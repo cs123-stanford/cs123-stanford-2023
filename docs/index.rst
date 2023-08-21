@@ -31,10 +31,15 @@ Researchers from Google DeepMind, Apple, and Toyota Research Institute will give
 **Prerequisites:** CS107 (familiarity with the command line), MATH51/CME100 (understanding of gradients). Coding will be majority Python but some C++ (Arduino). No robotics experience necessary!!
 
 **Grading:** Letter-Based
+
 **Time:** Monday 1:30-4:20
+
 **Location:** 50-52H
+
 **Number of credits:** 3
+
 **Enrollment capacity:** 20
+
 **Waitlist:** 10
 
 
