@@ -27,7 +27,7 @@ install('recommonmark')
 
 # -- Project information -----------------------------------------------------
 
-project = 'Stanford Pupper'
+project = 'CS123'
 copyright = '2021, Nathan Kau, Abi Lopez, Gabrael Levine'
 author = 'Nathan Kau, Abi Lopez, Gabrael Levine'
 
