@@ -21,6 +21,7 @@ def install(package):
         pip._internal.main(['install', package])
 
 install('sphinx_rtd_theme')
+install('recommonmark')
 # sys.path.insert(0, os.path.abspath('.'))
 
 
