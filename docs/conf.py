@@ -12,6 +12,15 @@
 #
 import os
 import sys
+import pip
+
+def install(package):
+    if hasattr(pip, 'main'):
+        pip.main(['install', package])
+    else:
+        pip._internal.main(['install', package])
+
+install('sphinx_rtd_theme')
 # sys.path.insert(0, os.path.abspath('.'))
 
 
