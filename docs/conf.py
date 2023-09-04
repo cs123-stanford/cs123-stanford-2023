@@ -12,16 +12,16 @@
 #
 import os
 import sys
-import pip3
+#import pip3
 
-def install(package):
-     if hasattr(pip3, 'main'):
-         pip3.main(['install', package])
-     else:
-         pip3._internal.main(['install', package])
+#def install(package):
+#     if hasattr(pip3, 'main'):
+#         pip3.main(['install', package])
+#     else:
+#         pip3._internal.main(['install', package])
 
-install('sphinx_rtd_theme')
-install('recommonmark')
+#install('sphinx_rtd_theme')
+#install('recommonmark')
 #sys.path.insert(0, os.path.abspath('.'))
 
 def setup (app):
