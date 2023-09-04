@@ -19,8 +19,6 @@ Lab Instructions
 ----------------------------------
 *Goal: Build two robot arms that mirror each other's motion.*
 
-[Insert GIF of completed robot arms]
-
 Step 0. Setup
 ^^^^^^^^^^^^^^
 #. Install `VSCode <https://code.visualstudio.com/Download>`_
