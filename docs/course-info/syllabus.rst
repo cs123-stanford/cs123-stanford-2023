@@ -1,5 +1,5 @@
 Syllabus
-****************
+########
 
 .. figure:: ../_static/pupper-hero.jpg
     :align: center
