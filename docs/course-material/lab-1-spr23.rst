@@ -93,7 +93,13 @@ Step 4. Connect and calibrate electronics
 Step 4. Run the starter code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Git clone the `starter code <https://github.com/stanfordroboticsclub/independent-study-lab1>`_, open in VSCode, and upload to Teensy.
+1. Git clone the `starter code <https://github.com/stanfordroboticsclub/independent-study-lab1>`_
+''git clone https://github.com/stanfordroboticsclub/independent-study-lab1.git''
+''cd independent-study-lab1''
+''git submodule init''
+''git submodule update''
+
+Open in VSCode, and upload to Teensy (refer to video).
 
 .. raw:: html
 
