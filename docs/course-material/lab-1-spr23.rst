@@ -60,10 +60,6 @@ Step 2. Fasten feet to base
 
 Step 3. Attach dial to motor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. figure:: ../_static/example-output.png
-    :align: center
-Plug in USB Cable into Teensy like so
-
 
 .. raw:: html
 
@@ -94,7 +90,7 @@ Step 4. Connect and calibrate electronics
 
 **Important:** *To set a motor controller to a certain ID, click (short press) press to put the motor controller into id-setting mode, then click N more times in quick succession, where N is the desired ID. Eg, for a desired ID of 3, press 3 more times after the first click.*
 
-Step 4. Run the starter code
+Step 5. Run the starter code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Git clone the `starter code <https://github.com/stanfordroboticsclub/independent-study-lab1>`_
@@ -106,6 +102,13 @@ Step 4. Run the starter code
 ``git submodule init``
 
 ``git submodule update``
+
+
+.. figure:: ../_static/teensy.jpeg
+    :align: center
+
+    Plug in USB Cable into Teensy like above
+
 
 Open in VSCode, and upload to Teensy (refer to video).
 
@@ -126,7 +129,7 @@ Open in VSCode, and upload to Teensy (refer to video).
     
     Example output from serial monitor.
 
-Step 5. Run bang-bang control
+Step 6. Run bang-bang control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. Uncomment the bang-bang code in ``src/main.cpp`` and upload.
@@ -143,7 +146,7 @@ Step 5. Run bang-bang control
 
 |
 
-Step 6. Write PD position control
+Step 7. Write PD position control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. Comment out the bang-bang controller.
@@ -155,7 +158,7 @@ Step 6. Write PD position control
 
 [Insert gif of proper PD joint control]
 
-Step 7. Experiment with different parameters
+Step 8. Experiment with different parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Note: Some of these steps will cause the output disc to go unstable and violently shake, be prepared!
 
@@ -172,13 +175,13 @@ If either gain is too high or is negative, the motor will go unstable.
 
 [Insert gif of some instability]
 
-Step 8. Experiment with different loop rates
+Step 9. Experiment with different loop rates
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. Examine where the code is checking if it's time to issue another control update.
 #. Change the update rate to 4Hz with Kp=1000 and Kd=100 to observe instability.
 
-Step 9. Program periodic motion
+Step 10. Program periodic motion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Set the update rate back to 200Hz (5ms interval).
