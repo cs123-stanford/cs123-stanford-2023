@@ -57,13 +57,14 @@ The course has been taught at Stanford, UW, WashU, Foothills College, Brandeis, 
     :maxdepth: 2
     :caption: Course material
 
-    course-material/lab-1-spr23
-    course-material/lab-2
-    course-material/lab-3-spr22
-    course-material/lab-4-spr22
-    course-material/lab-5-spr23
-    course-material/lab-6-spr22
-    course-material/lab-7-spr22
+    course-material/fall-23/lab-1
+    course-material/fall-23/lab-2
+    course-material/fall-23/lab-3
+    course-material/fall-23/lab-4
+    course-material/fall-23/lab-5
+    course-material/fall-23/lab-6
+    course-material/fall-23/lab-7
+    course-material/fall-23/lab-8
     course-material/final-project
 
 .. toctree::
