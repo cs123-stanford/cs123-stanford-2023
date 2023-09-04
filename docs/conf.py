@@ -15,10 +15,10 @@ import sys
 import pip3
 
 def install(package):
-     if hasattr(pip, 'main'):
-         pip.main(['install', package])
+     if hasattr(pip3, 'main'):
+         pip3.main(['install', package])
      else:
-         pip._internal.main(['install', package])
+         pip3._internal.main(['install', package])
 
 install('sphinx_rtd_theme')
 install('recommonmark')
