@@ -60,6 +60,10 @@ Step 2. Fasten feet to base
 
 Step 3. Attach dial to motor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. figure:: ../_static/example-output.png
+    :align: center
+Plug in USB Cable into Teensy like so
+
 
 .. raw:: html
 
