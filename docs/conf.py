@@ -24,8 +24,8 @@ import sys
 #install('recommonmark')
 #sys.path.insert(0, os.path.abspath('.'))
 
-def setup (app):
-    app.add_stylesheet('css/custom.css')
+#def setup (app):
+#   app.add_stylesheet('css/custom.css')
 
 
 
