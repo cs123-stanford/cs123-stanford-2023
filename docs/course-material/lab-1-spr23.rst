@@ -122,7 +122,7 @@ Open in VSCode, and upload to Teensy (refer to video).
 #. Upload starter code to Teensy (right arrow icon in blue bar of VSCode or click the ant icon, then upload)
 #. Open the serial monitor in VSCode (icon that looks like a plug in bottom bar of VSCode or click ant icon, then monitor)
 #. Click into the serial monitor area and then press the key **s** to make the Teensy start printing out the angle and velocity of the connected motor.
-#. Press ``s`` again to stop the program. If you want to rerun the code, upload again or unplug and replug your computer from the Teensy.
+#. Press ``s`` again to stop the program (use this in place of ^C, to start and stop the program). If you want to rerun the code, upload again or unplug and replug your computer from the Teensy.
 
 .. figure:: ../_static/example-output.png
     :align: center
