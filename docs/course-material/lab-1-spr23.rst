@@ -150,7 +150,8 @@ Step 6. Run bang-bang control
 
 *Example bang-bang control.*
 
-|
+**DELIVERABLE: Take a video of your bang bang control to upload to Gradescope with your submission**
+
 
 Step 7. Write PD position control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -166,34 +167,36 @@ Step 7. Write PD position control
 #. Use Kp = 1000.0 and Kd = 0.0 to start. Don't forget the negative signs! 
 #. Upload code to Teensy
 #. *FEEL* the effect of the PD controller.
-#. What happens when you rotate the disc just a little bit away from the target position? What happens when you rotate it a lot away from the target position? Do you feel the motor torque increase and then flatten out as you rotate the disc?
+#. What happens when you rotate the disc just a little bit away from the target position? What happens when you rotate it a lot away from the target position? Do you feel the motor torque increase and then flatten out as you rotate the disc? 
 
-[Insert gif of proper PD joint control]
+**DELIVERABLE: Answer the above question in your lab document, and report your chosen K_p and K_d values. Take a video of your working PID controller to upload to Gradescope**
+
+
 
 Step 8. Experiment with different parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Note: Some of these steps will cause the output disc to go unstable and violently shake, be prepared!
 
-For each of these situations (except the ones that go unstable), rotate the disc around with your hand to get a physical sense for the PD behavior.
+For each of these situations (except the ones that go unstable), rotate the disc around with your hand to get a physical sense for the PD behavior. Report on your findings for each of these in your lab document.
 
-#. Keeping Kd constant (0), experiment with Kp = -100 and Kp = 5000. Discuss with your partner how each feels. How are Kp and stiffness related?
-#. Keeping Kp constant (1000), experiment with different Kd values from -10 to 1000
-#. See what happens when Kp is too high. Try Kp=50000 and Kd=100.
-#. See what happens when Kd is too high. Try Kp=0 and Kd=100000.
-#. See what happens with just moderate damping. Try Kp=0 and Kd=100. 
+#. Keeping Kd constant (0), experiment with Kp = -100 and Kp = 5000. Discuss with your partner how each feels. Report how Kp and stiffness related?
+#. Keeping Kp constant (1000), experiment with different Kd values from -10 to 1000. Report what happens.
+#. Report what happens when Kp is too high. Try Kp=50000 and Kd=100.
+#. Report what happens when Kd is too high. Try Kp=0 and Kd=100000.
+#. Report what happens with just moderate damping. Try Kp=0 and Kd=100. 
+**DELIVERABLE: Report your findings in your lab document**
 
 The expected behavior is that higher Kp values will make the position control more stiff while higher Kd values will make the motor slower to achieve the desired position.
 If either gain is too high or is negative, the motor will go unstable.
 
-[Insert gif of some instability]
-
 Step 9. Experiment with different loop rates
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Report on your findings for each of these in your lab document
 #. Examine where the code is checking if it's time to issue another control update.
 #. Change the update rate to 4Hz with Kp=1000 and Kd=100 to observe instability. Reminder, 1Hz = 1/seconds. 
-
-WARNING, decreasing the update frequency by too much can cause dangerous behavior.
+**DELIVERABLE: Report how increasing/decreasing the update frequency affects the controller's performance.**
+**WARNING, decreasing the update frequency by too much can cause dangerous behavior.**
 
 Step 10. Program periodic motion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -207,12 +210,9 @@ Step 10. Program periodic motion
     position_target = sin(time)
 
 3. Play around with different frequencies. How high can you raise the frequency before the motor no longer moves as much as you expect? 
-
+**DELIVERABLE: Take a video to upload to Gradescope with your submission**
 
 Fun fact, the maximum frequency you can go before the motor moves to only 71% (-3dB) of the intended motion is called the bandwidth.
-
-
-[Insert gif of sinusoidal motion]
 
 
 (Old) Mini-lecture - Joint Control
