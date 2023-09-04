@@ -1,30 +1,31 @@
 Schedule
 ===========
 
+**Week 1** 9/25
+No Class! School starts on a Tuesday (for some reason...), so we will have our first class on Monday week 2!
 
-**Week 1**
-
-* Lecture on BLDC robot actuators and low-level control of robot joints.
+**Week 2** 10/2
+* Lecture on BLDC robot actuators and low-level PID control of robot joints.
 * :doc:`../course-material/lab-1` Introduction to Teensy microcontroller. Mechatronics assembly. Experimenting with PID to move BLDC actuators to desired angles. Moving three actuators simultaneously. 
 * :doc:`../course-material/lab-2` Build 3-DOF leader-follower robot arms akin to a surgical robotic system.
 
-**Week 2**
+**Week 2** 10/9
 
 * Lecture on forward kinematics of open-chain robots and applications.
 * :doc:`../course-material/lab-3` Program the robot to tell you the cartesian coordinates of the leg for any given position. Staying within a cartesian-space safety box with haptic feedback. 
 
-**Week 3**
+**Week 3** 10/16
 
 * Lecture on inverse kinematics of open-chain robots and applications
 * :doc:`../course-material/lab-4` Program legs to move to desired locations using inverse kinematics. Finally, drawing images with a robot arm! Task-space impedance control if time allows.
 
-**Week 4**
+**Week 4** 10/23
 
-* Lecture on quadruped gaits: e.g. theory behind gallop, walk, trot, etc and associated stability.
+* Lecture on model-based gait control: e.g. theory behind gallop, walk, trot, etc and associated stability.
 * :doc:`../course-material/lab-5` Program the robot to trot using open-loop task-space trajectories. Simulating the robot in PyBullet to design and test code before deploying in the real world.
 
 **Week 5**
-
+* Lecture on Reinforcement Learning for quadruped robots, and SOTA RL simulation techniques
 * :doc:`../course-material/lab-6` Students build full Pupper robot.
 
 **Week 6**
