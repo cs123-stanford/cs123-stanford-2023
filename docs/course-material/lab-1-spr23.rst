@@ -91,6 +91,8 @@ Step 4. Connect and calibrate electronics
 Step 5. Run the starter code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+**WARNING** To stop code, press ``s`` inside the terminal instead of ^C. Using ^C will lead to undefined behavior when you upload new code, or run the code again. 
+
 1. Git clone the `starter code <https://github.com/stanfordroboticsclub/independent-study-lab1>`_
 
 ``git clone https://github.com/stanfordroboticsclub/independent-study-lab1.git``
@@ -189,7 +191,9 @@ Step 9. Experiment with different loop rates
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. Examine where the code is checking if it's time to issue another control update.
-#. Change the update rate to 4Hz with Kp=1000 and Kd=100 to observe instability.
+#. Change the update rate to 4Hz with Kp=1000 and Kd=100 to observe instability. Reminder, 1Hz = 1/seconds. 
+
+WARNING, decreasing the update frequency by too much can cause dangerous behavior.
 
 Step 10. Program periodic motion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
