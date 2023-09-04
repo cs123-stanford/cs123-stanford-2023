@@ -1,4 +1,4 @@
-**Sourcing Course Materials**
+*Sourcing Course Materials*
 
 Information on how to source hardware and software designed for this course.
 
