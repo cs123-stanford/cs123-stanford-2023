@@ -24,7 +24,7 @@ Lab Instructions
 Step 0. Setup
 ^^^^^^^^^^^^^^
 #. Install `VSCode <https://code.visualstudio.com/Download>`_
-#. Install the PlatformIO extension for VSCode. (Might take several minutes on Windows - check the bottom bar in VSCode for status)
+#. Install the PlatformIO extension for VSCode, a native Arduino/Teensyduino development IDE for VSCode. (Might take several minutes on Windows - check the bottom bar in VSCode for status)
 
 .. raw:: html
 
@@ -120,10 +120,10 @@ Open in VSCode, and upload to Teensy (refer to video).
 
 #. Examine where in the code the motor angle and velocity are read in ``src/main.cpp``. Examine where the motor is commanded.
 
-.. figure:: ../_static/platformio_arrow.jpeg
+.. figure:: ../_static/platformio_arrow.jpg
     :align: center
 
-    Click the alien icon in the left bar to open the Platformio menu. (The UPLOAD button uploads the code to the Teensy microcontroller. The MONITOR button allows you to see the output from the Teensy. UPLOAD AND MONITOR accomplishes both at once).  
+    Click the alien icon in the left bar to open the PlatformIO menu. (The UPLOAD button uploads the code to the Teensy microcontroller. The MONITOR button allows you to see the output from the Teensy. UPLOAD AND MONITOR accomplishes both at once).  
 
 #. Upload starter code to Teensy (right arrow icon in blue bar of VSCode or click the ant icon, then upload)
 #. Open the serial monitor in VSCode (icon that looks like a plug in bottom bar of VSCode or click ant icon, then monitor)
