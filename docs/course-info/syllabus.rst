@@ -1,7 +1,4 @@
 Syllabus
-#######################################################
-
-Course Website
 ****************
 
 .. figure:: _static/pupper-hero.jpg
