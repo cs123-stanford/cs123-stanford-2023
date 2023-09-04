@@ -1,1 +1,4 @@
-.wy-side-nav-search{ background-color:<#C41E3A> }
+/* Change link color */
+a {
+    color: #FF5733; /* Change this color to your desired color */
+}
