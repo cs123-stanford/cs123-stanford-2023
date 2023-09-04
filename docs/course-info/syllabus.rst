@@ -1,4 +1,4 @@
-CS 123: A Hands-On Introduction to Building AI-Enabled Robots
+Syllabus
 #######################################################
 
 Course Website
