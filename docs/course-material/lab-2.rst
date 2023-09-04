@@ -52,7 +52,7 @@ Step 3. Connect and calibrate electronics
 
 |
 
-Step 4. Assemble the three motors into a robot arm!
+Step 4. Assemble the three motors into a right robot arm!
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **IMPORTANT**: Make sure you calibrated the motors before assembling the arm!
@@ -99,8 +99,10 @@ Step 6. Connect three more motors to use as control dials
 
 [TODO: gif]
 
-Step 7. Connect and calibrate electronics for second robot arm
+Step 7. Connect and calibrate electronics for second right robot arm
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Make sure that both arms are right-hand-sided (3d printed parts are marked with R and L)
 
 .. raw:: html
 
@@ -121,7 +123,6 @@ We're now making one of Pupper's left-side legs to use as the second robot arm.
         <iframe src="https://www.youtube.com/embed/Eq8ORlPMOAw" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
-|
 
 Step 9. Use the arms as leader and follower.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
