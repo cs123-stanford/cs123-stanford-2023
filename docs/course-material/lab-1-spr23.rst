@@ -156,7 +156,13 @@ Step 7. Write PD position control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. Comment out the bang-bang controller.
-#. Complete the pd_control function in ``src/main.cpp``. Your function should return a current command (100mA, 200mA etc) using the PD control law ``tau = Kp * (target - theta) + Kd * (-omega)``.
+#. Complete the pd_control function in ``src/main.cpp``. Your function should return an electrical current command (100mA, 200mA etc) using the PD control law using the following update equation.
+
+.. figure:: ../_static/pid_eqn.png
+    :align: center
+    
+    PID Update Equation. ``Tau`` is the commanded electrical current for the motor, ``x`` is the target angle, ``v`` is the target angular velocity, ``theta`` is the motor angle, and ``omega`` is the motor angular velocity. ``K_d`` and ``K_p`` are the derivative and proportional gains - these are dimensionless coefficients that you will experimentally determine through trial and error. 
+
 #. Use Kp = 1000.0 and Kd = 0.0 to start. Don't forget the negative signs! 
 #. Upload code to Teensy
 #. *FEEL* the effect of the PD controller.
