@@ -2,14 +2,17 @@ Schedule
 ===========
 
 **Week 1** 9/25
+
 No Class! School starts on a Tuesday (for some reason...), so we will have our first class on Monday week 2!
 
 **Week 2** 10/2: Actuators and PID Control
+
 * Lecture on BLDC robot actuators and low-level PID control of robot joints.
 * :doc:`../course-material/fall-23/lab-1` Introduction to Teensy microcontroller. Mechatronics assembly. Experimenting with PID to move BLDC actuators to desired angles. Moving three actuators simultaneously. 
 * :doc:`../course-material/fall-23/lab-2` Build 3-DOF leader-follower robot arms akin to a surgical robotic system.
 
 **Week 3** 10/9: Forward Kinematics
+
 * Lecture on forward kinematics of open-chain robots and applications.
 * :doc:`../course-material/fall-23/lab-3` Program the robot to tell you the cartesian coordinates of the leg for any given position. Staying within a cartesian-space safety box with haptic feedback. 
 
@@ -24,6 +27,7 @@ No Class! School starts on a Tuesday (for some reason...), so we will have our f
 * :doc:`../course-material/fall-23/lab-5` Program the robot to trot using open-loop task-space trajectories. Simulating the robot in PyBullet to design and test code before deploying in the real world.
 
 **Week 6**: Reinforcement Learning
+
 * Lecture on Reinforcement Learning for quadruped robots, and state-of-the-art RL simulation techniques
 * :doc:`../course-material/fall-23/lab-6` Students build full Pupper robot.
 
@@ -40,6 +44,7 @@ No Class! School starts on a Tuesday (for some reason...), so we will have our f
 * During this week, you will meet with TAs to review project final project proposals
 
 **Week 9**
+
 * Open lab time
 
 **Week 10**
