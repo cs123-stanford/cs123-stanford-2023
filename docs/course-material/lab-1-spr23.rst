@@ -213,6 +213,7 @@ Step 10. Program periodic motion
     position_target = sin(time)
 
 3. Play around with different frequencies. How high can you raise the frequency before the motor no longer moves as much as you expect? 
+
 **DELIVERABLE: Take a video to upload to Gradescope with your submission**
 
 Fun fact, the maximum frequency you can go before the motor moves to only 71% (-3dB) of the intended motion is called the bandwidth.
