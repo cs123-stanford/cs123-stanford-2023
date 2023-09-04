@@ -130,6 +130,8 @@ Step 9. Use the arms as leader and follower.
 #. Start the robot arms from the same position.
 #. Tune Kp and Kd gains and maximum current as you like.
 
+**DELIVERABLE: Submit a video of your leader/follower setup where you move all 3 joints of the leader, showing the follower copying the movements.**
+
 [TODO: pic]
 
 Step 10. Make the robot arms bidirectional!
@@ -140,9 +142,10 @@ Step 10. Make the robot arms bidirectional!
 
 .. code-block:: c++
 
-  bus.CommandTorques(m0_current, m1_current, m2_current, m3_current, C610Subbus::kOneToFourBlinks);
-  bus.CommandTorques(m4_current, m5_current, 0, 0, C610Subbus::kFiveToEightBlinks); 
+    bus.CommandTorques(m0_current, m1_current, m2_current, m3_current, C610Subbus::kZeroToThreeBlinks);
+    bus.CommandTorques(m4_current, m5_current, 0, 0, C610Subbus::kFourToSevenBlinks);
 
+**DELIVERABLE: Submit a video like the leader/follower video where you move both arms manually.**
 
 4. Congrats. Play with your robot! Make modifications!
 
