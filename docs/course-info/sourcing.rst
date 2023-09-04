@@ -1,5 +1,5 @@
-Sourcing Course Materials 
-======================================
+**Sourcing Course Materials**
+--------------------
 
 Bill of Materials
 --------------------
