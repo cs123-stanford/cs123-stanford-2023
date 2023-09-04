@@ -1,7 +1,7 @@
 Syllabus
 ****************
 
-.. figure:: _static/pupper-hero.jpg
+.. figure:: ../_static/pupper-hero.jpg
     :align: center
     :alt: Pupper
 
