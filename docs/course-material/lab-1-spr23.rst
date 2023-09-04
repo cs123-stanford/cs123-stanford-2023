@@ -184,6 +184,7 @@ For each of these situations (except the ones that go unstable), rotate the disc
 #. Report what happens when Kp is too high. Try Kp=50000 and Kd=100.
 #. Report what happens when Kd is too high. Try Kp=0 and Kd=100000.
 #. Report what happens with just moderate damping. Try Kp=0 and Kd=100. 
+
 **DELIVERABLE: Report your findings in your lab document**
 
 The expected behavior is that higher Kp values will make the position control more stiff while higher Kd values will make the motor slower to achieve the desired position.
@@ -195,7 +196,9 @@ Step 9. Experiment with different loop rates
 Report on your findings for each of these in your lab document
 #. Examine where the code is checking if it's time to issue another control update.
 #. Change the update rate to 4Hz with Kp=1000 and Kd=100 to observe instability. Reminder, 1Hz = 1/seconds. 
+
 **DELIVERABLE: Report how increasing/decreasing the update frequency affects the controller's performance.**
+
 **WARNING, decreasing the update frequency by too much can cause dangerous behavior.**
 
 Step 10. Program periodic motion
