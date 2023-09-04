@@ -119,6 +119,12 @@ Open in VSCode, and upload to Teensy (refer to video).
     </div>
 
 #. Examine where in the code the motor angle and velocity are read in ``src/main.cpp``. Examine where the motor is commanded.
+
+.. figure:: ../_static/platformio_arrow.jpeg
+    :align: center
+
+    Click the alien icon in the left bar to open the Platformio menu. (The UPLOAD button uploads the code to the Teensy microcontroller. The MONITOR button allows you to see the output from the Teensy. UPLOAD AND MONITOR accomplishes both at once).  
+
 #. Upload starter code to Teensy (right arrow icon in blue bar of VSCode or click the ant icon, then upload)
 #. Open the serial monitor in VSCode (icon that looks like a plug in bottom bar of VSCode or click ant icon, then monitor)
 #. Click into the serial monitor area and then press the key **s** to make the Teensy start printing out the angle and velocity of the connected motor.
