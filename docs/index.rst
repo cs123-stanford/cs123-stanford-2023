@@ -27,9 +27,6 @@ Researchers from Google DeepMind, Hands-On Robotics, and Toyota Research Institu
 
 *"Empowering robots with AI is essential to make them smart and useful in people's daily life. It is one of the most important research directions in both academia and industry. This class teaches the most relevant skills, gives students hand-on experiences, and prepares them for a career in the area of AI and robotics."* - Jie Tan, Staff Research Scientist at Google DeepMind
 
-The course has been taught at Stanford, UW, WashU, Foothills College, Brandeis, and George Mason, with plans to expand worldwide!
-
-
 **Prerequisites:** CS107 (familiarity with the command line), MATH51/CME100 (understanding of gradients). Coding will be majority Python but some C++ (Arduino). No robotics experience necessary!!
 
 **Grading:** Letter-Based
