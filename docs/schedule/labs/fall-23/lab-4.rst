@@ -1,4 +1,4 @@
-Lab 4 - Inverse Kinematics (WIP)
+Lab 4 - Copy Cat (Dog...) (WIP)
 =======================================================
 
 .. contents:: :depth: 2
