@@ -23,4 +23,4 @@ Actuators and PD control lecture by Stuart Bowers, April 10, 2023.
         <iframe src="https://www.youtube.com/embed/GZb0ZHpmb28" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
-Lab: :doc:`..labs/fall-23/lab-1` Introduction to Teensy microcontroller. Mechatronics assembly. Experimenting with PID to move BLDC actuators to desired angles. Moving three actuators simultaneously.
+Lab: :doc:`../../labs/fall-23/lab-1` Introduction to Teensy microcontroller. Mechatronics assembly. Experimenting with PID to move BLDC actuators to desired angles. Moving three actuators simultaneously.
