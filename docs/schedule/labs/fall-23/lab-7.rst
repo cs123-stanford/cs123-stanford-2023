@@ -1,4 +1,4 @@
-Lab 7 - AI-enabled Quadrupeds: Robot Vision  (WIP)
+Lab 7 - Seeing is Believing (WIP)
 ======================================
 
 .. contents:: :depth: 2
