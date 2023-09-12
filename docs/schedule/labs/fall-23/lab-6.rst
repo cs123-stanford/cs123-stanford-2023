@@ -1,4 +1,4 @@
-Lab 6 - Reinforcement Learning (WIP)
+Lab 6 - How to Train Your Dog (WIP)
 =======================================
 
 .. contents:: :depth: 2
