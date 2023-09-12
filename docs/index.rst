@@ -49,11 +49,11 @@ No Class! School starts on a Tuesday (for some reason...), so we will have our f
 
 * Lecture on BLDC robot actuators and low-level PID control of robot joints.
 * :doc:`../course-material/fall-23/lab-1` Introduction to Teensy microcontroller. Mechatronics assembly. Experimenting with PID to move BLDC actuators to desired angles. Moving three actuators simultaneously. 
-* :doc:`../course-material/fall-23/lab-2` Build 3-DOF leader-follower robot arms akin to a surgical robotic system.
 
 **Week 3** 10/9: Forward Kinematics
 
 * Lecture on forward kinematics of open-chain robots and applications.
+* :doc:`../course-material/fall-23/lab-2` Build 3-DOF leader-follower robot arms akin to a surgical robotic system.
 * :doc:`../course-material/fall-23/lab-3` Program the robot to tell you the cartesian coordinates of the leg for any given position. Staying within a cartesian-space safety box with haptic feedback. 
 
 **Week 4** 10/16: Inverse Kinematics
