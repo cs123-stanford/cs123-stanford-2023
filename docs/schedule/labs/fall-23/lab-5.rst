@@ -1,11 +1,7 @@
-Lab 6 - Pupper Assembly
+Lab 5 - Pupper Assembly (WIP)
 ========================
 
 .. contents:: :depth: 2
-
-
-Lab instructions
--------------------
 
 Step 1. Leg Assembly
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

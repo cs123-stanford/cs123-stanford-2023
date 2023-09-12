@@ -105,34 +105,21 @@ No Class! School starts on a Tuesday (for some reason...), so we will have our f
 
 
 .. toctree::
-    :maxdepth: 1
-    :caption: Course information
-  
-    course-info/syllabus
-    course-info/schedule
-    course-info/sourcing
-
-.. toctree::
     :maxdepth: 2
-    :caption: Course material
+    :caption: Course Schedule
 
-    course-material/fall-23/lab-1
-    course-material/fall-23/lab-2
-    course-material/fall-23/lab-3
-    course-material/fall-23/lab-4
-    course-material/fall-23/lab-5
-    course-material/fall-23/lab-6
-    course-material/fall-23/lab-7
-    course-material/fall-23/lab-8
-    course-material/final-project
+    schedule/lectures/fall-23/week-1
+    schedule/lectures/fall-23/week-2
+    schedule/lectures/fall-23/week-3
+    schedule/lectures/fall-23/week-4
+    schedule/lectures/fall-23/week-5
+    schedule/lectures/fall-23/week-6
+    schedule/lectures/fall-23/week-7
+    schedule/lectures/fall-23/week-8
 
 .. toctree::
     :maxdepth: 1
     :caption: References
 
-    reference/faq
-    reference/rpi-reference
-    reference/design
-    reference/libraries
-    reference/dji_reference
+    references/references
     
