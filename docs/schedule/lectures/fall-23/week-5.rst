@@ -53,4 +53,4 @@ https://share.icloud.com/photos/0836FiHhLJuCXCs9TyqSW8Ilw
 
     <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSOdXk8Tz55ZzrXGzIeHZUEigYQPUS2bPOIQPeFiRIXSRrVX7hqwXnC1yJnaZoH-uvJZ0OnK4JAW14o/embed?start=false&loop=false&delayms=60000" frameborder="0" width="600" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-Lab: :doc:`..labs/fall-23/lab-6` Introduction to Teensy microcontroller. Mechatronics assembly. Experimenting with PID to move BLDC actuators to desired angles. Moving three actuators simultaneously.
+Lab: :doc:`../../labs/fall-23/lab-6` Introduction to Teensy microcontroller. Mechatronics assembly. Experimenting with PID to move BLDC actuators to desired angles. Moving three actuators simultaneously.
