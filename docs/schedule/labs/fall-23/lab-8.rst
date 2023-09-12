@@ -1,4 +1,4 @@
-Lab 6 - AI-enabled Quadrupeds: LLMs (WIP)
+Lab 6 - Do What I Say (WIP)
 ========================
 
 .. contents:: :depth: 2
