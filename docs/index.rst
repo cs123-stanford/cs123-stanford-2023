@@ -38,6 +38,8 @@ Researchers from Google DeepMind, Hands-On Robotics, and Toyota Research Institu
 
 **Waitlist:** 10
 
+**Late Policy:** Late work will be accepted on a case by case basis. Since this class is very dependent on hardware builds, we highly discourage submitting work after the scheduled deadline. 
+
 Schedule
 ===========
 
