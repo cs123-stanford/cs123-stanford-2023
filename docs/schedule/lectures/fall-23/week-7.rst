@@ -1,6 +1,6 @@
-Week 8 - AI-enabled Quadrupeds (Robot Vision) (WIP)
+Week 7 11/6: Pupper Assembly (WIP)
 =======================================
 
 .. contents:: :depth: 2
 
-Lab: :doc:`../../labs/fall-23/lab-8` Students build AI-enabled integrated with LLMs
+Lab: :doc:`../../labs/fall-23/lab-7` Students build AI-enabled quadruped with vision

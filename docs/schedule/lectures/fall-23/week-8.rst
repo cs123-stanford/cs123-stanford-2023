@@ -1,6 +1,6 @@
-Week 9 - AI-enabled Quadrupeds (LLMs) (WIP)
+Week 8 11/13: AI-enabled Quadrupeds (Robot Vision) (WIP)
 =======================================
 
 .. contents:: :depth: 2
 
-Open Lab Time for Final Projects
+Lab: :doc:`../../labs/fall-23/lab-8` Students build AI-enabled integrated with LLMs

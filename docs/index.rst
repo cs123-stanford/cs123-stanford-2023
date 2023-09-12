@@ -116,10 +116,11 @@ No Class! School starts on a Tuesday (for some reason...), so we will have our f
     schedule/lectures/fall-23/week-6
     schedule/lectures/fall-23/week-7
     schedule/lectures/fall-23/week-8
+    schedule/lectures/fall-23/week-9
 
 .. toctree::
     :maxdepth: 1
     :caption: References
 
-    references/references
+    reference/references
     
