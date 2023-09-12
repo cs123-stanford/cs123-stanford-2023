@@ -13,7 +13,7 @@ Course Website
 **2023 Teaching team:** 
 
 * Instructors: `Prof. Karen Liu <https://tml.stanford.edu/people/karen-liu>`_ (Stanford CS), `Jie Tan <https://www.jie-tan.net/>`_ (Google DeepMind), `Stuart Bowers <https://handsonrobotics.org/>`_ (Hands-On Robotics)
-* Co-Intructors: `Wenhao Yu <https://wenhaoyu.weebly.com/>` (Google DeepMind), `Tingnan Zhang <https://www.linkedin.com/in/tingnanzhang/>` (Google DeepMind)
+* Co-Intructors: `Wenhao Yu <https://wenhaoyu.weebly.com/>`_ (Google DeepMind), `Tingnan Zhang <https://www.linkedin.com/in/tingnanzhang/>`_ (Google DeepMind)
 * Head TAs: Jaden Clark (CS 2024), Gabrael Levine (MS CS 2024)
 * TAs: Ankush Dhawan (EE 2024), Sydney Yan (CS 2025), Brandon Vu (CS 2024)
 
