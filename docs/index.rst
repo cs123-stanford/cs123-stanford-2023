@@ -11,7 +11,7 @@ CS 123: A Hands-On Introduction to Building AI-Enabled Robots
 
 * Instructors: `Prof. Karen Liu <https://tml.stanford.edu/people/karen-liu>`_ (Stanford CS), `Jie Tan <https://www.jie-tan.net/>`_ (Google DeepMind), `Stuart Bowers <https://handsonrobotics.org/>`_ (Hands-On Robotics)
 * Co-Intructors: `Wenhao Yu <https://wenhaoyu.weebly.com/>`_ (Google DeepMind), `Tingnan Zhang <https://www.linkedin.com/in/tingnanzhang/>`_ (Google DeepMind)
-* Head TAs: `Jaden Clark <https://www.linkedin.com/in/jaden-clark-9827031a3/>`_ (CS 2024), `Gabrael Levine <https://www.linkedin.com/in/gabrael/>`_ (MS CS 2024)
+* Head TAs: `Jaden Clark <https://jadenvc.github.io/>`_ (CS 2024), `Gabrael Levine <https://www.linkedin.com/in/gabrael/>`_ (MS CS 2024)
 * TAs: `Ankush Dhawan <https://www.linkedin.com/in/ankush-dhawan/>`_ (EE 2024), `Sydney Yan<https://www.linkedin.com/in/sydney-yan-35b97a1ab/>`_ (CS 2025), `Brandon Vu <https://www.linkedin.com/in/brandon-t-vu/>`_ (CS 2024)
 
 **Overview:**
