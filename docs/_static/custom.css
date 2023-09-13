@@ -2,3 +2,7 @@
 body {
     background-color: #f20505; /* Change this color to your desired background color */
 }
+/* Change header text color to blue */
+h1, h2, h3, h4, h5, h6 {
+    color: red;
+}
