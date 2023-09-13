@@ -10,3 +10,8 @@ h1, h2, h3, h4, h5, h6 {
 .wy-nav-side {
     background-color: #f20505;
 }
+
+/* Change the background color of the sidebar navigation menu */
+.wy-nav-side {
+    background-color: #f20505; /* Replace with your desired background color */
+}
