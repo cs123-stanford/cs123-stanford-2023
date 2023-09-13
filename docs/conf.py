@@ -65,10 +65,10 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 #
 
 import sphinx_rtd_theme
-import solar-theme
+import solar_theme
 
 #html_theme = 'sphinx_rtd_theme'
-html_theme = 'solar-theme'
+html_theme = 'solar_theme'
 #html_theme_path = ["_themes", ]
 html_theme_path = [solar_theme.theme_path]
 #html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
