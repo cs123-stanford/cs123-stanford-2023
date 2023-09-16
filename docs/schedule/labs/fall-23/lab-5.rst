@@ -1,4 +1,4 @@
-Lab 5 - Pupper Assembly (WIP)
+Lab 5 - RL Lab (Work in Progress)
 ========================
 
 .. contents:: :depth: 2
