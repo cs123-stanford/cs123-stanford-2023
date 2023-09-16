@@ -5,14 +5,8 @@ Lab 5 - Pupper Assembly (WIP)
 
 Step 1.Stand High Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Detach your robot arms from the base 
-#. Attach 2 motors, one into each side of motor bulkhead, with 3 M3x6 phillips head screws each
-#. Attach left and right legs to the shafts of the motors you just installed and screw in shoulder bolt tightly
-#. Thread the wrapped cables through slots
-#. Zip tie the cables to keep them in place
-#. Clip motor controllers into place
-#. Connect motor and encoder cables to motor controllers
-#. Repeat this process so you have two motor bulkheads with four legs total
+#. Reward is standing high. Provide code with standing at regular height, student need to modify it to make it stand higher.
+#. Deploy on real
 
 DELIVERABLE: Screen recording of stand up in simulation
 
@@ -26,34 +20,16 @@ Step 2. Deploy Stand High Policy
     </div>
 
 |
+Transfer policy from local machine to pupper
+#. The model is a .pt file under the log folder name (e.g., “model_700.pt”)
+#. ‘scp [model name] pi@raspberrypi.local:’ (note the colon at the end)
 
-#. Detach your robot arms from the base 
-#. Attach 2 motors, one into each side of motor bulkhead, with 3 M3x6 phillips head screws each
-#. Attach left and right legs to the shafts of the motors you just installed and screw in shoulder bolt tightly
-#. Thread the wrapped cables through slots
-#. Zip tie the cables to keep them in place
-#. Clip motor controllers into place
-#. Connect motor and encoder cables to motor controllers
-#. Repeat this process so you have two motor bulkheads with four legs total
+#. In local puppersim repo, change the policy called in isaac_gym_policy.py (located under the puppersim folder) to your policy name (your .pt file)
+#. Change pi address in deploy_to_robot.sh
+#. ./deploy_to_robot.sh python puppersim/puppersim/isaac_gym_policy.py --run_on_robot
+
 
 DELIVERABLE: Take video of stand-up
-
-CHECK. Ensure Motor IDs are correct
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Use this diagram to ensure you have the correct IDs set on your motor controllers. For each bulkhead you should have:
-
-Right left/right motion hip motor: 1
-
-Right forward/back motion hip motor: 2
-
-Right knee motor: 3
-
-Left left/right motion hip motor: 4
-
-Left forward/back motion hip motor: 5
-
-Left knee motor: 6
 
 
 .. figure:: ../_static/motor_ids.png
@@ -72,11 +48,8 @@ Step 3. Walking Policy
 
 |
 
-#. Place front motor bulkhead
-#. Connect motor controller power cables (yellow XT30) and CAN connectors (small white JST GH) to bottom PCB
-#. Place back motor bulkhead and connect cables
-#. Flip robot and fasten bulkheads to bottom PCB with 4x M3x6 button head screws
-#. Tighten these screws well and/or add loctite 
+#. We provide basic interface (how to read robot velocity, how to obtain target velocity) and student need to write a new reward function
+#. deploy in sim
 
 DELIVERABLE: What terms are included in your reward functions? What coefficeints did you use? How did you come up with these terms and what was their desired effect? Why might this policy perform poorly on the physical robot?
 
@@ -91,12 +64,9 @@ Step 4. Domain Randomization
 
 |
 
-#. Screw RPi into electronics bulkhead with M2.5x5 socket head screws such that the Pi is oriented like in the video.
-#. Connect USB C extension cable to Rpi
-#. Connect RPi camera flex cable into RPi. There's a little grey flap that flips up on the connector that lets you slide the cable in. Flip the flap down to lock the cable in.
-#. Connect RPi to power by using 2-pin cable. Connect one end into 5V, GND pins near the Teensy and other side into RPi. Quadruple-check that the 5V and GND pins are going the right places. See diagram.
-#. Connect RPi to Teensy using USB A to USB micro cable
-#. Connect RC receiver to RPi with usb extension cable.
+#. Student need to implement domain randomization
+#. Deploy on real, works
+
 
 
 DELIVERABLE: What other terms could you randomize?
