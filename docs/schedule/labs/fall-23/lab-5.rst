@@ -3,11 +3,11 @@ Lab 5 - Pupper Assembly (WIP)
 
 .. contents:: :depth: 2
 
-Step 1. Leg Assembly
+Step 1.Stand High Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 * Make 1 more left leg and 1 more right leg using instructions in lab 2, however, do not attach the "base" motor
 
-Step 2. Bulkhead assembly
+Step 2. Deploy Stand High Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. raw:: html
@@ -50,7 +50,7 @@ Left knee motor: 6
     
     Motor ID diagram
 
-Step 3. Body assembly
+Step 3. Walking Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. raw:: html
@@ -67,7 +67,7 @@ Step 3. Body assembly
 #. Flip robot and fasten bulkheads to bottom PCB with 4x M3x6 button head screws
 #. Tighten these screws well and/or add loctite 
 
-Step 4. Electronics bulkhead assembly
+Step 4. Domain Randomization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. raw:: html
