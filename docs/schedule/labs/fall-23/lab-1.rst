@@ -103,7 +103,7 @@ Open in VSCode, and upload to Teensy (refer to video).
 
 #. Examine where in the code the motor angle and velocity are read in ``src/main.cpp``. Examine where the motor is commanded.
 
-.. figure:: ../_static/platformio_arrow.jpg
+.. figure:: ../../../_static/platformio_arrow.jpg
     :align: center
 
     Click the alien icon in the left bar to open the PlatformIO menu. (The UPLOAD button uploads the code to the Teensy microcontroller. The MONITOR button allows you to see the output from the Teensy. UPLOAD AND MONITOR accomplishes both at once).  
@@ -113,7 +113,7 @@ Open in VSCode, and upload to Teensy (refer to video).
 #. Click into the serial monitor area and then press the key **s** to make the Teensy start printing out the angle and velocity of the connected motor.
 #. Press ``s`` again to stop the program (use this in place of ^C, to start and stop the program). If you want to rerun the code, upload again or unplug and replug your computer from the Teensy.
 
-.. figure:: ../_static/example-output.png
+.. figure:: ../../../_static/example-output.png
     :align: center
     
     Example output from serial monitor.
@@ -142,7 +142,7 @@ Step 7. Write PD position control
 #. Comment out the bang-bang controller.
 #. Complete the pd_control function in ``src/main.cpp``. Your function should return an electrical current command (100mA, 200mA etc) using the PD control law using the following update equation.
 
-.. figure:: ../_static/pid_eqn.png
+.. figure:: ../../../_static/pid_eqn.png
     :align: center
     
     PID Update Equation. ``Tau`` is the commanded electrical current for the motor, ``x`` is the target angle, ``v`` is the target angular velocity, ``theta`` is the motor angle, and ``omega`` is the motor angular velocity. ``K_d`` and ``K_p`` are the derivative and proportional gains - these are dimensionless coefficients that you will experimentally determine through trial and error. 
