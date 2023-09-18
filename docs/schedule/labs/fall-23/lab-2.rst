@@ -128,7 +128,7 @@ Step 9. Use the arms as leader and follower.
 #. Start the robot arms from the same position.
 #. Tune Kp and Kd gains and maximum current as you like.
 
-**DELIVERABLE: Submit a video of your leader/follower setup where you move all 3 joints of the leader, showing the follower copying the movements. Report on the differences you noticed between tuning the multi-joint setup verus the single dial setup in your lab document**
+**DELIVERABLE: Submit a video of your leader/follower setup where you move all 3 joints of the leader, showing the follower copying the movements. Report on the differences you noticed between tuning the multi-joint setup versus the single dial setup in your lab document**
 
 [TODO: pic]
 
