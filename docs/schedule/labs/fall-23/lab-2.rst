@@ -5,7 +5,7 @@ Lab 2 - Bad Robot Surgeon
 
 *Goal: Build two robot arms that mirror each other's motion.*
 
-.. figure:: ../_static/teleop.jpeg
+.. figure:: ../../../_static/teleop.jpeg
     :align: center
     
     Assembled teleop robot arms
