@@ -87,7 +87,7 @@ Step 5. Run the starter code
 ``git submodule update``
 
 
-.. figure:: ../_static/teensy.jpeg
+.. figure:: ../../../_static/teensy.jpeg
     :align: center
 
     Plug in USB Cable into Teensy like above
