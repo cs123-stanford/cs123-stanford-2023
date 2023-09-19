@@ -135,28 +135,41 @@ Step 6. Run bang-bang control
 
 **DELIVERABLE: Take a video of your bang bang control to upload to Gradescope with your submission**
 
-
-Step 7. Write PD position control
+Step 7. Write P proportional control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-#. Comment out the bang-bang controller.
-#. Complete the pd_control function in ``src/main.cpp``. Your function should return an electrical current command (100mA, 200mA etc) using the PD control law using the following update equation.
+#. Comment out the bang-bang controller. 
+#. Take a look at the pd_control function in ``src/main.cpp``. Notice that there are two parts summed together: proportional_control and derivative_control. They are the individual terms of the PD control law. 
+#. Complete the proportional_control function in ``src/main.cpp``. Your function should return an electrical current command (100mA, 200mA etc) using the PD control law using the following update equation. In this case, we are not conducting any damping on the control current, so leave that as 0. 
 
 .. figure:: ../../../_static/pid_eqn.png
     :align: center
     
-    PID Update Equation. ``Tau`` is the commanded electrical current for the motor, ``x`` is the target angle, ``v`` is the target angular velocity, ``theta`` is the motor angle, and ``omega`` is the motor angular velocity. ``K_d`` and ``K_p`` are the derivative and proportional gains - these are dimensionless coefficients that you will experimentally determine through trial and error. 
+    PID Update Equation. ``Tau`` is the commanded electrical current for the motor, ``theta_target`` is the target angle, ``omega_target`` is the target angular velocity, ``theta_current`` is the motor angle, and ``omega_current`` is the motor angular velocity. ``K_d`` and ``K_p`` are the derivative and proportional gains - these are dimensionless coefficients that you will experimentally determine through trial and error. 
 
-#. Use Kp = 1000.0 and Kd = 0.0 to start. Don't forget the negative signs! 
+Questions:
+#. Start with Kp = 1000.0 and leave Kd as is. Don't forget the negative signs! 
+#. Upload code to Teensy
+#. *FEEL* the effect of the P controller.
+#. What happens when you rotate the disc just a little bit away from the target position? What happens when you rotate it a lot away from the target position? Do you feel the motor torque increase and then flatten out as you rotate the disc? 
+#. Next, play around with different values for Kd. What, if anything, changes?
+
+Step 8. Write PD position control
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+#. Next, complete the derivative_control in ``src/main.cpp``. This should work with your proportional_control in pd_control to create a more full PD controller. Again, follow the above update equation, outputting an electrical current in ``tau``.
+
+Questions:
+#. Use Kp = 1000.0 and Kd = 10.0 to start. Don't forget the negative signs! 
 #. Upload code to Teensy
 #. *FEEL* the effect of the PD controller.
 #. What happens when you rotate the disc just a little bit away from the target position? What happens when you rotate it a lot away from the target position? Do you feel the motor torque increase and then flatten out as you rotate the disc? 
+#. Experiment around with different values of Kp and Kd. Report the Kp and Kd values that worked the best. 
 
-**DELIVERABLE: Answer the above question in your lab document, and report your chosen K_p and K_d values. Take a video of your working PID controller to upload to Gradescope**
+**DELIVERABLE: Answer the above question in your lab document, and report your chosen Kp and Kd values. Take a video of your working PID controller to upload to Gradescope**
 
 
 
-Step 8. Experiment with different parameters
+Step 9. Experiment with different parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Note: Some of these steps will cause the output disc to go unstable and violently shake, be prepared!
 
@@ -173,7 +186,7 @@ For each of these situations (except the ones that go unstable), rotate the disc
 The expected behavior is that higher Kp values will make the position control more stiff while higher Kd values will make the motor slower to achieve the desired position.
 If either gain is too high or is negative, the motor will go unstable.
 
-Step 9. Experiment with different loop rates
+Step 10. Experiment with different loop rates
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Report on your findings for each of these in your lab document
@@ -184,7 +197,7 @@ Report on your findings for each of these in your lab document
 
 **WARNING, decreasing the update frequency by too much can cause dangerous behavior.**
 
-Step 10. Program periodic motion
+Step 11. Program periodic motion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Set the update rate back to 200Hz (5ms interval).
