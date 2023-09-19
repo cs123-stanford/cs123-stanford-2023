@@ -78,7 +78,7 @@ Step 5. Run the starter code
 
 1. Git clone the `starter code <https://github.com/stanfordroboticsclub/independent-study-lab1>`_
 
-``git clone https://github.com/stanfordroboticsclub/independent-study-lab1.git``
+``git clone https://github.com/cs123-stanford/lab_1_hello_pd.git``
 
 ``cd independent-study-lab1``
 
