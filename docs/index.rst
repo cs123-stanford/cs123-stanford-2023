@@ -122,7 +122,7 @@ No Class! School starts on a Tuesday (for some reason...), so we will have our f
     :maxdepth: 1
     :caption: List of Labs
 
-    schedule/labs/fall-23/labs_master
+    schedule/labs/labs_master
 
 .. toctree::
     :maxdepth: 1
