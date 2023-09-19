@@ -144,7 +144,7 @@ Step 7. Write P proportional control
 .. figure:: ../../../_static/pid_eqn.png
     :align: center
     
-    PID Update Equation. ``Tau`` is the commanded electrical current for the motor, ``theta_target`` is the target angle, ``omega_target`` is the target angular velocity, ``theta_current`` is the motor angle, and ``omega_current`` is the motor angular velocity. ``K_d`` and ``K_p`` are the derivative and proportional gains - these are dimensionless coefficients that you will experimentally determine through trial and error. 
+    PID Update Equation. ``Tau`` is the commanded electrical current for the motor, ``theta_target`` is the target angle, ``omega_target`` is the target angular velocity, ``theta_current`` is the motor angle, and ``omega_current`` is the motor angular velocity. ``Kd`` and ``Kp`` are the derivative and proportional gains - these are dimensionless coefficients that you will experimentally determine through trial and error. 
 
 Questions:
 
