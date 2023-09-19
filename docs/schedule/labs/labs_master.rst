@@ -1,4 +1,4 @@
-List of Labs
+Labs Page
 =======================================
 * :doc:`fall_23/lab-1`
 * :doc:`fall-23/lab-2`
