@@ -102,6 +102,7 @@ Open in VSCode, and upload to Teensy (refer to video).
     </div>
 
 #. Examine where in the code the motor angle and velocity are read in ``src/main.cpp``. Examine where the motor is commanded.
+
 **NOTE** In Arduino/Teensyduino code, there are two central functions to pay attention to. First, there is the ``setup()`` function, which runs once when the code is uploaded to the microcontroller, and sets up the configuration. Next, there is the ``loop()`` function, which runs continuously, like a ``while True`` loop before you stop the code. Most other functions, while still important, can be considered helper functions. 
 
 .. figure:: ../../../_static/platformio_arrow.jpg
