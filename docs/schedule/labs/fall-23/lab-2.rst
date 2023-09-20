@@ -20,7 +20,7 @@ Step 1. Connect 2 more motors
 Step 1.5. Control the 3 motors together
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. Modify your PD control code from lab 1 to control all 3 motors (controlled independently).
+#. Modify your PD control code from lab 1 to control all 3 motors (controlled independently). Modify only the right_state MotorState array here. Leave the left_state array as is at all 0s. 
 
 [TODO: insert pic of compeleted setup]
 
@@ -93,7 +93,7 @@ Step 6. Connect three more motors to use as control dials
 #. Connect three additional motors to the same CAN bus (ie same row of connectors).
 #. Calibrate and connect three additional motors to the Pupper PCB.
 #. Set their IDs to not overlap with your existing motors. We use 4, 5, and 6.
-#. Set the target positions of the base motor, shoulder motor, and elbow motor to the angle readings of the first, second, and third new motors respectively.
+#. Set the target positions of the base motor, shoulder motor, and elbow motor to the angle readings of the first, second, and third new motors respectively. Use the left_state MotorState array for this. 
 
 [TODO: gif]
 
