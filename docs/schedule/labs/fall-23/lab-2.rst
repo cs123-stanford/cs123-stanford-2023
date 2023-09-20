@@ -1,6 +1,9 @@
 Lab 2 - Bad Robot Surgeon and Forward Kinematics
 ================================
 
+Part One: Bad Robot Surgeon
+___________________________
+
 .. contents:: :depth: 2
 
 *Goal: Build two robot arms that mirror each other's motion.*
