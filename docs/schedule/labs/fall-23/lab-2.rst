@@ -1,4 +1,4 @@
-Lab 2 - Bad Robot Surgeon
+Lab 2 - Bad Robot Surgeon and Forward Kinematics
 ================================
 
 .. contents:: :depth: 2
