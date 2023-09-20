@@ -162,6 +162,7 @@ Step 0. Get the starter code
 
 Step 1. Prepare hardware
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#. For this part of the lab, you only need to use one arm. The other arm will come in handy for the full Pupper build. 
 #. Set the controller for the base actuactor of the robot arm to 1 (1 blink). 
 #. Set the controller for the shoulder actuactor of the robot arm to 2 (2 blinks). 
 #. Set the controller for the elbow actuactor of the robot arm to 3 (3 blinks).
@@ -171,7 +172,7 @@ Step 1. Implement and test a forward kinematics function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Determine if you have a right or left robot leg (there's a L or R on the lower link). 
 #. Update line 15 of *src/main.cpp* based on the what side leg you have.
-#. Complete the forward_kinematics function inside of src/kinematics.h. You should return a BLA::Matrix<3> of the cartesian coordinates of the end-effector.
+#. Complete the forward_kinematics function inside of src/kinematics.h using what you learned in lecture. You should return a BLA::Matrix<3> of the cartesian coordinates of the end-effector.
 #. Upload code.
 #. Press s to start. The starter code will first test your kinematics code and then run the main loop.
 
@@ -197,3 +198,38 @@ OPTIONAL Step 4. Do the `safety dance <https://www.youtube.com/watch?v=nM4okRvCg
 #. Run the function whenever the robot end effector leaves the safety box.
 
 [gif of completed project]
+
+References for Derivation of FK
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Mini-lecture - Forward Kinematics
+------------------------------------
+
+.. raw:: html
+
+    <iframe src="https://stanford195.autodesk360.com/shares/public/SH35dfcQT936092f0e43e4b3d19bbaacc90a?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+    
+
+*3D illustration of motor angles, directions of positive rotation, and relevant geometry.*
+
+.. figure:: ../../../_static/kinematics/kinematics.002.png
+    :align: center
+    
+    Problem statement.
+
+
+.. figure:: ../../../_static/kinematics/kinematics.003.png
+    :align: center
+    
+    Coordinate frame, link lengths, and leg origin illustration.
+
+
+.. figure:: ../../../_static/kinematics/kinematics.004.png
+    :align: center
+    
+    Derivation of x coordinate of foot and L.
+
+
+.. figure:: ../../../_static/kinematics/kinematics.005.png
+    :align: center
+    
+    Derivation of y and z coordinate of foot.
