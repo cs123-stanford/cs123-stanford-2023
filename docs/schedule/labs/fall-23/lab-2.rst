@@ -151,3 +151,6 @@ Step 10. Make the robot arms bidirectional!
 4. Congrats. Play with your robot! Make modifications!
 
 [TODO: gif]
+
+Part Two: Write Forward Kinematics
+__________________________________
