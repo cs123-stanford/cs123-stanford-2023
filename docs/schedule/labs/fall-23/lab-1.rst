@@ -105,7 +105,7 @@ Open in VSCode, and upload to Teensy (refer to video).
 
 **NOTE** In Arduino/Teensyduino code, there are two central functions to pay attention to. First, there is the ``setup()`` function, which runs once when the code is uploaded to the microcontroller, and sets up the configuration. Next, there is the ``loop()`` function, which runs continuously, like a ``while True`` loop before you stop the code. Most other functions, while still important, can be considered helper functions. Pay particular attention to the ``updateCmd()`` and ``updateState()`` functions, which update a ``MotorState`` object that is defined in a struct. 
 
-**DELIVERABLE: Before running your code, write what out what you understand about the ``loop()`` function for this code in your Lab Document. What gets updated on each iteration? How does updating a MotorState object correspond to actually changing the physical commanded current of the motor?**
+**DELIVERABLE: Before running your code, write what you understand about the ``loop()`` function for this code in your Lab Document. What gets updated on each iteration? How does updating a MotorState object correspond to actually changing the physical commanded current of the motor?**
 
 .. figure:: ../../../_static/platformio_arrow.jpg
     :align: center
