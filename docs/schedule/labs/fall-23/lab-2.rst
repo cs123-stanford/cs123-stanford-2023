@@ -180,7 +180,7 @@ Step 2. View cartesian coordinates of end effector
 #. Start the robot from the zero position. See picture below
 #. Print out the cartesian coordinates of the end effector using your forward kinematics function
 
-.. figure:: ../_static/horizontal-config.png
+.. figure:: ../../../_static/horizontal-config.png
     :align: center
     
     A left robot arm in the starting position for lab 2 and its coordinate system.
