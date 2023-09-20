@@ -71,7 +71,7 @@ Step 4. Connect and calibrate electronics
 
 **Important:** *To set a motor controller to a certain ID, click (short press) press to put the motor controller into id-setting mode, then click N more times in quick succession, where N is the desired ID. Eg, for a desired ID of 3, press 3 more times after the first click.*
 
-Step 5. Run the starter code
+Step 5. Examine and run the starter code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **WARNING** To stop code, press ``s`` inside the terminal instead of ^C. Using ^C will lead to undefined behavior when you upload new code, or run the code again. 
@@ -102,6 +102,7 @@ Open in VSCode, and upload to Teensy (refer to video).
     </div>
 
 #. Examine where in the code the motor angle and velocity are read in ``src/main.cpp``. Examine where the motor is commanded.
+**NOTE** In Arduino/Teensyduino code, there are two central functions to pay attention to. First, there is the ``setup()`` function, which runs once when the code is uploaded to the microcontroller, and sets up the configuration. Next, there is the ``loop()`` function, which runs continuously, like a ``while True`` loop before you stop the code. Most other functions, while still important, can be considered helper functions. 
 
 .. figure:: ../../../_static/platformio_arrow.jpg
     :align: center
