@@ -140,8 +140,8 @@ Step 10. Make the robot arms bidirectional!
 
 .. code-block:: c++
 
-    bus.CommandTorques(m0_current, m1_current, m2_current, m3_current, C610Subbus::kZeroToThreeBlinks);
-    bus.CommandTorques(m4_current, m5_current, 0, 0, C610Subbus::kFourToSevenBlinks);
+    bus.CommandTorques(right_state[0].cmd, right_state[1].cmd, right_state[2].cmd, left_state[0].cmd, C610Subbus::kIDZeroToThree);
+    bus.CommandTorques(left_state[1].cmd, left_state[2].cmd, 0, 0, C610Subbus::kIDFourToSeven);
 
 **DELIVERABLE: Submit a video like the leader/follower video where you move both arms manually.**
 
