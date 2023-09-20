@@ -168,7 +168,7 @@ Step 1. Prepare hardware
 #. Set the controller for the elbow actuactor of the robot arm to 3 (3 blinks).
 #. Make sure all the motor controllers are plugged into the CAN 2 bus (the set of connectors near the Teensy).
 
-Step 1. Implement and test a forward kinematics function
+Step 2. Implement and test a forward kinematics function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Determine if you have a right or left robot leg (there's a L or R on the lower link). 
 #. Update line 15 of *src/main.cpp* based on the what side leg you have.
@@ -176,7 +176,7 @@ Step 1. Implement and test a forward kinematics function
 #. Upload code.
 #. Press s to start. The starter code will first test your kinematics code and then run the main loop.
 
-Step 2. View cartesian coordinates of end effector
+Step 3. View cartesian coordinates of end effector
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Start the robot from the zero position. See picture below
 #. Print out the cartesian coordinates of the end effector using your forward kinematics function
@@ -186,12 +186,12 @@ Step 2. View cartesian coordinates of end effector
     
     A left robot arm in the starting position for lab 2 and its coordinate system.
 
-Step 3. Make a safety box
+Step 4. Make a safety box
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Pick a "safety" box -- a virtual box in cartesian coordinates that the robot can operate safely in. For example, -0.1<x<0.1 and -.1<y>0.1 and 0<z<-0.2.
 #. Print a warning whenever the robot leaves the safety box.
 
-OPTIONAL Step 4. Do the `safety dance <https://www.youtube.com/watch?v=nM4okRvCg2g&ab_channel=MenWithoutHatsVEVO>`_
+OPTIONAL Step 5. Do the `safety dance <https://www.youtube.com/watch?v=nM4okRvCg2g&ab_channel=MenWithoutHatsVEVO>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Make a function to vibrate the motors (high frequency, low amplitude torque command sinusoid) 
 #. If you program a torque sinusoid, a safe range for the amplitude is around 500 - 4000mA. Any lower is barely perceptible.
