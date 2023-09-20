@@ -125,8 +125,9 @@ Open in VSCode, and upload to Teensy (refer to video).
 Step 6. Run bang-bang control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. Uncomment the bang-bang code in ``src/main.cpp`` and upload.
-#. Observe the effects of changing the current command to something else.
+#. Examine the function ``bang_bang_control()`` in ``src/main.cpp`` and understand what it does. It is called in the ``updateCmd()`` function. ``updateCmd()`` is then called every iteration of ``loop()``.
+#. Uncomment the bang-bang code in ``updateCmd()`` and upload.
+#. Observe the effects of changing the current command to something else. Reminder, bang_bang_control returns a commanded current.
 #. *FEEL* how the controller behaves. Move the dial by hand and see how the controller reacts.
 
 .. raw:: html
