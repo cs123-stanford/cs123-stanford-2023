@@ -13,6 +13,20 @@ ___________________________
     
     Assembled teleop robot arms
 
+Step 0. Clone the starter code 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. In the directory of your choice, git clone the `starter code <https://github.com/cs123-stanford/lab_2_bad_robot_surgeon.git>`_ for Bad Robot Surgeon
+
+``git clone https://github.com/cs123-stanford/lab_2_bad_robot_surgeon.git`
+
+``cd lab_2_bad_robot_surgeon``
+
+``git submodule init``
+
+``git submodule update``
+
+
 Step 1. Connect 2 more motors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -157,8 +171,15 @@ __________________________________
 
 Step 0. Get the starter code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Get the starter code https://github.com/stanfordroboticsclub/independent-study-lab2
-#. Make sure to follow the installation instructions for the repo.
+1. In the directory of your choice, git clone the `starter code <https://github.com/cs123-stanford/lab_2_bad_robot_surgeon.git>`_ for Forward Kinematics.
+
+``git clone https://github.com/cs123-stanford/lab_2_fk.git`
+
+``cd lab_2_fk``
+
+``git submodule init``
+
+``git submodule update``
 
 Step 1. Prepare hardware
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
