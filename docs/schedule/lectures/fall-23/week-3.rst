@@ -1,4 +1,4 @@
-Week 3 10/9: Forward Kinematics (WIP)
+Week 3 10/9: Forward Kinematics
 =======================================================
 
 .. contents:: :depth: 2
