@@ -80,7 +80,7 @@ Step 5. Examine and run the starter code
 
 ``git clone https://github.com/cs123-stanford/lab_1_hello_pd.git``
 
-``cd independent-study-lab1``
+``cd lab_1_hello_pd``
 
 ``git submodule init``
 
