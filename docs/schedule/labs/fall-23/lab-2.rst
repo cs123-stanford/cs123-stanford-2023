@@ -44,7 +44,7 @@ Step 1.5. Control the 3 motors together
 Step 2. Insert square nuts into plastic parts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You may need to use force to get them in.
+You may need to use force to get them in. The screw hole of the square nut must exactly align with the screw hole on each of the parts, as a long screw will attach through there. 
 
 .. raw:: html
 
@@ -57,6 +57,13 @@ You may need to use force to get them in.
 Step 3. Connect and calibrate electronics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+The motors should be calibrated in this way
+
+.. figure:: ../../../_static/motor_ids.png
+    :align: center
+    
+    Motor IDs: use 1-3 for the right leg, and 4-6 for the left leg.
+
 **IMPORTANT:** Calibrate each motor *before* you assemble the arm, so that they get an accurate calibration with no load. Once you calibrate the motor, keep it with the motor controller you calibrated it on. The calibration is dependent on the motor controller, so that motor is now paired with the motor controller. If in doubt, recalibrate.
 
 .. raw:: html
@@ -66,6 +73,10 @@ Step 3. Connect and calibrate electronics
     </div>
 
 |
+
+**DELIVERABLE: Take a video of the motor controllers blinking with the correct IDs as decribed above.**
+This is just to ensure that the motors are calibrated and connected before building the full leg, or else reassembly would be necessary.
+
 
 Step 4. Assemble the three motors into a right robot arm!
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
