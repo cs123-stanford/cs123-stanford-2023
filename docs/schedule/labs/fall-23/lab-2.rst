@@ -166,7 +166,7 @@ Step 10. Make the robot arms bidirectional!
 
 [TODO: gif]
 
-Part Two: Write Forward Kinematics
+Part Two: Forward Kinematics
 __________________________________
 
 Step 0. Get the starter code
