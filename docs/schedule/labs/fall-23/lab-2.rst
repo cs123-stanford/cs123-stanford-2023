@@ -173,7 +173,7 @@ Step 0. Get the starter code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 1. In the directory of your choice, git clone the `starter code <https://github.com/cs123-stanford/lab_2_bad_robot_surgeon.git>`_ for Forward Kinematics.
 
-``git clone https://github.com/cs123-stanford/lab_2_fk.git`
+``git clone https://github.com/cs123-stanford/lab_2_fk.git``
 
 ``cd lab_2_fk``
 
