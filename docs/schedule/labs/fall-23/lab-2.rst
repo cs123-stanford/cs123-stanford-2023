@@ -225,11 +225,13 @@ Step 4. Make a safety box
 
 **DELIVERABLE: Submit a video of you moving the robot arm outside of the safety bounds, and the serial monitor output printing an outside bounds message**
 
-OPTIONAL Step 5. Do the `safety dance <https://www.youtube.com/watch?v=nM4okRvCg2g&ab_channel=MenWithoutHatsVEVO>`_
+Step 5. Do the `safety dance <https://www.youtube.com/watch?v=nM4okRvCg2g&ab_channel=MenWithoutHatsVEVO>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Make a function to vibrate the motors (high frequency, low amplitude torque command sinusoid) 
-#. If you program a torque sinusoid, a safe range for the amplitude is around 500 - 4000mA. Any lower is barely perceptible.
-#. Run the function whenever the robot end effector leaves the safety box.
+#. Make a function to vibrate the motors (high frequency, low amplitude alternating torque command) 
+#. If you program an alternating torque, a safe range for the amplitude is around 800 - 3000mA. Any lower is barely perceptible.
+#. Run the function whenever the robot end effector leaves the safety box. A suggested implementation is to alternate the torque current command on each control loop iteration. 
+
+**DELIVERABLE: Submit a video of you moving the robot arm outside of the safety bounds, and the arm's haptic feedback response.**
 
 [gif of completed project]
 
