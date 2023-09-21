@@ -1,10 +1,11 @@
 Lab 1 - Hello PD
 ================================
-*Goal: Build two robot arms that mirror each other's motion.*
+*Goal: Build a robot arm that you can program PD control on.*
 
 Step 0. Setup
 ^^^^^^^^^^^^^^
-#. Install `VSCode <https://code.visualstudio.com/Download>`_
+#. Install Git for your OS. `Windows <https://git-scm.com/download/win>`_, `Mac <https://git-scm.com/download/mac>`_, `Linux <https://git-scm.com/download/linux>`_ (keep in mind if you are using Debian, Ubuntu, etc). We will use Git for retrieving starter code, and version control. 
+#. Install `VSCode <https://code.visualstudio.com/Download>`_. VSCode is a convenient IDE where you will do your code development. 
 #. Install the PlatformIO extension for VSCode, a native Arduino/Teensyduino development IDE for VSCode. (Might take several minutes on Windows - check the bottom bar in VSCode for status)
 
 .. raw:: html
@@ -15,7 +16,7 @@ Step 0. Setup
 
 |
 
-Step 1. Assembly motor to base
+Step 1. Assemble motor to base
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. raw:: html
