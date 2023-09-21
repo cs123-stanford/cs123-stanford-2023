@@ -158,7 +158,9 @@ Questions:
 #. Upload code to Teensy
 #. *FEEL* the effect of the P controller.
 #. What happens when you rotate the disc just a little bit away from the target position? What happens when you rotate it a lot away from the target position? Do you feel the motor torque increase and then flatten out as you rotate the disc? 
-#. Next, play around with different values for Kd. What, if anything, changes?
+#. What changes when you change Kp?
+
+**DELIVERABLE: Answer these last two questions in your lab document**
 
 Step 8. Write PD position control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -166,14 +168,13 @@ Step 8. Write PD position control
 #. Next, complete the derivative_control in ``src/main.cpp``. This should work with your proportional_control in pd_control to create a more full PD controller. Again, follow the above update equation, outputting an electrical current in ``tau``.
 
 Questions:
-#. Use Kp = 1000.0 and Kd = 10.0 to start. Don't forget the negative signs! 
+
+#. After adding in the derivative term, use Kp = 1000.0 and Kd = 10.0 to start. Don't forget the negative signs! How does this controller perform compared to just P control?
 #. Upload code to Teensy
 #. *FEEL* the effect of the PD controller.
-#. What happens when you rotate the disc just a little bit away from the target position? What happens when you rotate it a lot away from the target position? Do you feel the motor torque increase and then flatten out as you rotate the disc? 
-#. Experiment around with different values of Kp and Kd. Report the Kp and Kd values that worked the best. 
+#. Change around the values for Kp and Kd, experimenting with how they change the performance. What happens now when you rotate the disc farther from the target position? Why does adding the derivative term help the controller’s performance? Find the optimal Kp and Kd values. 
 
-**DELIVERABLE: Answer the above question in your lab document, and report your chosen Kp and Kd values. Take a video of your working PID controller to upload to Gradescope**
-
+**DELIVERABLE: Answer the above questions in your lab document, and report your chosen Kp and Kd values. Take a video of your working PD controller to upload to Gradescope**
 
 
 Step 9. Experiment with different parameters
@@ -217,7 +218,7 @@ Step 11. Program periodic motion
 
 3. Play around with different frequencies. How high can you raise the frequency before the motor no longer moves as much as you expect? 
 
-**DELIVERABLE: Take a video to upload to Gradescope with your submission**
+**DELIVERABLE: Take a video to upload to Gradescope with your submission of periodic motion**
 
 Fun fact, the maximum frequency you can go before the motor moves to only 71% (-3dB) of the intended motion is called the bandwidth.
 
