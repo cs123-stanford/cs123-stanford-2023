@@ -171,7 +171,7 @@ Step 10. Make the robot arms bidirectional!
     bus.CommandTorques(right_state[0].cmd, right_state[1].cmd, right_state[2].cmd, left_state[0].cmd, C610Subbus::kIDZeroToThree);
     bus.CommandTorques(left_state[1].cmd, left_state[2].cmd, 0, 0, C610Subbus::kIDFourToSeven);
 
-**DELIVERABLE: Submit a video like the leader/follower video where you move both arms manually.**
+**DELIVERABLE: Submit a video like the leader/follower video where you move both arms manually, first moving the left, and then the right, to show bidirectionality**
 
 4. Congrats. Play with your robot! Make modifications!
 
@@ -222,6 +222,8 @@ Step 4. Make a safety box
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Pick a "safety" box -- a virtual box in cartesian coordinates that the robot can operate safely in. For example, -0.1<x<0.1 and -.1<y>0.1 and 0<z<-0.2.
 #. Print a warning whenever the robot leaves the safety box.
+
+**DELIVERABLE: Submit a video of you moving the robot arm outside of the safety bounds, and the serial monitor output printing an outside bounds message**
 
 OPTIONAL Step 5. Do the `safety dance <https://www.youtube.com/watch?v=nM4okRvCg2g&ab_channel=MenWithoutHatsVEVO>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
