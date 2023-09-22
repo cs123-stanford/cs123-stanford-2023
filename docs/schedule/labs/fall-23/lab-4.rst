@@ -1,8 +1,6 @@
 Lab 4: Sum > Parts (Pupper Assembly)
 =======================================
 
-.. contents:: :depth: 2
-
 These instructions assume you are running Mac or Linux. If you have Windows 10 or lower, we recommend dual-booting linux. If you have Windows 11, try using the Windows Linux Subsystem. Otherwise proceed at your own risk!
 
 Step 1. Prepare the bottom PCB
