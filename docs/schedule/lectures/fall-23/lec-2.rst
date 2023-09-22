@@ -1,8 +1,6 @@
 Actuators, PD Control
 ================================
 
-.. contents:: :depth: 2
-
 Mini-lecture - Actuators and PD Control
 -----------------------------
 Actuators and PD control lecture by Stuart Bowers, April 10, 2023.
