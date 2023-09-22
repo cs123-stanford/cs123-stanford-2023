@@ -132,27 +132,9 @@ No Class! School starts on a Tuesday (for some reason...), so we will have our f
 
 .. toctree::
     :maxdepth: 2
-    :caption: Course Schedule
+    :caption: Course Materials
 
-    schedule/lectures/fall-23/week-1
-    schedule/lectures/fall-23/week-2
-    schedule/lectures/fall-23/week-3
-    schedule/lectures/fall-23/week-4
-    schedule/lectures/fall-23/week-5
-    schedule/lectures/fall-23/week-6
-    schedule/lectures/fall-23/week-7
-    schedule/lectures/fall-23/week-8
-    schedule/lectures/fall-23/week-9
-
-.. toctree::
-    :maxdepth: 1
-    :caption: Labs
-
+    index
     schedule/labs/labs_master
-
-.. toctree::
-    :maxdepth: 1
-    :caption: References
-
     reference/references
     
