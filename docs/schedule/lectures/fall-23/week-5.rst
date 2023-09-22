@@ -1,4 +1,4 @@
-Week 5 10/23: Model-based Gait Control  (WIP)
+Model-based Gait Control
 ======================================
 
 .. contents:: :depth: 2
