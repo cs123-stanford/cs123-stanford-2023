@@ -1,4 +1,4 @@
-Lab 3: Copy Cat (Dog...) (WIP)
+Lab 3: Copy Cat (Dog...)
 =======================================================
 
 .. contents:: :depth: 2
