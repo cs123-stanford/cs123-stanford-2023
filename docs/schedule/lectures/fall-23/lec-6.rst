@@ -1,8 +1,6 @@
 Reinforcement Learning
 =======================================
 
-.. contents:: :depth: 2
-
 Lecture 5.1: Intro to RL and Its Applications in Robotics
 ---------------------------------
 Intro to RL and Its Applications in Robotics Lecture by Tingnan Zhang, May 3, 2023. 
