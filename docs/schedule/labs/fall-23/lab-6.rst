@@ -1,4 +1,4 @@
-Lab 6: Seeing is Believing (WIP)
+Lab 6: Seeing is Believing
 ======================================
 
 .. contents:: :depth: 2
