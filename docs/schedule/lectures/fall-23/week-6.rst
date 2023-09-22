@@ -1,4 +1,4 @@
-Week 6 10/30: Reinforcement Learning (WIP)
+Reinforcement Learning
 =======================================
 
 .. contents:: :depth: 2
