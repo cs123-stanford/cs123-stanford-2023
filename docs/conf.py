@@ -33,8 +33,8 @@ import sys
 # -- Project information -----------------------------------------------------
 
 project = 'CS123'
-copyright = '2021, Nathan Kau, Abi Lopez, Gabrael Levine'
-author = 'Nathan Kau, Abi Lopez, Gabrael Levine'
+copyright = '2023, Stanford CS123 Teaching Team'
+author = 'Nathan Kau, Ankush Dhawan, Jaden Clark, Gabrael Levine'
 
 # The full version, including alpha/beta/rc tags
 release = '2021'
