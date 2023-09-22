@@ -1,9 +1,6 @@
 Lab 7: Do What I Say
 ========================
 
-.. contents:: :depth: 2
-
-
 Lab instructions
 -------------------
 
