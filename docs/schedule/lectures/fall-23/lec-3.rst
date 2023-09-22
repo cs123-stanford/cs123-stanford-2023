@@ -1,9 +1,6 @@
 Forward Kinematics
 =======================================================
 
-.. contents:: :depth: 2
-
-
 Lecture 
 ----------
 Forward kinematics lecture
