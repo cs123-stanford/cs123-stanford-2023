@@ -43,41 +43,24 @@ Researchers from Google DeepMind, Hands-On Robotics, and Toyota Research Institu
 Schedule
 ===========
 
-.. list-table:: Title
-   :widths: 25 25 50
-   :header-rows: 1
-
-   * - 
-     - Lecture
-     - Lab
-     - Due
-   * - Row 1, column 1
-     -
-     - Row 1, column 3
-     - 
-   * - Row 2, column 1
-     - Row 2, column 2
-     - Row 2, column 3
-     - 
-
 +------------------+------------------+------------------+------------------+
-| Header 1         | Header 2         | Header 3         | Header 4         |
+|                  | Lecture          | Lab              | Due Date         |
 +==================+==================+==================+==================+
-| Row 1, Col 1     | Row 1, Col 2     | Row 1, Col 3     | Row 1, Col 4     |
+| Week 1: 9/25     | Row 1, Col 2     | Row 1, Col 3     | Row 1, Col 4     |
 +------------------+------------------+------------------+------------------+
-| Row 2, Col 1     | Row 2, Col 2     | Row 2, Col 3     | Row 2, Col 4     |
+| Week 2: 10/2     | Row 2, Col 2     | Row 2, Col 3     | Row 2, Col 4     |
 +------------------+------------------+------------------+------------------+
-| Row 3, Col 1     | Row 3, Col 2     | Row 3, Col 3     | Row 3, Col 4     |
+| Week 3: 10/9     | Row 3, Col 2     | Row 3, Col 3     | Row 3, Col 4     |
 +------------------+------------------+------------------+------------------+
-| Row 4, Col 1     | Row 4, Col 2     | Row 4, Col 3     | Row 4, Col 4     |
+| Week 4: 10/16    | Row 4, Col 2     | Row 4, Col 3     | Row 4, Col 4     |
 +------------------+------------------+------------------+------------------+
-| Row 1, Col 1     | Row 1, Col 2     | Row 1, Col 3     | Row 1, Col 4     |
+| Week 5: 10/23    | Row 1, Col 2     | Row 1, Col 3     | Row 1, Col 4     |
 +------------------+------------------+------------------+------------------+
-| Row 2, Col 1     | Row 2, Col 2     | Row 2, Col 3     | Row 2, Col 4     |
+| Week 6: 10/30    | Row 2, Col 2     | Row 2, Col 3     | Row 2, Col 4     |
 +------------------+------------------+------------------+------------------+
-| Row 3, Col 1     | Row 3, Col 2     | Row 3, Col 3     | Row 3, Col 4     |
+| Week 7: 11/6     | Row 3, Col 2     | Row 3, Col 3     | Row 3, Col 4     |
 +------------------+------------------+------------------+------------------+
-| Row 4, Col 1     | Row 4, Col 2     | Row 4, Col 3     | Row 4, Col 4     |
+| Week 8: 11/13    | Row 4, Col 2     | Row 4, Col 3     | Row 4, Col 4     |
 +------------------+------------------+------------------+------------------+
 
 
