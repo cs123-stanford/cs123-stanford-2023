@@ -1,4 +1,4 @@
-Lab 7: Do What I Say (WIP)
+Lab 7: Do What I Say
 ========================
 
 .. contents:: :depth: 2
