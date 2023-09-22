@@ -50,7 +50,6 @@ Schedule
    * - 
      - Lecture
      - Lab
-     - Due Date
    * - Row 1, column 1
      -
      - Row 1, column 3
