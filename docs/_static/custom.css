@@ -1,19 +1,9 @@
-/* /* Change background color */
-
-body {
-    background-color: #f20505; /* Change this color to your desired background color */
-}
-/* Change header text color to blue */
-h1, h2, h3, h4, h5, h6 {
-    color: red;
-}
-/* Change the background color of the sidebar to light blue */
-.wy-nav-side {
-    background-color: #f20505;
+/* Adjust the width of the main content area */
+.wy-nav-content {
+    max-width: 800px; /* Change this value to your desired width */
 }
 
-/* Change the background color of the sidebar navigation menu */
+/* Adjust the width of the sidebar (optional) */
 .wy-nav-side {
-    background-color: #f20505; /* Replace with your desired background color */
+    max-width: 300px; /* Change this value to your desired width */
 }
- */
