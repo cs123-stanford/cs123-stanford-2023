@@ -1,8 +1,6 @@
 Lab 3: Copy Cat (Dog...)
 =======================================================
 
-.. contents:: :depth: 2
-
 Lab Instructions
 ----------------------------------
 *Goal: 1) Learn how to compute inverse kinematics 2) Become familiar with simulation-to-real pipeline.*
