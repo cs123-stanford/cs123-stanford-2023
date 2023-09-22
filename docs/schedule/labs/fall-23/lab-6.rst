@@ -1,8 +1,6 @@
 Lab 6: Seeing is Believing
 ======================================
 
-.. contents:: :depth: 2
-
 These instructions assume you are running mac or linux. If you have Windows 10 or lower, I recommend dual-booting linux. If you have Windows 11, try using the Windows Linux Subsystem
 
 Step 1. Set up simulation environment
