@@ -1,8 +1,6 @@
 Model-based Gait Control
 ======================================
 
-.. contents:: :depth: 2
-
 Mini-lecture - TBD
 ---------------------------------
 
