@@ -4,8 +4,6 @@ Lab 2: Bad Robot Surgeon
 Part One: Bad Robot Surgeon
 ___________________________
 
-.. contents:: :depth: 2
-
 *Goal: Build two robot arms that mirror each other's motion.*
 
 .. figure:: ../../../_static/teleop.jpeg
