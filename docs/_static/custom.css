@@ -3,7 +3,12 @@
     max-width: 1280px; /* Change this value to your desired width */
 }
 
-/* Adjust the width of the sidebar (optional) */
+/* Hide the Sphinx RTD sidebar */
 .wy-nav-side {
-    display: none; /* Change this value to your desired width */
+    display: none;
+}
+
+/* Expand the content area to fill the available width */
+.wy-nav-content {
+    margin-left: 0;
 }
