@@ -1,4 +1,4 @@
-Week 8 11/13: AI-enabled Quadrupeds (Robot Vision) (WIP)
+AI-enabled Quadrupeds (Robot Vision)
 =======================================
 
 .. contents:: :depth: 2
