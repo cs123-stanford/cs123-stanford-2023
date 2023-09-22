@@ -1,5 +1,4 @@
-Pupper Assembly
+AI-enabled Quadrupeds (Robot Vision)
 =======================================
 
-.. contents:: :depth: 2
 
