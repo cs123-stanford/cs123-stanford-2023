@@ -1,4 +1,4 @@
-Week 4 10/16: Inverse Kinematics (WIP)
+Inverse Kinematics
 =======================================================
 
 .. contents:: :depth: 2
