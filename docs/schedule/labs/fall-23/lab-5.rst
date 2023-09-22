@@ -1,6 +1,8 @@
 Lab 5: How to Train Your Dog
 ========================
 
+*Goal: Use RL to control your Pupper.*
+
 Step 1.Stand High Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Reward is standing high. Provide code with standing at regular height, student need to modify it to make it stand higher.
