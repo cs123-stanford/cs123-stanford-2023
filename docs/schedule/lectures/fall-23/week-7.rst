@@ -1,4 +1,4 @@
-Week 7 11/6: Pupper Assembly (WIP)
+Pupper Assembly
 =======================================
 
 .. contents:: :depth: 2
