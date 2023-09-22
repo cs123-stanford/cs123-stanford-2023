@@ -43,6 +43,20 @@ Researchers from Google DeepMind, Hands-On Robotics, and Toyota Research Institu
 Schedule
 ===========
 
+.. list-table:: Title
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Heading row 1, column 1
+     - Heading row 1, column 2
+     - Heading row 1, column 3
+   * - Row 1, column 1
+     -
+     - Row 1, column 3
+   * - Row 2, column 1
+     - Row 2, column 2
+     - Row 2, column 3
+
 **Week 1** 9/25
 
 No Class! School starts on a Tuesday (for some reason...), so we will have our first class on Monday week 2!
