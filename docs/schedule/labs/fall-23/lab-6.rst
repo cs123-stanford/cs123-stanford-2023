@@ -1,4 +1,4 @@
-Lab 6 - How to Train Your Dog (WIP)
+Lab 6 - Hardware Assembly (WIP)
 =======================================
 
 .. contents:: :depth: 2
