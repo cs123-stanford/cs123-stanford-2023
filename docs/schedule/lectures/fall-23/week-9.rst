@@ -1,4 +1,4 @@
-Week 9 11/27: AI-enabled Quadrupeds (LLMs) (WIP)
+AI-enabled Quadrupeds (LLMs)
 =======================================
 
 .. contents:: :depth: 2
