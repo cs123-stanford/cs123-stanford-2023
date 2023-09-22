@@ -1,4 +1,4 @@
-Week 3 10/9: Forward Kinematics
+Forward Kinematics
 =======================================================
 
 .. contents:: :depth: 2
