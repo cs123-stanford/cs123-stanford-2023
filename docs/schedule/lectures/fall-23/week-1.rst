@@ -1,4 +1,4 @@
-Week 1 9/25: No Class!
+No Class!
 ================================
 
 .. contents:: :depth: 2
