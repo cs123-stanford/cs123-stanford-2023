@@ -178,6 +178,8 @@ Step 10. Make the robot arms bidirectional!
 Part Two: Forward Kinematics
 __________________________________
 
+*Goal: Program forward kinematics to determine the robot arm's cartesian coordinates and create a haptic-feedback safety box.*
+
 Step 0. Get the starter code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 1. In the directory of your choice, git clone the `starter code <https://github.com/cs123-stanford/lab_2_bad_robot_surgeon.git>`_ for Forward Kinematics.
