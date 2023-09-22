@@ -1,8 +1,6 @@
 Lab 5: How to Train Your Dog
 ========================
 
-.. contents:: :depth: 2
-
 Step 1.Stand High Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Reward is standing high. Provide code with standing at regular height, student need to modify it to make it stand higher.
