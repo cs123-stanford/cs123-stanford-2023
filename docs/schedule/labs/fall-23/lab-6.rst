@@ -5,25 +5,25 @@ Lab 6 - Hardware Assembly (WIP)
 
 These instructions assume you are running Mac or Linux. If you have Windows 10 or lower, we recommend dual-booting linux. If you have Windows 11, try using the Windows Linux Subsystem. Otherwise proceed at your own risk!
 
-Step 1. Set up simulation environment
+Step 1. Prepare the bottom PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Clone the simulator repository ``git clone https://github.com/jietan/puppersim.git``
 #. Follow the instructions in the `System setup <https://github.com/jietan/puppersim#system-setup/>`_ and `Getting the code ready <https://github.com/jietan/puppersim#getting-the-code-ready/>`_ sections of the Puppersim README.md.
 
-Step 2. Train the policy using RL (ARS)
+Step 2. Assemble the legs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Follow instructions at https://github.com/Nate711/puppersim/blob/main/puppersim/reacher/README.md to run the commands to train the policy.
 #. Wait about 50 iterations until going to step 3 but leave it training
 
-Step 3. Run your policy in simulator
+Step 3. Attach the legs to the body
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Follow instructions at https://github.com/Nate711/puppersim/blob/main/puppersim/reacher/README.md to run the policy.
 
-Step 4. Deploy policy to robot
+Step 4. Attach legs to PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Follow instructions at https://github.com/Nate711/puppersim/blob/main/puppersim/reacher/README.md to deploy to your robot.
 
-Step 5. One day project of your choice
+Step 5. Attach electronics bulkhead to PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Do your own mini project!
 
@@ -34,7 +34,9 @@ Some ideas:
 * Add a cube in the pybullet simulation and teach the robot to kick it. (hard)
 * Turn off torque on the elbow or shoulder motor and make the robot learn to balance the arm vertically. (hard)
 
-|
+Step 6. Attach top PCB
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#. Follow instructions at https://github.com/Nate711/puppersim/blob/main/puppersim/reacher/README.md to deploy to your robot.
 
 (Old) RL Lecture
 ---------------------------------
