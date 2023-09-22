@@ -1,9 +1,6 @@
 Lab 7: Do What I Say
 ========================
 
-Lab instructions
--------------------
-
 Step 1. Leg Assembly
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 * Make 1 more left leg and 1 more right leg using instructions in lab 2, however, do not attach the "base" motor
