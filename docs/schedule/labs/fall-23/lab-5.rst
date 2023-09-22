@@ -1,4 +1,4 @@
-Lab 5 - How to Train Your Dog (Work in Progress)
+Lab 5: How to Train Your Dog
 ========================
 
 .. contents:: :depth: 2

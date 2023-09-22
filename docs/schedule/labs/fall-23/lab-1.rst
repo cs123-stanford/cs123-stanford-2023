@@ -1,4 +1,4 @@
-Lab 1 - Hello PD
+Lab 1: Hello PD
 ================================
 *Goal: Build a robot arm that you can program PD control on.*
 
