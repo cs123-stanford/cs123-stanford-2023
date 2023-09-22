@@ -1,4 +1,4 @@
-Week 2 10/2: Introduction, Actuators, PD Control
+Actuators, PD Control
 ================================
 
 .. contents:: :depth: 2
