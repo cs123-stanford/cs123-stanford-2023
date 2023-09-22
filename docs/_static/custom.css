@@ -5,5 +5,5 @@
 
 /* Adjust the width of the sidebar (optional) */
 .wy-nav-side {
-    max-width: 0px; /* Change this value to your desired width */
+    max-width: 300px; /* Change this value to your desired width */
 }
