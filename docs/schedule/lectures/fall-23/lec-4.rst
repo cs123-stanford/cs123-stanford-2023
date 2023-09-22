@@ -1,11 +1,9 @@
 Inverse Kinematics
 =======================================================
 
-.. contents:: :depth: 2
 
-Inverse Kinematics Lecture
-------------
 Inverse Kinematics lecture by Jaden Clark, April 24, 2023.
+----------------------------------------------------------
 
 .. raw:: html
 
