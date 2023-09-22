@@ -1,6 +1,8 @@
 Lab 4: Sum > Parts (Pupper Assembly)
 =======================================
 
+*Goal: Build a full Pupper robot!*
+
 These instructions assume you are running Mac or Linux. If you have Windows 10 or lower, we recommend dual-booting linux. If you have Windows 11, try using the Windows Linux Subsystem. Otherwise proceed at your own risk!
 
 Step 1. Prepare the bottom PCB
