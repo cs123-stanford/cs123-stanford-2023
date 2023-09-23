@@ -30,7 +30,7 @@ Researchers from Google DeepMind, Hands-On Robotics, and Toyota Research Institu
 
 **Time:** Monday 1:30-4:20
 
-**Location:** 50-52H
+**Location:** Gates B02
 
 **Number of credits:** 3
 
