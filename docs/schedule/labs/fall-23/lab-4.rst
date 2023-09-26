@@ -64,16 +64,21 @@ Left knee motor: 6
 9. Attach the motor controller and fit it into the leg. Note: You will have to bundle the cables to squeeze it into the controller compartment. Secure loose wires with a long cable sleeve, and ziptie it on the end that goes into the controller compartment. Note: The ziptie is also pushed into the controller compartment before closing it.
 10. Insert a square nut into the lower leg and ensure it is properly aligned. 
 11. Attach the lower leg to the upper leg. The hole on the lower leg should be aligned with the keyed part (flat part) of the motor shaft. Before screwing it in, ensure this alignment correct by pushing a screwdriver through the hole first.
-12. Secure the lower leg to the upper leg with a 16mm shoulder screw. Note: Push the shoulder screw in as deep as possible before beginning to screw. If the shoulder screw is not flush with the side of the leg, the hole is not properly aligned and must be realigned. If the shoulder screw is flush with the side of the leg, great job! You can move on to the hips.
-13.
+12. Secure the lower leg to the upper leg with a 16mm shoulder screw. Note: Push the shoulder screw in as deep as possible before beginning to screw. If the shoulder screw is not flush with the side of the leg, the hole is not properly aligned and must be realigned. If the shoulder screw is flush with the side of the leg, great job!
+
+IF YOU ARE REUSING LEGS FROM LAB 2, REMOVE THEM FROM THE BASE AND START HERE.
+
+13. Fasten a motor to the hip bracket using M3 screws. IMPORTANT! The hip bracket you are using MUST MATCH the directionality of the leg. (Left leg with left hip, right leg with right hip). Also, the motor you are attaching is motor 5 if you're working with the left leg, and motor 2 if you're working with the right. Use the arrow to determine the appropriate orientation of the cabling. Insert the short cabling sleeve, and secure on one side with zipties.
+14. Insert a square nut into the hip braket and make sure it is properly aligned with the shoulder screw hole. 
+15. Secure the hip bracket to the upper leg. The flat part of the motor shaft should once again be aligned with the hole on the upper leg.
+
+16. Repeat the above steps until you have 4 completed legs (2 left, 2 right).
 
 Step 3. Attach the legs to the body
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Follow instructions at https://github.com/Nate711/puppersim/blob/main/puppersim/reacher/README.md to run the policy.
 
 Step 4. Attach legs to PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Follow instructions at https://github.com/Nate711/puppersim/blob/main/puppersim/reacher/README.md to deploy to your robot.
 
 Step 5. Attach electronics bulkhead to PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
