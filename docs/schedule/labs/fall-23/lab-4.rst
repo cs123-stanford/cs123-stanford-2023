@@ -9,7 +9,7 @@ Step 1. Prepare the bottom PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Note: You can skip this step if you completed your bottom PCB in lab 1
 
-Add video
+Add videos
 
 .. raw:: html
 
