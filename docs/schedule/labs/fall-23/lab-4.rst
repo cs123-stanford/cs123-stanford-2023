@@ -30,7 +30,7 @@ Left forward/back motion hip motor: 5
 Left knee motor: 6
 
 
-.. figure:: ../_static/motor_ids.png
+.. figure:: ../../../_static/motor_ids.png
     :align: center
     
     Motor ID diagram
