@@ -37,6 +37,12 @@ Step 2. Assemble the legs
 IMPORTANT: Calibrate your motors BEFORE attaching to legs and ensure Motor IDs are correct
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/S7Yns-jh8pE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
 Use this diagram to ensure you have the correct IDs set on your motor controllers. For each bulkhead you should have:
 
 Right left/right motion hip motor: 1
