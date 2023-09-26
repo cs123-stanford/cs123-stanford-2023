@@ -35,7 +35,7 @@ Step 1. Connect 2 more motors
 Step 1.5. Control the 3 motors together
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. Modify your PD control code from lab 1 to control all 3 motors (controlled independently). Modify only the ``right_state`` MotorState array here. Leave the ``left_state`` array as is at all 0s. 
+#. Modify your PD control code from lab 1 to control all 3 motors (controlled independently). Modify only the ``back_state`` MotorState array here.
 
 [TODO: insert pic of compeleted setup]
 
@@ -60,7 +60,7 @@ The motors should be calibrated in this way
 .. figure:: ../../../_static/motor_ids.png
     :align: center
     
-    Motor IDs: use 1-3 for the right leg, and 4-6 for the left leg.
+    Motor IDs: use 1-3 for the front leg, and 1-3 for the back leg.
 
 **IMPORTANT:** Calibrate each motor *before* you assemble the arm, so that they get an accurate calibration with no load. Once you calibrate the motor, keep it with the motor controller you calibrated it on. The calibration is dependent on the motor controller, so that motor is now paired with the motor controller. If in doubt, recalibrate.
 
@@ -166,10 +166,10 @@ Step 10. Make the robot arms bidirectional!
 
 .. code-block:: c++
 
-    bus.CommandTorques(right_state[0].cmd, right_state[1].cmd, right_state[2].cmd, left_state[0].cmd, C610Subbus::kIDZeroToThree);
-    bus.CommandTorques(left_state[1].cmd, left_state[2].cmd, 0, 0, C610Subbus::kIDFourToSeven);
+    bus_back.CommandTorques(back_state[0].cmd, back_state[1].cmd, back_state[2].cmd, 0 , C610Subbus::kIDZeroToThree);
+    bus_front.CommandTorques(front_state[0].cmd, front_state[1].cmd, front_state[2].cmd, 0 , C610Subbus::kIDZeroToThree);
 
-**DELIVERABLE: Submit a video like the leader/follower video where you move both arms manually, first moving the left, and then the right, to show bidirectionality**
+**DELIVERABLE: Submit a video like the leader/follower video where you move both arms manually, first moving the front, and then the back, to show bidirectionality**
 
 4. Congrats. Play with your robot! Make modifications!
 
