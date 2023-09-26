@@ -119,7 +119,7 @@ Step 6. Connect three more motors to use as control dials
 #. Connect three additional motors to the same CAN bus (ie same row of connectors).
 #. Calibrate and connect three additional motors to the Pupper PCB.
 #. Set their IDs to not overlap with your existing motors. We use 4, 5, and 6.
-#. Set the target positions of the base motor, shoulder motor, and elbow motor to the angle readings of the first, second, and third new motors respectively. Use the ``left_state`` MotorState array for this. 
+#. Set the target positions of the base motor, shoulder motor, and elbow motor to the angle readings of the first, second, and third new motors respectively. Use the ``front_state`` MotorState array for this. 
 
 [TODO: gif]
 
