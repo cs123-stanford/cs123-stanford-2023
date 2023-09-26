@@ -8,4 +8,4 @@ Hosts the course website for Stanford course CS123 https://cs-123-stanford-2023.
 - TAs: Ankush Dhawan, Sydney Yan, Brandon Vu
 
 
-If your university is interesting in hosting this course, contact fleecy@stanford.edu 
+If your university is interesting in hosting this course, contact jvclark@stanford.edu
