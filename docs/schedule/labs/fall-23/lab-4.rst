@@ -9,13 +9,7 @@ Step 1. Prepare the bottom PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Note: You can skip this step if you completed your bottom PCB in lab 1
 
-Add videos
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/watch?v=BVt5AKMmmlk&list=PLyfO-HCxXUtfBhJ-dnrfDaf9GAcyBsvT4&index=1&ab_channel=StanfordStudentRobotics" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
+Add videos2
 
 .. raw:: html
 
