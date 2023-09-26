@@ -139,7 +139,7 @@ Step 12. Take your robot on a walk
   * Up/down on the right joystick controls forward/back. 
   * Left/right on the right joystick controls strafing left/right.
 
-.. figure:: ../_static/djipupper_photos/startup-position.png
+.. figure:: ../../../_static/djipupper_photos/startup-position.png
     :align: center
     
     Startup position.
