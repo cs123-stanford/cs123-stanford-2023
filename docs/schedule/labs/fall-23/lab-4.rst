@@ -7,12 +7,18 @@ These instructions assume you are running Mac or Linux. If you have Windows 10 o
 
 Step 1. Prepare the bottom PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Clone the simulator repository ``git clone https://github.com/jietan/puppersim.git``
-#. Follow the instructions in the `System setup <https://github.com/jietan/puppersim#system-setup/>`_ and `Getting the code ready <https://github.com/jietan/puppersim#getting-the-code-ready/>`_ sections of the Puppersim README.md.
+Note: You can skip this step if you completed your bottom PCB in lab 1
+
+1. Remove the yellow cable (normally closed switch) from the power switch.
+2. Solder the power switch cables into the bottom PCB. The two blue wires must be soldered into "Switch", the red into "LED+", and the black wire into "LED-". Note: Make sure the wire ends are not electrically connected to each other.
+3. Trim excess cable.
+4. Attach 3D-printed protectors to electrically conductive areas on the bottom PCB. 
+
+Congrats! You finished the first step. 
 
 Step 2. Assemble the legs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-CHECK. Ensure Motor IDs are correct
+IMPORTANT: Calibrate your motors BEFORE attaching to legs and ensure Motor IDs are correct
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Use this diagram to ensure you have the correct IDs set on your motor controllers. For each bulkhead you should have:
