@@ -60,7 +60,7 @@ The motors should be calibrated in this way
 .. figure:: ../../../_static/motor_ids.png
     :align: center
     
-    Motor IDs: use 1-3 for the front leg, and 1-3 for the back leg.
+    Motor IDs: use 1-3 for the front leg, and 1-3 for the back leg. Both should be right-hand-sided legs
 
 **IMPORTANT:** Calibrate each motor *before* you assemble the arm, so that they get an accurate calibration with no load. Once you calibrate the motor, keep it with the motor controller you calibrated it on. The calibration is dependent on the motor controller, so that motor is now paired with the motor controller. If in doubt, recalibrate.
 
