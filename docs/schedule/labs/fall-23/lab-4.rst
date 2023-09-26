@@ -26,7 +26,7 @@ Congrats! You finished the first step.
 
 Step 2. Assemble the legs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-IMPORTANT: Calibrate your motors BEFORE attaching to legs and ensure Motor IDs are correct
+IMPORTANT: Calibrate your motors BEFORE attaching to legs and keep track of Motor IDs.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. raw:: html
