@@ -39,6 +39,8 @@ For each motor/motor controller pair:
 
 5. Mark the ID number on your controller. DONT FORGET.
 
+**NOTE: Correctly matching motor IDs and labelling is EXTREMELY IMPORTANT. If you do this incorrectly, you will later have to rebuild the robot.
+
 6. Repeat these steps for all motors. Use this diagram to ensure you have the correct IDs set on your motor controllers. For each bulkhead you should have:
 
 Right left/right motion hip motor: 1
@@ -104,6 +106,12 @@ Step 4. Attach the legs to the body
 
 Step 5. Attach legs to PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. Secure the leg to the bottom PCB using an M3 button head screw.
+2. Connect the power and signal cables of the motor controller to the PCB board. Make sure you have properly assigned the correct motor controller (As detailed in step 2).
+3. Insert the motor controller into the motor bulkhead's fin. Use zip ties to secure any remaining cables.
+4. Repeat the process for the remaining motor controllers and organize the cables accordingly. 
+5. Activate the power to verify the ID settings are correct. All lights should exhibit a green blinking pattern.
 
 Step 6. Attach electronics bulkhead to PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
