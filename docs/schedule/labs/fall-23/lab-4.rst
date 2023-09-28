@@ -22,7 +22,7 @@ Congrats! You finished the first step.
 
 Step 2. Configure IDs and Calibrate the Motor Conotrollers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. youtube:: BVt5AKMmmlk
+.. youtube:: FpVTkltykIs
    :width: 640
    :height: 480
 
@@ -65,7 +65,7 @@ Step 3. Assemble the legs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 IMPORTANT: Calibrate your motors BEFORE attaching to legs. Please redo this step if legs were improperly constructed in Lab 2.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. youtube:: AhVEC3JIOug
+.. youtube:: LBls9kuRTzE
    :width: 640
    :height: 480
 
@@ -106,6 +106,9 @@ Step 4. Attach the legs to the body
 
 Step 5. Attach legs to PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. youtube:: LBls9kuRTzE
+   :width: 640
+   :height: 480
 
 1. Secure the leg to the bottom PCB using an M3 button head screw.
 2. Connect the power and signal cables of the motor controller to the PCB board. Make sure you have properly assigned the correct motor controller (As detailed in step 2).
@@ -115,6 +118,10 @@ Step 5. Attach legs to PCB
 
 Step 6. Attach electronics bulkhead to PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. youtube:: q3h5zBQDJJs
+   :width: 640
+   :height: 480
+
 #. Screw RPi into electronics bulkhead with M2.5x5 socket head screws such that the Pi is oriented like in the video.
 #. Connect USB C extension cable to Rpi
 #. Connect RPi camera flex cable into RPi. There's a little grey flap that flips up on the connector that lets you slide the cable in. Flip the flap down to lock the cable in.
