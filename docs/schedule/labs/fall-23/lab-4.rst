@@ -9,7 +9,7 @@ Note: You can skip this step if you completed your bottom PCB in lab 1
 
 Add videos2
 
-.. youtube:: dQw4w9WgXcQ
+.. youtube:: BVt5AKMmmlk
    :width: 640
    :height: 480
 
@@ -22,7 +22,7 @@ Add videos2
 
 Congrats! You finished the first step. 
 
-Step 2. Assemble the legs
+Step 3. Assemble the legs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 IMPORTANT: Calibrate your motors BEFORE attaching to legs. Please redo this step if legs were improperly constructed in Lab 2.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -72,7 +72,7 @@ IF YOU ARE REUSING LEGS FROM LAB 2, REMOVE THEM FROM THE BASE AND START HERE.
 
 16. Repeat the above steps until you have 4 completed legs (2 left, 2 right).
 
-Step 3. Attach the legs to the body
+Step 4. Attach the legs to the body
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. raw:: html
@@ -81,10 +81,10 @@ Step 3. Attach the legs to the body
         <iframe src="https://www.youtube.com/watch?v=Jy_zpkmjmGU&list=PLyfO-HCxXUtfBhJ-dnrfDaf9GAcyBsvT4&index=3&ab_channel=StanfordStudentRobotics" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
-Step 4. Attach legs to PCB
+Step 5. Attach legs to PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Step 5. Attach electronics bulkhead to PCB
+Step 6. Attach electronics bulkhead to PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Screw RPi into electronics bulkhead with M2.5x5 socket head screws such that the Pi is oriented like in the video.
 #. Connect USB C extension cable to Rpi
@@ -99,7 +99,7 @@ Step 5. Attach electronics bulkhead to PCB
 #. Flip robot and fasten bulkheads to bottom PCB with 4x M3x6 button head screws
 #. Tighten these screws well and/or add loctite 
 
-Step 6. Attach top PCB
+Step 7. Attach top PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Follow instructions at https://github.com/Nate711/puppersim/blob/main/puppersim/reacher/README.md to deploy to your robot.
 
@@ -111,7 +111,7 @@ Step 6. Attach top PCB
 #. Connect other female XT60 into the bottom PCB
 
 
-Step 7. Bind RC receiver
+Step 8. Bind RC receiver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Get a FRSKY USB receiver and a BetaFPV Transmitter
 #. While holding the button on the USB receiver down, insert it into your computer. It should show a flashing red light.
@@ -122,26 +122,26 @@ Step 7. Bind RC receiver
 #. Refer to the transmitter manual for more info if needed https://support.betafpv.com/hc/en-us/articles/900003583046-Manual-for-LiteRadio-2.
 #. Refer to the receiver manual for more info if needed https://www.frsky-rc.com/wp-content/uploads/Downloads/Manual/XSR-SIM/XSR-SIM-%20manual.pdf 
 
-Step 8. Finish hardware assembly
+Step 9. Finish hardware assembly
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Put velcro or dual-lock onto the bottom PCB where it says "battery". For now we'll use the power supply to run the robot so you don't have to install the actual battery.
 #. Attach the top PCB panel with M3x6 button head screws. 
 #. Check again with instructors.
 #. Marvel at your work!
 
-Step 9. Flash code onto the Teensy
+Step 10. Flash code onto the Teensy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Go to https://github.com/Nate711/DJIPupperTests/blob/master/README.md for instructions on how to download and set up the Teensy firmware
 #. Use VSCode PlatformIO to open the DJIPupperTests folder as a project and then upload the code to the Teensy. (Same thing as in labs 1-4).
 
-Step 10. Flash software image onto Raspberry Pi
+Step 11. Flash software image onto Raspberry Pi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Download our `image <https://drive.google.com/file/d/1LWupKrq-aiqHTXsXZ3rIQzXBHl4DCbSj/view?usp=sharing>`_
 #. Install `Balena etcher <https://www.balena.io/etcher/>`_
 #. Flash the image onto the micro SD card using Balena etcher. 
 #. Insert the micro sd card into the Pi's micro sd card slot (on bottom side of board)
 
-Step 11. Enable the heuristic controller
+Step 12. Enable the heuristic controller
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Connect the robot to your computer via the top USB-C port on the robot.
 #. SSH into the robot with ``ssh pi@raspberrypi.local``. The password is ``raspberry``. Ask for help if this doesn't work.
@@ -149,7 +149,7 @@ Step 11. Enable the heuristic controller
 #. Run ``sudo systemctl status robot`` to check that the service is running ok (should be green).
 #. Reboot with ``sudo reboot 0``
 
-Step 11.5. (Optional, Stanford only) Get Stanford Wifi access
+Step 12.5. (Optional, Stanford only) Get Stanford Wifi access
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Once ssh'd into the robot, run ``ifconfig`` and record the ``wlan0`` MAC address. This is the MAC address for the WIFI chip. It should be a series of hex characters like f0:2f:4b:07:ee:ea. 
 #. Go to iprequest.stanford.edu on your computer, and make a new registration for the Pi. Select other device -> other wired. Enter the *Wireless* MAC address you got in step 1. 
@@ -161,7 +161,7 @@ Step 11.5. (Optional, Stanford only) Get Stanford Wifi access
 #. If it doesn't work, wait 20 minutes, restart the Pi, and try again! 
 #. Make sure you change the password after connecting to Wifi or it *will* get hacked. We highly recommend physically labeling the robot with the new password.
 
-Step 12. Take your robot on a walk
+Step 13. Take your robot on a walk
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Unplug the Pi from USB C.
 #. Place your robot on a flat, level surface. Position the legs as shown in the picture below.
