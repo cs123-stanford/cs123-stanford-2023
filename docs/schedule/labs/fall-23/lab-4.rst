@@ -28,10 +28,15 @@ Step 2. Configure IDs and Calibrate the Motor Conotrollers
 
 For each motor/motor controller pair:
 1. Connect a motor to a motor controller, and the motor controller to the bottom PCB.
+
 2. Ensure that the PCB is plugged into a power outlet, and turn the PCB on. If everything is properly connected, you should hear the motor controller beep.
+
 3. Initiate calibration by holding the button on the motor controller until the motor begins to move (very slowly). Note: it is easier to tell that the motor is moving if you watch the white square on the bottom of the motor.
+
 4. After calibration, reset the motor ID by pressing once on the button. After pressing down once, wait a bit and then press the button the nummber of times you want to set the new ID too (for example, if you want the new motor ID to be 6, press 6 times after the initial reset press).
+
 5. Mark the ID number on your controller. DONT FORGET.
+
 6. Repeat these steps for all motors. Use this diagram to ensure you have the correct IDs set on your motor controllers. For each bulkhead you should have:
 
 Right left/right motion hip motor: 1
