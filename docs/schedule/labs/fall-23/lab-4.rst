@@ -82,10 +82,10 @@ IMPORTANT: Calibrate your motors BEFORE attaching to legs. Please redo this step
 
 10. Fasten a motor to the hip bracket using M3 screws. IMPORTANT! The hip bracket you are using MUST MATCH the directionality of the leg. (Left leg with left hip, right leg with right hip). Also, the motor you are attaching is motor 5 if you're working with the left leg, and motor 2 if you're working with the right. Use the arrow to determine the appropriate orientation of the cabling. Insert the short cabling sleeve, and secure on one side with zipties.
 11. Insert the short cable sleeving over the motor cable. Secure one side with zip ties.
-9. Insert a square nut into the hip braket and make sure it is properly aligned with the shoulder screw hole using the screwdriver. 
-10. Secure the hip bracket to the upper leg. The flat part of the motor shaft should once again be aligned with the hole on the upper leg. Double check the hip side matches the lower leg side (R with R, L with L).
+2. Insert a square nut into the hip braket and make sure it is properly aligned with the shoulder screw hole using the screwdriver. 
+13. Secure the hip bracket to the upper leg. The flat part of the motor shaft should once again be aligned with the hole on the upper leg. Double check the hip side matches the lower leg side (R with R, L with L).
 
-11. Repeat the above steps until you have 4 completed legs (2 left, 2 right).
+14. Repeat the above steps until you have 4 completed legs (2 left, 2 right).
 
 Step 4. Attach the legs to the body
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -95,6 +95,12 @@ Step 4. Attach the legs to the body
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
         <iframe src="https://www.youtube.com/watch?v=Jy_zpkmjmGU&list=PLyfO-HCxXUtfBhJ-dnrfDaf9GAcyBsvT4&index=3&ab_channel=StanfordStudentRobotics" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
+
+1. Apply the soldering tool to heat the M3 insert onto the motor bulkhead. Push inwards until it is flush with the surface.
+2. Place 4 dowel pins into the corresponding holes on the motor bulkhead. Ensure the pins do not extend beyond 0.5cm from the surface.
+3. Secure the motor bulkhead, ensuring that the arrow is directed towards the motor cable. 
+4. Insert the hip bracket onto the motor, ensuring that the flat surface on the motor shaft is facing outward. Utilize a screwdriver to align the hole on the motor shaft. Fasten the components together using the shoulder screw.
+5. Fasten the cable to the motor bulkhead using zip ties, following the cable arrangement demonstrated in the video. This will prevenet the cable from experiencing strain while the robot is moving.
 
 Step 5. Attach legs to PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
