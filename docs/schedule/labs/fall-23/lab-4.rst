@@ -31,7 +31,7 @@ IMPORTANT: Calibrate your motors BEFORE attaching to legs. Please redo this step
 .. raw:: html
 
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/S7Yns-jh8pE" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/watch?v=AhVEC3JIOug&list=PLyfO-HCxXUtfBhJ-dnrfDaf9GAcyBsvT4&index=2&ab_channel=StanfordStudentRobotics" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 1. Connect a motor to a motor controller, and the motor controller to the bottom PCB.
@@ -76,6 +76,12 @@ IF YOU ARE REUSING LEGS FROM LAB 2, REMOVE THEM FROM THE BASE AND START HERE.
 
 Step 3. Attach the legs to the body
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/watch?v=Jy_zpkmjmGU&list=PLyfO-HCxXUtfBhJ-dnrfDaf9GAcyBsvT4&index=3&ab_channel=StanfordStudentRobotics" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
 
 Step 4. Attach legs to PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
