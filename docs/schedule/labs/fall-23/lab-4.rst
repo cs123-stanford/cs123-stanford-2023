@@ -27,6 +27,8 @@ Step 2. Configure IDs and Calibrate the Motor Conotrollers
    :height: 480
 
 For each motor/motor controller pair:
+
+
 1. Connect a motor to a motor controller, and the motor controller to the bottom PCB.
 
 2. Ensure that the PCB is plugged into a power outlet, and turn the PCB on. If everything is properly connected, you should hear the motor controller beep.
