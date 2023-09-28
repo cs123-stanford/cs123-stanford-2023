@@ -7,8 +7,6 @@ Step 1. Prepare the bottom PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Note: You can skip this step if you completed your bottom PCB in lab 1
 
-Add videos2
-
 .. youtube:: BVt5AKMmmlk
    :width: 640
    :height: 480
@@ -22,21 +20,19 @@ Add videos2
 
 Congrats! You finished the first step. 
 
-Step 3. Assemble the legs
+Step 2. Configure IDs and Calibrate the Motor Conotrollers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-IMPORTANT: Calibrate your motors BEFORE attaching to legs. Please redo this step if legs were improperly constructed in Lab 2.
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. raw:: html
+.. youtube:: BVt5AKMmmlk
+   :width: 640
+   :height: 480
 
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/watch?v=AhVEC3JIOug&list=PLyfO-HCxXUtfBhJ-dnrfDaf9GAcyBsvT4&index=2&ab_channel=StanfordStudentRobotics" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-
+For each motor/motor controller pair:
 1. Connect a motor to a motor controller, and the motor controller to the bottom PCB.
 2. Ensure that the PCB is plugged into a power outlet, and turn the PCB on. If everything is properly connected, you should hear the motor controller beep.
-3. Initiate calibration by holding the button on the motor controller until the motor begins to move. Note: it is easier to tell that the motor is moving if you watch the white square on the bottom of the motor.
+3. Initiate calibration by holding the button on the motor controller until the motor begins to move (very slowly). Note: it is easier to tell that the motor is moving if you watch the white square on the bottom of the motor.
 4. After calibration, reset the motor ID by pressing once on the button. After pressing down once, wait a bit and then press the button the nummber of times you want to set the new ID too (for example, if you want the new motor ID to be 6, press 6 times after the initial reset press).
-5. Repeat these steps for all motors. Use this diagram to ensure you have the correct IDs set on your motor controllers. For each bulkhead you should have:
+5. Mark the ID number on your controller. DONT FORGET.
+6. Repeat these steps for all motors. Use this diagram to ensure you have the correct IDs set on your motor controllers. For each bulkhead you should have:
 
 Right left/right motion hip motor: 1
 
@@ -56,21 +52,33 @@ Left knee motor: 6
     
     Motor ID diagram
 
-6. After completing calibration, it's time to get started on the legs themselves! Insert a dowel pin into an upper leg. It should not protrude more than 0.5cm from the leg. Note: You can try pushing the dowel against the table to insert it, or using adjustable pliers.
-7. Fit a square nut into the upper leg. You may have to push it in with a screwdriver. Ensure that the square nut alignment is correct by pushing a screwdriver through the shoulder screw hole into the square nut. 
-8. Install a motor into the upper leg using M3 screws. IMPORTANT! The motor must have ID 3 if you're working with the right knee, and 6 if you're working with the left. Please refer to the above Motor ID diagram for more info. Make sure to orient the cables in the direction the arrow is pointing. 
-9. Attach the motor controller and fit it into the leg. Note: You will have to bundle the cables to squeeze it into the controller compartment. Secure loose wires with a long cable sleeve, and ziptie it on the end that goes into the controller compartment. Note: The ziptie is also pushed into the controller compartment before closing it.
-10. Insert a square nut into the lower leg and ensure it is properly aligned. 
-11. Attach the lower leg to the upper leg. The hole on the lower leg should be aligned with the keyed part (flat part) of the motor shaft. Before screwing it in, ensure this alignment correct by pushing a screwdriver through the hole first.
-12. Secure the lower leg to the upper leg with a 16mm shoulder screw. Note: Push the shoulder screw in as deep as possible before beginning to screw. If the shoulder screw is not flush with the side of the leg, the hole is not properly aligned and must be realigned. If the shoulder screw is flush with the side of the leg, great job!
+Step 3. Assemble the legs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IMPORTANT: Calibrate your motors BEFORE attaching to legs. Please redo this step if legs were improperly constructed in Lab 2.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. youtube:: AhVEC3JIOug
+   :width: 640
+   :height: 480
 
-IF YOU ARE REUSING LEGS FROM LAB 2, REMOVE THEM FROM THE BASE AND START HERE.
 
-13. Fasten a motor to the hip bracket using M3 screws. IMPORTANT! The hip bracket you are using MUST MATCH the directionality of the leg. (Left leg with left hip, right leg with right hip). Also, the motor you are attaching is motor 5 if you're working with the left leg, and motor 2 if you're working with the right. Use the arrow to determine the appropriate orientation of the cabling. Insert the short cabling sleeve, and secure on one side with zipties.
-14. Insert a square nut into the hip braket and make sure it is properly aligned with the shoulder screw hole. 
-15. Secure the hip bracket to the upper leg. The flat part of the motor shaft should once again be aligned with the hole on the upper leg.
+1. After completing calibration, it's time to get started on the legs themselves! Insert a dowel pin into an upper leg. It should not protrude more than 0.5cm from the leg. Note: You can try pushing the dowel against the table to insert it, or using adjustable pliers.
+2. Fit a square nut into the upper leg. You may have to push it in with a screwdriver. Ensure that the square nut alignment is correct by pushing a screwdriver through the shoulder screw hole into the square nut. There may be some loose filament in the way.
+3. Install a motor into the upper leg using M3 flat head screws. IMPORTANT! The motor must have ID 3 if you're working with the right knee, and 6 if you're working with the left. Please refer to the above Motor ID diagram for more info. Make sure to orient the cables in the direction the arrow is pointing. 
+4. Attach the motor controller and fit it into the leg. Note: You will have to bundle the cables to squeeze it into the controller compartment. Secure loose wires with a long cable sleeve, and ziptie it on the end that goes into the controller compartment. Note: The ziptie is also pushed into the controller compartment before closing it.
+5. Insert a square nut into the lower leg and ensure it is properly aligned. MAY STUDENTS FORGET THIS STEP.
+6. Attach the lower leg to the upper leg. The hole on the lower leg should be aligned with the keyed part (flat part) of the motor shaft. TIP: Before screwing it in, ensure this alignment correct by pushing a screwdriver through the hole first.
+7. Secure the lower leg to the upper leg with a 16mm shoulder screw. Note: Push the shoulder screw in as deep as possible before beginning to screw. If the shoulder screw is not flush with the side of the leg, the hole is not properly aligned and must be realigned. If the shoulder screw is flush with the side of the leg, great job!
 
-16. Repeat the above steps until you have 4 completed legs (2 left, 2 right).
+8. Slide the long cable sleeve over the motor controller cable and secure one side with zip ties. 
+
+9. Encase teh upper leg with the thigh section by pushing in the insert. 
+
+10. Fasten a motor to the hip bracket using M3 screws. IMPORTANT! The hip bracket you are using MUST MATCH the directionality of the leg. (Left leg with left hip, right leg with right hip). Also, the motor you are attaching is motor 5 if you're working with the left leg, and motor 2 if you're working with the right. Use the arrow to determine the appropriate orientation of the cabling. Insert the short cabling sleeve, and secure on one side with zipties.
+11. Insert the short cable sleeving over the motor cable. Secure one side with zip ties.
+9. Insert a square nut into the hip braket and make sure it is properly aligned with the shoulder screw hole using the screwdriver. 
+10. Secure the hip bracket to the upper leg. The flat part of the motor shaft should once again be aligned with the hole on the upper leg. Double check the hip side matches the lower leg side (R with R, L with L).
+
+11. Repeat the above steps until you have 4 completed legs (2 left, 2 right).
 
 Step 4. Attach the legs to the body
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
