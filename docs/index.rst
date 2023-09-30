@@ -16,23 +16,44 @@ CS 123: A Hands-On Introduction to Building AI-Enabled Robots
 
 **Overview:**
 
-Welcome to the course page for Stanford's course in legged robots!
+Welcome to the course page for Stanford’s course in legged robots!
 
-This course offers a hands-on introduction to AI-powered robotics. Unlike most introductory robotics courses, students will learn essential robotics concepts by constructing a quadruped robot from scratch and training it to perform real-world tasks such as navigation and command following. The course covers a broad range of topics critical to robot learning, including motor control, forward and inverse kinematics, system identification, simulation, and reinforcement learning. Through weekly labs, students will construct and program an agile robot quadruped named Pupper. In the final few weeks, students will undertake an open-ended project, such as training Pupper to perform agile movements, developing a vision system to allow Pupper to play fetch, or adapting large language models to enable Pupper’s ability to communicate with humans.
+This course offers a hands-on introduction to AI-powered robotics. Unlike most introductory robotics courses, students will learn essential robotics concepts by constructing a quadruped robot from scratch and training it to perform real-world tasks such as navigation and command following. The course covers a broad range of topics critical to robot learning, including motor control, forward and inverse kinematics, system identification, simulation, and reinforcement learning. Through weekly labs, students will construct and program an agile robot quadruped named Pupper. In the final few weeks, students will undertake an open-ended project, such as training Pupper to perform agile movements, developing a vision system to allow Pupper to play fetch, or adapting large language models to enable Pupper’s ability to communicate with humans. Researchers from Google DeepMind, Hands-On Robotics, and Toyota Research Institute will give lectures during the quarter on their work teaching robots new skills using reinforcement learning.
 
-Researchers from Google DeepMind, Hands-On Robotics, and Toyota Research Institute will give lectures during the quarter on their work teaching robots new skills using reinforcement learning. 
-
-*"Empowering robots with AI is essential to make them smart and useful in people's daily life. It is one of the most important research directions in both academia and industry. This class teaches the most relevant skills, gives students hand-on experiences, and prepares them for a career in the area of AI and robotics."* - Jie Tan, Staff Research Scientist at Google DeepMind
-
-**Prerequisites:** CS107 (familiarity with the command line), MATH51/CME100 (understanding of gradients). Coding will be majority Python but some C++ (Arduino). No robotics experience necessary!!
-
-**Grading:** Letter-Based
+*“Empowering robots with AI is essential to make them smart and useful in people’s daily life. It is one of the most important research directions in both academia and industry. This class teaches the most relevant skills, gives students hand-on experiences, and prepares them for a career in the area of AI and robotics.”* - Jie Tan, Staff Research Scientist at Google DeepMind
 
 **Time:** Monday 1:30-4:20
 
-**Location:** Gates B02
+**Location:** Gates B02, *in-person attendance required*
+
+**TA Sessions:**
+
+*9-10:30am Tuesday (Gates B02): Jaden and Brandon
+
+*7:30-9pm Wednesday (Gates B02): Jaden and Ankush
+
+*7:30-9pm Thursday (Gates B02): Gabrael and Sydney
+
+*2-3:30pm Friday (Gates B02): Gabrael
+
+**Office Hours:**
+4-5PM Wednesday (Gates 368): Karen
+
+**Prerequisites: **
+
+*CS107 (familiarity with the command line) 
+
+*MATH51/CME100 (understanding of gradients)
+
+*Coding will be majority Python but some C++ (Arduino)
+
+*No robotics experience necessary!!
 
 **Number of credits:** 3
+
+**Grading:** Letter-Based
+
+
 
 Schedule
 ===========
