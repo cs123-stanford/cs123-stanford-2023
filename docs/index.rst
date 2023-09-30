@@ -51,7 +51,7 @@ This course offers a hands-on introduction to AI-powered robotics. Unlike most i
 
 **Number of credits:** 3
 
-**Grading:** :doc:`../grading_details`
+**Grading:** :doc:`../grading/grading_details`
 
 
 
