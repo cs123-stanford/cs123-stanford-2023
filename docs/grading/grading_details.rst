@@ -17,7 +17,7 @@ Grading Details
 
 * Lab 7: 10%
 
-**Everyone in the same group will receive the same score for the group-based portion of the lab. Some labs have written homework for which students get individual scores**
+*Everyone in the same group will receive the same score for the group-based portion of the lab. Some labs have written homework for which students get individual scores*
 
 **Final Project (25%):**
 
@@ -27,7 +27,7 @@ Grading Details
 
 * Final product: 15%
 
-**The team that has the best final project will have the opportunity to demo their result on the Inauguration Day of Stanford Robotics Center in March 2024!**
+*The team that has the best final project will have the opportunity to demo their result on the Inauguration Day of Stanford Robotics Center in March 2024!*
 
 **Late Policy:**
 
