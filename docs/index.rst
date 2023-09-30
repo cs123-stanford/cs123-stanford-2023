@@ -39,7 +39,7 @@ This course offers a hands-on introduction to AI-powered robotics. Unlike most i
 **Office Hours:**
 4-5PM Wednesday (Gates 368): Karen
 
-**Prerequisites: **
+**Prerequisites:**
 
 * CS107 (familiarity with the command line) 
 
