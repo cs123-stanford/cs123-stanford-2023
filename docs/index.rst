@@ -28,26 +28,26 @@ This course offers a hands-on introduction to AI-powered robotics. Unlike most i
 
 **TA Sessions:**
 
-*9-10:30am Tuesday (Gates B02): Jaden and Brandon
+* 9-10:30am Tuesday (Gates B02): Jaden and Brandon
 
-*7:30-9pm Wednesday (Gates B02): Jaden and Ankush
+* 7:30-9pm Wednesday (Gates B02): Jaden and Ankush
 
-*7:30-9pm Thursday (Gates B02): Gabrael and Sydney
+* 7:30-9pm Thursday (Gates B02): Gabrael and Sydney
 
-*2-3:30pm Friday (Gates B02): Gabrael
+* 2-3:30pm Friday (Gates B02): Gabrael
 
 **Office Hours:**
 4-5PM Wednesday (Gates 368): Karen
 
 **Prerequisites: **
 
-*CS107 (familiarity with the command line) 
+* CS107 (familiarity with the command line) 
 
-*MATH51/CME100 (understanding of gradients)
+* MATH51/CME100 (understanding of gradients)
 
-*Coding will be majority Python but some C++ (Arduino)
+* Coding will be majority Python but some C++ (Arduino)
 
-*No robotics experience necessary!!
+* No robotics experience necessary!!
 
 **Number of credits:** 3
 
