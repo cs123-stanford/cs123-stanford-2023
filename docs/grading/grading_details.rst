@@ -1,8 +1,7 @@
 Grading Details
 ========================
 
-**7 Labs (75%):** 
-
+**Labs (75%):** 
 * Lab 1: 10%
 
 * Lab 2: 10%
@@ -20,7 +19,6 @@ Grading Details
 *Everyone in the same group will receive the same score for the group-based portion of the lab. Some labs have written homework for which students get individual scores*
 
 **Final Project (25%):**
-
 * Proposal: 2% 
 
 * Final presentation: 8%
