@@ -77,7 +77,7 @@ Step 5. Examine and run the starter code
 
 **WARNING** To stop code, press ``s`` inside the terminal instead of ^C. Using ^C will lead to undefined behavior when you upload new code, or run the code again. 
 
-1. Git clone the `starter code <https://github.com/stanfordroboticsclub/independent-study-lab1>`_
+1. Git clone the `starter code <https://github.com/cs123-stanford/lab_1_hello_pd>`_
 
 ``git clone https://github.com/cs123-stanford/lab_1_hello_pd.git``
 
