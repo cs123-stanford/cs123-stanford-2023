@@ -13,13 +13,7 @@ DELIVERABLE: Screen recording of stand up in simulation
 Step 2. Deploy Stand High Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. raw:: html
 
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/Xhj-rCPxm6o" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-
-|
 Transfer policy from local machine to pupper
 #. The model is a .pt file under the log folder name (e.g., “model_700.pt”)
 #. ‘scp [model name] pi@raspberrypi.local:’ (note the colon at the end)
@@ -40,13 +34,6 @@ DELIVERABLE: Take video of stand-up
 Step 3. Walking Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/vv3jABUq3ng" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-
-|
 
 #. We provide basic interface (how to read robot velocity, how to obtain target velocity) and student need to write a new reward function
 #. deploy in sim
@@ -56,13 +43,6 @@ DELIVERABLE: What terms are included in your reward functions? What coefficeints
 Step 4. Domain Randomization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/OArwzrKzQdM" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-
-|
 
 #. Student need to implement domain randomization
 #. Deploy on real, works
@@ -79,24 +59,11 @@ DELIVERABLE: What other terms could you randomize?
     Startup position.
 
 
-Step 5. Speed/terrain test
+Step 5. Speed test
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/OArwzrKzQdM" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-
-|
-
-#. Screw RPi into electronics bulkhead with M2.5x5 socket head screws such that the Pi is oriented like in the video.
-#. Connect USB C extension cable to Rpi
-#. Connect RPi camera flex cable into RPi. There's a little grey flap that flips up on the connector that lets you slide the cable in. Flip the flap down to lock the cable in.
-#. Connect RPi to power by using 2-pin cable. Connect one end into 5V, GND pins near the Teensy and other side into RPi. Quadruple-check that the 5V and GND pins are going the right places. See diagram.
-#. Connect RPi to Teensy using USB A to USB micro cable
-#. Connect RC receiver to RPi with usb extension cable.
-
+#. Tune your reward function and domain randomization to improve Pupper's speed
+#. Fastest Puppers will get extra credit!
 
 DELIVERABLE: Test your policy during office hours
 
