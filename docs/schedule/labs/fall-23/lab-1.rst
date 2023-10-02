@@ -2,6 +2,8 @@ Lab 1: Hello PD
 ================================
 *Goal: Build a robot arm that you can program PD control on.*
 
+Link to the `Lab document <https://docs.google.com/document/d/1M2W4mdybpKI47ditB3BAb8ue8iwPYnDK4nTwGRWv-H0/edit?usp=sharing>`_.
+
 Step 0. Setup
 ^^^^^^^^^^^^^^
 #. Install Git for your OS. `Windows <https://git-scm.com/download/win>`_, `Mac <https://git-scm.com/download/mac>`_, `Linux <https://git-scm.com/download/linux>`_ (keep in mind if you are using Debian, Ubuntu, etc). We will use Git for retrieving starter code, and version control. 
