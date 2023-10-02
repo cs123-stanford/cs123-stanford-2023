@@ -11,6 +11,7 @@ Step 1. Code inverse kinematics
 #. Implement ``cost`` in ``kinematics.h`` as the squared-norm of the error between the position returned by ``FK(guess)`` and ``target_location``. 
 #. Implement ``calculate_cost_gradient`` in ``kinematics.h`` using the finite differencing method we covered in lecture. A good perturbation size is small, like 0.001.
 #. Implement ``inverse_kinematics`` in ``kinematics.h``. Play around with different step sizes, from 1 to 100, to see what works for you.
+
 **Deliverable: Print out the last 10 costs of IK up to the thousanths decimal place. Do they decrease or increase?**
 
 Step 2. Test the consistency between forward kinematics and inverse kinematics
@@ -18,6 +19,7 @@ Step 2. Test the consistency between forward kinematics and inverse kinematics
 #. Implement ``test_ik`` in ``test_inv_kinematics.h``
 #. Write a test by taking some reachable (x,y,z) point in space (think hard about what's reachable!), using your IK function to get the corresponding joint angles, then passing them to your FK function to retrieve the original (x,yz). These should match as long as the original point was reachable. 
 #. Make sure the test passes before moving on
+
 **Deliverable: What test point did you use? Write about why we are doing an FK -> IK consistency test rather than an IK -> FK test (2-3 sentences). Hint: Think about the robot leg configuration(s)**
 .. The reason we're doing this IK -> FK consistency test and not a FK -> IK consistency test is that for any reachable point in space, the robot can flip its "elbow" joint up or down to get to that point in space, resulting in different joint angles.
 
@@ -29,6 +31,7 @@ Step 4. Almost there!
 #. Calculate the inverse kinematics of the leg on bus1 with the end effector position from the previous step
 #. Calculate ``actuator_commands1`` using ``vectorized_pd`` to command the leg on bus1 given Kp and Kd gains provided
 #. Hold both arms in the horizontal position and start the program
+
 **Deliverable: What is the behavior of the two arms?**   
 
 Step 5. Put it together! Make your two robot arms match each other's end-effector positions
