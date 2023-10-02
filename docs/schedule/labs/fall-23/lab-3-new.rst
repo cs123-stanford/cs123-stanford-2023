@@ -21,6 +21,7 @@ Step 2. Test the consistency between forward kinematics and inverse kinematics
 #. Make sure the test passes before moving on
 
 **Deliverable: What test point did you use? Write about why we are doing an FK -> IK consistency test rather than an IK -> FK test (2-3 sentences). Hint: Think about the robot leg configuration(s)**
+
 .. The reason we're doing this IK -> FK consistency test and not a FK -> IK consistency test is that for any reachable point in space, the robot can flip its "elbow" joint up or down to get to that point in space, resulting in different joint angles.
 
 Step 4. Almost there!
