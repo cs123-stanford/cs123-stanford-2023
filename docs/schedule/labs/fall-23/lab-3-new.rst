@@ -3,7 +3,7 @@ Lab 3: Copy Cat (Dog...)
 
 *Goal: 1) Learn how to compute inverse kinematics 2) Use IK to create a mirroring setup.*
 
-.. figure:: ../_static/lab3.jpg
+.. figure:: ../../../_static/lab3.jpg
     :align: center
 
 Step 1. Code inverse kinematics
