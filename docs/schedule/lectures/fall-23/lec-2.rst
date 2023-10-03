@@ -1,12 +1,12 @@
 Actuators, PD Control
 ================================
 
-.. raw:: html
+.. _my-google-slides-link:
 
+Google Slides Presentation
+=========================
 
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://docs.google.com/presentation/d/1tB4blZmRQ5ooRHQdt5rduM-5r6Qb02_oMyi5ZX8CR5o/" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
+You can view the presentation on `Google Slides <https://docs.google.com/presentation/d/1tB4blZmRQ5ooRHQdt5rduM-5r6Qb02_oMyi5ZX8CR5o/edit#slide=id.g22c45b09435_0_1388`_.
 
 Lecture slides by Stuart Bowers
 
