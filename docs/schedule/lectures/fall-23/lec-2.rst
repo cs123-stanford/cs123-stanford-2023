@@ -6,7 +6,7 @@ Actuators, PD Control
 Google Slides Presentation
 =========================
 
-You can view the presentation on `Google Slides <https://docs.google.com/presentation/d/1tB4blZmRQ5ooRHQdt5rduM-5r6Qb02_oMyi5ZX8CR5o/edit#slide=id.g22c45b09435_0_1388`_.
+You can view the presentation on `Google Slides <https://docs.google.com/presentation/d/1tB4blZmRQ5ooRHQdt5rduM-5r6Qb02_oMyi5ZX8CR5o`_.
 
 Lecture slides by Stuart Bowers
 
