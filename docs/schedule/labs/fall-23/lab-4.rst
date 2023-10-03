@@ -26,7 +26,9 @@ Step 2. Configure IDs and Calibrate the Motor Conotrollers
    :width: 640
    :height: 480
 
-For each motor/motor controller pair:
+Assuming you constructed/calibrated two right legs and assigned them both IDs 1-3 in previous labs, complete the following for left legs.
+
+For each left motor/motor controller pair:
 
 
 1. Connect a motor to a motor controller, and the motor controller to the bottom PCB.
