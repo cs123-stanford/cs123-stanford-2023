@@ -61,6 +61,8 @@ Left knee motor: 6
     
     Motor ID diagram
 
+**DELIVERABLE: Calibrating before constructing the motors is essential. Take a video of all 12 motors flashing green correctly and submit with the lab report. **
+
 Step 3. Assemble the legs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 IMPORTANT: Calibrate your motors BEFORE attaching to legs. Please redo this step if legs were improperly constructed in Lab 2.
@@ -218,6 +220,8 @@ Step 13. Take your robot on a walk
     :align: center
     
     Startup position.
+
+**DELIVERABLE: Take a video of Pupper walking around! **
 
 
 
