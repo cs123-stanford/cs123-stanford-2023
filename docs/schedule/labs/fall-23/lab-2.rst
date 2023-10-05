@@ -117,9 +117,9 @@ Step 5. Run your code again on the new robot arm
 
 Step 6. Connect three more motors to use as control dials
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Connect three additional motors to the same CAN bus (ie same row of connectors).
+#. Connect three additional motors to the other CAN bus (ie different row of connectors).
 #. Calibrate and connect three additional motors to the Pupper PCB.
-#. Set their IDs to not overlap with your existing motors. We use 4, 5, and 6.
+#. Set their IDs to 1, 2, and 3. There should be no conflicts (ID conflicts beep and flash yellow) as they are attach to a different CAN bus.
 #. Set the target positions of the base motor, shoulder motor, and elbow motor to the angle readings of the first, second, and third new motors respectively. Use the ``front_state`` MotorState array for this. 
 
 [TODO: gif]
@@ -163,7 +163,7 @@ Step 10. Make the robot arms bidirectional!
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Program position control for the leader arm actuators (formerly control dial actuators)
 #. Set the position targets of the leader arm to the positions of the follower arm.
-#. Assuming the leader arm has controller IDs 1, 2 and 3, and the follower arm has controller IDs 4, 5 and 6, you can send current (ie torque) commands to the robot arms with the code 
+#. Send current (ie torque) commands to the robot arms with the code . Refer to the motor ID diagram to control the correct motors. They shold both be right legs.
 
 .. code-block:: c++
 
