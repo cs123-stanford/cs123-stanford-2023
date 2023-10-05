@@ -39,6 +39,7 @@ Step 1.5. Control the 3 motors together
 
 .. figure:: ../../../_static/arms.jpg
     :align: center
+*When testing your code throughout this lab, initialize your arms as is in the above picture. Keep in mind the reference to the PCB.*
 
 Step 2. Insert square nuts into plastic parts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
