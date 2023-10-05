@@ -37,7 +37,8 @@ Step 1.5. Control the 3 motors together
 
 #. Modify your PD control code from lab 1 to control all 3 motors (controlled independently). Modify only the ``back_state`` MotorState array here.
 
-[TODO: insert pic of compeleted setup]
+.. figure:: ../../../_static/arms.jpeg
+    :align: center
 
 Step 2. Insert square nuts into plastic parts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
