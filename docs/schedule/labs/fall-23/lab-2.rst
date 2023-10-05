@@ -189,9 +189,9 @@ Step 11. Prepare hardware
 
 Step 12. Implement and test a forward kinematics function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Determine if you have a right or left robot leg (there's a L or R on the lower link). 
 #. Update line 15 of *src/main.cpp* based on the what side leg you have.
 #. Complete the forward_kinematics function inside of src/kinematics.h using what you learned in lecture. You should return a BLA::Matrix<3> of the cartesian coordinates of the end-effector.
+#. IMPORTANT: Initialize the arm in an upright position, as shown in step 1.5. If it is initialized incorrectly, your forward kinematic solution will appear incorrect.
 #. Upload code.
 #. Press s to start. The starter code will first test your kinematics code and then run the main loop.
 
