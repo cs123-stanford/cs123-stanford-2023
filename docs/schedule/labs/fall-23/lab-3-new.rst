@@ -1,4 +1,4 @@
-Lab 3: Copy Cat (Dog...)
+Lab 3: The Creation of Pupper
 =======================================================
 
 *Goal: 1) Learn how to compute inverse kinematics 2) Use IK to create a mirroring setup.*
