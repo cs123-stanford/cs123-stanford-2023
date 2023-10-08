@@ -3,14 +3,33 @@ Lab 5: How to Train Your Dog
 
 *Goal: Use RL to control your Pupper.*
 
-Step 1.Stand High Policy
+Step 1. Set Up Virtual Machine
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Video of GCP Setup
+
+#. Log into GCP and find the gcp-robotics project
+#. Start your machine, and SSH into the instance
+#. Navigate to the directory "jvclark/rl/legged_gym". Here, you will be able to run the train.py script to train a policy, and play.py script to run the latest policy.
+
+Step 2. VS Code SSH Setup
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Video of VS Code Setup
+
+#. Install the VS Code SSH extension.
+#. Press Cmd + Shift + P. Then, configure SSH hosts. Fill out GCP host config as shown in the video.
+#. Press Cmd + Shift + P again. Then select "Connect to Host". Press Cmd + O and select the rl/legged_gym repository.
+#. You should now be able to edit your code in the legged_gym repo.
+
+Step 3. Stand High Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Reward is standing high. Provide code with standing at regular height, student need to modify it to make it stand higher.
 #. Deploy on real
 
 DELIVERABLE: Screen recording of stand up in simulation
 
-Step 2. Deploy Stand High Policy
+Step 4. Deploy Stand High Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
@@ -31,7 +50,7 @@ DELIVERABLE: Take video of stand-up
     
     Motor ID diagram
 
-Step 3. Walking Policy
+Step 5. Walking Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
@@ -40,7 +59,7 @@ Step 3. Walking Policy
 
 DELIVERABLE: What terms are included in your reward functions? What coefficeints did you use? How did you come up with these terms and what was their desired effect? Why might this policy perform poorly on the physical robot?
 
-Step 4. Domain Randomization
+Step 6. Domain Randomization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
@@ -59,7 +78,7 @@ DELIVERABLE: What other terms could you randomize?
     Startup position.
 
 
-Step 5. Speed test
+Step 7. Speed test (optional)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. Tune your reward function and domain randomization to improve Pupper's speed
