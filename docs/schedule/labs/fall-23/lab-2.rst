@@ -6,7 +6,7 @@ Lab 2: Bad Robot Surgeon
 Part One: Bad Robot Surgeon
 ___________________________
 
-*Goal: Build two robot arms that mirror each other's motion.*
+*Goal: Build a control arm and a surgery arm using Pupper's legs with haptic feedback.
 
 .. figure:: ../../../_static/teleop.jpeg
     :align: center
