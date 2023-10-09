@@ -35,16 +35,14 @@ DELIVERABLE: Screen recording of stand up in simulation
 
 Step 4. Deploy Stand High Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-Transfer policy from local machine to pupper
-#. The model is a .pt file under the log folder name (e.g., “model_700.pt”)
-#. ‘scp [model name] pi@raspberrypi.local:’ (note the colon at the end)
-
+Transfer policy from virtual machine to local machine
+#. Clone the puppersim repo onto your local machine using ``git clone https://github.com/jietan/puppersim.git``. This repository contains policy deployment code for transferring the policy trained in simulation to the phsyical hardware.
+#. Navigate inside the puppersim repo and run ``pip install -e .`` Don't forget the "." at the end.
+#. Move your file into the puppersim repo. From your local machine run ``scp -i /path/to/ssh/token  user@instance:~/path/to/model /path/to/puppersim`` to move the file to your puppersim directory.Ex.) ``scp -i /Users/jaden/Downloads/isaac-gym-jaden.pem ubuntu@ec2-13-57-117-122.us-west-1.compute.amazonaws.com:/home/ubuntu/rl/legged_gym/logs/Jun06-00-33-22_pupper_test1/model_700.pt ~/Downloads/puppersim``
 #. In local puppersim repo, change the policy called in isaac_gym_policy.py (located under the puppersim folder) to your policy name (your .pt file)
-#. Change pi address in deploy_to_robot.sh
-#. ./deploy_to_robot.sh python puppersim/puppersim/isaac_gym_policy.py --run_on_robot
-
+#. Turn on and calibrate Pupper. 
+#. Connect the Ethernet cable from your computer to Pupper
+#. run your policy on Pupper using ``./deploy_to_robot.sh python puppersim/puppersim/isaac_gym_policy.py --run_on_robot``. Make sure you are aware of the cables in advance and are prepared for Pupper to behave unexpectedly.
 
 DELIVERABLE: Video of stand-up in real
 
