@@ -97,17 +97,12 @@ DELIVERABLE: For 3 different terms that you randomized, what ranges or values di
 Step 7. Speed test (optional)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. Tune your reward function and domain randomization to improve Pupper's speed
+#. Tune your reward function and domain randomization to improve Pupper's speed. You can use any reward function defined in legged_robot.py, or add your own.
 #. Fastest Puppers will get extra credit!
 
 DELIVERABLE: Test your policy during office hours
 
 Resources
 -----------
-
-Wiring diagram
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. figure:: ../_static/wiring-diagram.png
-    :align: center
-    
-    Wiring diagram.
+`Legged Gym Paper <https://arxiv.org/pdf/2109.11978.pdf>`_
+`Learning Quadrupedal Locomotion Over Challenging Terrain <https://arxiv.org/abs/2010.11251>`_
