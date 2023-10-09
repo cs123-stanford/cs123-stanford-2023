@@ -105,7 +105,7 @@ The robot arm we're making is actually one of Pupper's right legs so you'll see 
 Step 5. Run your code again on the new robot arm
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. Note that the "zero" position of these motors is whatever position it was at when the Teensy and motor were first both powered on.
+#. Note that the "zero" position of these motors is whatever position it was at when the Teensy and motor were first both powered on. When running your code, always make sure to initialize in the vertical position with the correct reference to the PCB as in the above image.
 #. Upload and run your code for controlling the 3 motors simultaneously.
 
 .. raw:: html
@@ -122,7 +122,7 @@ Step 6. Connect three more motors to use as control dials
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Connect three additional motors to the other CAN bus (ie different row of connectors).
 #. Calibrate and connect three additional motors to the Pupper PCB.
-#. Set their IDs to 1, 2, and 3. There should be no conflicts (ID conflicts beep and flash yellow) as they are attach to a different CAN bus.
+#. Set their IDs to 1, 2, and 3. There should be no conflicts (ID conflicts beep and flash yellow) as they are attach to a different CAN bus. If you do have an ID conflict, you must remove the CAN connector (smaller white) from the PCB, and then reset the motor IDs. 
 #. Set the target positions of the base motor, shoulder motor, and elbow motor to the angle readings of the first, second, and third new motors respectively. Use the ``front_state`` MotorState array for this. 
 
 [TODO: gif]
@@ -173,8 +173,6 @@ Step 10. Make the robot arms bidirectional!
     bus_front.CommandTorques(front_state[0].cmd, front_state[1].cmd, front_state[2].cmd, 0 , C610Subbus::kIDZeroToThree);
 
 **DELIVERABLE: Submit a video like the leader/follower video where you move both arms manually, first moving the front, and then the back, to show bidirectionality**
-
-4. Congrats. Play with your robot! Make modifications!
 
 [TODO: gif]
 
