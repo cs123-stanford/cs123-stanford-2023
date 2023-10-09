@@ -200,7 +200,7 @@ Here is some syntax for BLA Matricies in C++
 .. code-block:: c++
 
     BLA::Matrix<4, 1> matrix = {0, 1, 0, 0};
-    BLA::Matrix<4, 4> mat = {1, 0, 0, ,
+    BLA::Matrix<4, 4> mat = {1, 0, 0, 0,
                           0, 1, 0, 0,
                           0, 0, 1, 0,
                           0, 0, 0, 1};
