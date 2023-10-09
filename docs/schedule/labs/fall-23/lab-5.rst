@@ -71,18 +71,16 @@ Run
 ``python legged_gym/scripts/train.py --task=pupper_flat --num_envs=2000 --max_iterations=1500 --run_name='running_test' --headless`` 
 to train your policy. Check policy around every 250 iterations to analyze if you have chosen the correct coefficients.
 
+Experiment with different reward coefficents until you are happy with the walking gait.
+
 DELIVERABLE: What terms are included in your reward functions? What coefficeints did you use? How did you come up with these terms and what was their desired effect? Why might this policy perform poorly on the physical robot?
 
 Step 6. Domain Randomization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Edit the ``domain_rand`` ranges in ``pupper_config.py`` 
 
-#. Student need to implement domain randomization
-#. Deploy on real, works
-
-
-
-DELIVERABLE: What other terms could you randomize?
+DELIVERABLE: For 3 different terms that you randomized, what ranges or values did you select, and how did you choose them?
 
 
 
