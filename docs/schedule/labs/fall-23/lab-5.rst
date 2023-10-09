@@ -21,8 +21,14 @@ Step 2. VS Code SSH Setup
 Video of VS Code Setup
 
 #. Install the VS Code SSH extension.
-#. Press Cmd + Shift + P. Then, configure SSH hosts. Fill out GCP host config as shown in the video.
-#. Press Cmd + Shift + P again. Then select "Connect to Host". Press Cmd + O and select the rl/legged_gym repository.
+#. Press Cmd + Shift + P. Select "Connect to host". then "Configure SSH Hosts...". Open the ".../.ssh/config" file. Fill out GCP host config as shown in the image.
+
+.. figure:: ../../../_static/gcp_setup.jpg
+    :align: center
+
+    Setup SSH access
+
+#. Press Cmd + Shift + P again. Then select "Connect to Host". Press Cmd + O to open the rl/legged_gym repository.
 #. You should now be able to edit your code in the legged_gym repo.
 
 Step 3. Stand High Policy
