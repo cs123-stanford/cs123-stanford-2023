@@ -6,7 +6,10 @@ Lab 5: How to Train Your Dog
 Step 1. Set Up Virtual Machine
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Video of GCP Setup
+.. figure:: ../../../_static/gcp_setup.jpg
+    :align: center
+
+    Access your group's GCP instance
 
 #. Log into GCP and find the gcp-robotics project
 #. Start your machine, and SSH into the instance
