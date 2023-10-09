@@ -32,9 +32,10 @@ Step 0. Clone the starter code
 Step 1. Connect 2 more motors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. Connect power and encoder cables from motors to controllers.
-#. Connect power and CAN cables from controllers to Pupper PCB. Make sure the CAN cables go into the same row (row near the Teensy).
+#. Take off the plastic wrap on the motors. Connect power and encoder cables from motors to controllers.
+#. Connect power (yellow cables) from the motor controllers to the Pupper PCB.
 #. Set the new motor controllers to have different IDs. Use 1, 2, and 3. **Important:** *To set a motor controller to a certain ID, click (short press) press to put the motor controller into id-setting mode, then click N more times in quick succession, where N is the desired ID. Eg, for a desired ID of 3, press 3 more times after the first click. Unplug the CAN (small) cables from the PCB while setting ID's to make it easier, otherwise they may conflict while you are changing them*
+#. Plug in the CAN Connectors (smaller, white) to the PCB corresponding to the correct bus. 
 
 Step 1.5. Control the 3 motors together
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
