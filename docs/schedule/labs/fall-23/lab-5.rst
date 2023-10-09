@@ -73,7 +73,7 @@ to train your policy. Check policy around every 250 iterations to analyze if you
 
 Experiment with different reward coefficents until you are happy with the walking gait.
 
-Deploy the r
+Deploy policy on Pupper, as in step 4. Be careful as the robot may behave erratically.
 
 DELIVERABLE: What terms are included in your reward functions? What coefficeints did you use? How did you come up with these terms and what was their desired effect? Why might this policy perform poorly on the physical robot?
 
