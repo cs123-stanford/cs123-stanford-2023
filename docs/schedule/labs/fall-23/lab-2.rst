@@ -207,7 +207,7 @@ Step 12. View cartesian coordinates of end effector
 #. Uncomment code block labelled "PART TWO: Forward Kinematics". This block will call the forward kinematics function you just implemented for you, and print out the cartesian coordinates in the Serial Monitor.
 #. Check to see that your forward kinematics function is working correctly according to the right hand rule.
 
-Step 14. Make a safety box
+Step 13. Make a safety box
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Decide which arm you plan to use for the control arm, and which arm you use for the surgery arm (either the bus_back or bus_front arm). 
 #. Pick a "safety" box -- a virtual box in cartesian coordinates that the robot can operate safely in (i.e. not touching an organ in the body). For example, -0.1<x<0.1 and -.1<y>0.1 and 0<z<-0.2.
@@ -215,7 +215,7 @@ Step 14. Make a safety box
 
 **DELIVERABLE: Submit a video of you moving the robot arm outside of the safety bounds, and the serial monitor output printing an outside bounds message**
 
-Step 15. Do the `safety dance <https://www.youtube.com/watch?v=nM4okRvCg2g&ab_channel=MenWithoutHatsVEVO>`_
+Step 14. Do the `safety dance <https://www.youtube.com/watch?v=nM4okRvCg2g&ab_channel=MenWithoutHatsVEVO>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Make a function to vibrate the motors of the control arm (high frequency, low amplitude alternating torque command) using the bus.CommandTorques() function. 
 #. A safe range for the amplitude is around 800 - 3000mA. Any lower is barely perceptible.
