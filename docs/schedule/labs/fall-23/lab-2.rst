@@ -196,15 +196,15 @@ Step 11. Implement and test a forward kinematics function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Complete the forward_kinematics function inside of src/kinematics.h using what you learned in lecture. You should return a BLA::Matrix<3> of the cartesian coordinates of the end-effector.
 
-Here is some syntax for BLA Matricies in C++
+Here is some syntax for initializing BLA Matricies in C++
 
 .. code-block:: c++
 
-    BLA::Matrix<4, 1> matrix = {0, 1, 0, 0};
+    BLA::Matrix<4, 1> matrix = {0, 1, 0, 0}; # Example e_2 column vector
     BLA::Matrix<4, 4> mat = {1, 0, 0, 0,
                           0, 1, 0, 0,
                           0, 0, 1, 0,
-                          0, 0, 0, 1};
+                          0, 0, 0, 1}; # example dim=4 identity matrix
 
 #. IMPORTANT: Initialize the arm in an upright position, as shown in step 1.5. If it is initialized incorrectly, your forward kinematic solution will appear incorrect.
 #. Upload code.
