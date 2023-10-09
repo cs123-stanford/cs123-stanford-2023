@@ -1,6 +1,8 @@
 Lab 2: Bad Robot Surgeon
 ================================
 
+`Lab 2 Document: <https://docs.google.com/document/d/1mb8gAqws2CNTXpFKZXI0iVApD7mzUVjW-WSP1v8IuJY/edit>`_
+
 Part One: Bad Robot Surgeon
 ___________________________
 
@@ -188,35 +190,37 @@ Inspiration: Robot Surgery
 
 #. For this lab, we are going to be building a bad robot surgeon using some of Pupper's legs. Much like the Da Vinci surgical robot, we are going to control one of Pupper's arms as the controller joystick, and the other arm will copy the first arm's movement. When the surgery arm is touching something that it should not, we will use haptic feedback on the control arm to tell the user that something is wrong. We will use forward kinematics to do this!
 
-Step 12. Implement and test a forward kinematics function
+Step 11. Implement and test a forward kinematics function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Update line 15 of *src/main.cpp* based on the what side leg you have.
 #. Complete the forward_kinematics function inside of src/kinematics.h using what you learned in lecture. You should return a BLA::Matrix<3> of the cartesian coordinates of the end-effector.
 #. IMPORTANT: Initialize the arm in an upright position, as shown in step 1.5. If it is initialized incorrectly, your forward kinematic solution will appear incorrect.
 #. Upload code.
-#. Press s to start. The starter code will first test your kinematics code and then run the main loop.
-
-Step 13. View cartesian coordinates of end effector
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Start the robot from the zero position. See picture below
-#. Print out the cartesian coordinates of the end effector using your forward kinematics function
+#. Press s to start. The starter code will first test your kinematics code and then run the main loop. If you are failing asserts, check to see which assert you are failing. These tests are detailed in the src/test_kinematics.h file. 
 
 .. figure:: ../../../_static/vertical-config.png
     :align: center
     
-    A left robot arm in the starting position for lab 2 and its coordinate system.
+    A robot arm in the starting position for lab 2 and its coordinate system. Remind yourself of the coordinate system at each step, and keep in mind the references that each motor has to each other motor. 
+
+**DELIVERABLE: Answer in your lab document. Did you forward kinematics code pass the asserts the first try? What changes did you make to pass the asserts? What debugging techniques did you use?**
+
+Step 12. View cartesian coordinates of end effector
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#. Uncomment code block labelled "PART TWO: Forward Kinematics". This block will call the forward kinematics function you just implemented for you, and print out the cartesian coordinates in the Serial Monitor.
+#. Check to see that your forward kinematics function is working correctly according to the right hand rule.
 
 Step 14. Make a safety box
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Pick a "safety" box -- a virtual box in cartesian coordinates that the robot can operate safely in. For example, -0.1<x<0.1 and -.1<y>0.1 and 0<z<-0.2.
-#. Print a warning whenever the robot leaves the safety box.
+#. Decide which arm you plan to use for the control arm, and which arm you use for the surgery arm (either the bus_back or bus_front arm). 
+#. Pick a "safety" box -- a virtual box in cartesian coordinates that the robot can operate safely in (i.e. not touching an organ in the body). For example, -0.1<x<0.1 and -.1<y>0.1 and 0<z<-0.2.
+#. Print a warning whenever the robot leaves the safety box. 
 
 **DELIVERABLE: Submit a video of you moving the robot arm outside of the safety bounds, and the serial monitor output printing an outside bounds message**
 
 Step 15. Do the `safety dance <https://www.youtube.com/watch?v=nM4okRvCg2g&ab_channel=MenWithoutHatsVEVO>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Make a function to vibrate the motors (high frequency, low amplitude alternating torque command) 
-#. If you program an alternating torque, a safe range for the amplitude is around 800 - 3000mA. Any lower is barely perceptible.
-#. Run the function whenever the robot end effector leaves the safety box. A suggested implementation is to alternate the torque current command on each control loop iteration. 
+#. Make a function to vibrate the motors of the control arm (high frequency, low amplitude alternating torque command) using the bus.CommandTorques() function. 
+#. A safe range for the amplitude is around 800 - 3000mA. Any lower is barely perceptible.
+#. Run the function whenever the surgery arm end effector leaves the safety box. A suggested implementation is to alternate the torque current command on each control loop iteration using the bus.CommandTorques() function. This alternating torque will serve as the haptic feedback for when the user moves the control arm outside safe bounds.
 
 **DELIVERABLE: Submit a video of you moving the robot arm outside of the safety bounds, and the arm's haptic feedback response. Report what amplitude you chose for the haptic feedback. **
