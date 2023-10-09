@@ -221,4 +221,4 @@ Step 14. Do the `safety dance <https://www.youtube.com/watch?v=nM4okRvCg2g&ab_ch
 #. A safe range for the amplitude is around 800 - 3000mA. Any lower is barely perceptible.
 #. Run the function whenever the surgery arm end effector leaves the safety box. A suggested implementation is to alternate the torque current command on each control loop iteration using the bus.CommandTorques() function. This alternating torque will serve as the haptic feedback for when the user moves the control arm outside safe bounds.
 
-**DELIVERABLE: Submit a video of you moving the robot arm outside of the safety bounds, and the arm's haptic feedback response. Report what amplitude you chose for the haptic feedback. **
+**DELIVERABLE: Submit a video of you moving the robot arm outside of the safety bounds, and the arm's haptic feedback response. Report what amplitude you chose for the haptic feedback.**
