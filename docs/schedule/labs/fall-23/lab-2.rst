@@ -39,7 +39,7 @@ Step 1. Connect 2 more motors
 Step 1.5. Control the 3 motors together
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. Update your PD control code with you lab 1 gains to control all 3 motors (controlled independently). Modify only the ``back_state`` MotorState array here.
+#. Update your PD control code with you lab 1 gains to control all 3 motors (controlled independently). Modify only the ``back_state`` MotorState array here to update the MotorState array for all 3 motors.
 
 .. figure:: ../../../_static/arms.jpg
     :align: center
