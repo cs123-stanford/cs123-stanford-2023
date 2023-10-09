@@ -140,8 +140,7 @@ Make sure that both arms are right-hand-sided (3d printed parts are marked with 
 
 Step 8. Assemble the three new motors into a robot arm
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-We're now making one of Pupper's left-side legs to use as the second robot arm.
+We are now assembling another one of Pupper's legs to use as a second arm!
 
 .. raw:: html
 
@@ -180,13 +179,14 @@ Step 10. Make the robot arms bidirectional!
 Part Two: Forward Kinematics
 __________________________________
 
-Step 11. Prepare hardware
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. For this part of the lab, you only need to use one arm. The other arm will come in handy for the full Pupper build. 
-#. Set the controller for the base actuactor of the robot arm to 1 (1 blink). 
-#. Set the controller for the shoulder actuactor of the robot arm to 2 (2 blinks). 
-#. Set the controller for the elbow actuactor of the robot arm to 3 (3 blinks).
-#. Make sure all the motor controllers are plugged into the CAN 2 bus (the set of connectors near the Teensy).
+Inspiration: Robot Surgery
+
+.. figure:: ../../../_static/da-vinci-robot.png
+    :align: center
+    
+    Da Vinci robot built by Intuitive Surgical. A trained doctor manipulates the arms of the Da Vinci robot for a minimally invasive surgery.
+
+#. For this lab, we are going to be building a bad robot surgeon using some of Pupper's legs. Much like the Da Vinci surgical robot, we are going to control one of Pupper's arms as the controller joystick, and the other arm will copy the first arm's movement. When the surgery arm is touching something that it should not, we will use haptic feedback on the control arm to tell the user that something is wrong. We will use forward kinematics to do this!
 
 Step 12. Implement and test a forward kinematics function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
