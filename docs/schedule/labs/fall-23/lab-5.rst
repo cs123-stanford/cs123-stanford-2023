@@ -40,6 +40,7 @@ DELIVERABLE: Screen recording of stand up in simulation
 Step 4. Deploy Stand High Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Transfer policy from virtual machine to local machine
+
 #. Clone the puppersim repo onto your local machine using ``git clone https://github.com/jietan/puppersim.git``. This repository contains policy deployment code for transferring the policy trained in simulation to the phsyical hardware.
 #. Navigate inside the puppersim repo and run ``pip install -e .`` Don't forget the "." at the end.
 #. Move your file into the puppersim repo. From your local machine run ``scp -i /path/to/ssh/token  user@instance:~/path/to/model /path/to/puppersim`` to move the file to your puppersim directory.Ex.) ``scp -i /Users/jaden/Downloads/isaac-gym-jaden.pem ubuntu@ec2-13-57-117-122.us-west-1.compute.amazonaws.com:/home/ubuntu/rl/legged_gym/logs/Jun06-00-33-22_pupper_test1/model_700.pt ~/Downloads/puppersim``
