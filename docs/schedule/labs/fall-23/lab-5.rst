@@ -82,7 +82,7 @@ DELIVERABLE: How did the performance in simulation compare to the performance on
 Step 6. Domain Randomization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Edit the ``domain_rand`` ranges in ``pupper_config.py`` 
+Edit the ``domain_rand`` ranges in ``pupper_config.py``. Experiment with different ranges until Pupper has similar performance in the real world, to in simulation.
 
 DELIVERABLE: For 3 different terms that you randomized, what ranges or values did you select, and how did you choose them?
 
