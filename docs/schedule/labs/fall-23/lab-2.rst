@@ -100,6 +100,7 @@ The robot arm we're making is actually one of Pupper's right legs so you'll see 
 **Assembly Pro Tips**
 
 #. Use the tip of the hex driver to align the shoulder bolt with the square nut. This will make assembly much easier.
+#. Make sure the wires on your motor are pointing the same direction as the arrow inside your joints.
 #. Use force when inserting the shoulder bolts. Sometimes it is hard to get them through the hole in the motor shaft even if perfectly aligned.
 #. Tighten the shoulder bolts as tight as possible without stripping. It is vital for the future stability of your Pupper!
 
