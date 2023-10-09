@@ -29,6 +29,8 @@ Edit the base height reward function so that Puppper stands up.
 
 Write the  ``_reward_base_height`` function in ``pupper.py`` file so that pupper stands
 
+Run ``_reward_base_height`` to train your policy. Run for around 250 iterations and check the results.
+
 Hint: Make sure that the reward is positive. The code clips rewards at 0. To do so, you can subtract a base height penalty (based on the current state of Pupper relative to the target state) from a constant.
 
 DELIVERABLE: Screen recording of stand up in simulation
@@ -56,9 +58,11 @@ DELIVERABLE: Video of stand-up in real
 Step 5. Walking Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Write the  ``_reward_forward_velocity`` functions in ``pupper.py`` so that Pupper receives a positive reward for higher velocities. Make sure to set the max reward returned at ``self.forward_velocity_clip``.
 
-#. We provide basic interface (how to read robot velocity, how to obtain target velocity) and student need to write a new reward function
-#. deploy in sim
+Write the ``_reward_torques`` function in ``pupper.py`` so that Puppers penalize
+
+Edit the ``forward_velocity`` and ``torques`` scales in ``pupper_config.py``
 
 DELIVERABLE: What terms are included in your reward functions? What coefficeints did you use? How did you come up with these terms and what was their desired effect? Why might this policy perform poorly on the physical robot?
 
