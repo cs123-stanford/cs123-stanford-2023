@@ -1,7 +1,7 @@
 Lab 2: Bad Robot Surgeon
 ================================
 
-`Lab 2 Document: <https://docs.google.com/document/d/1mb8gAqws2CNTXpFKZXI0iVApD7mzUVjW-WSP1v8IuJY/edit>`_
+`Lab 2 Document <https://docs.google.com/document/d/1mb8gAqws2CNTXpFKZXI0iVApD7mzUVjW-WSP1v8IuJY/edit>`_
 
 Part One: Bad Robot Surgeon
 ___________________________
