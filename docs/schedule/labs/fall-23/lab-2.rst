@@ -201,7 +201,7 @@ Step 13. View cartesian coordinates of end effector
 #. Start the robot from the zero position. See picture below
 #. Print out the cartesian coordinates of the end effector using your forward kinematics function
 
-.. figure:: ../../../_static/horizontal-config.png
+.. figure:: ../../../_static/vertical-config.png
     :align: center
     
     A left robot arm in the starting position for lab 2 and its coordinate system.
@@ -220,40 +220,3 @@ Step 15. Do the `safety dance <https://www.youtube.com/watch?v=nM4okRvCg2g&ab_ch
 #. Run the function whenever the robot end effector leaves the safety box. A suggested implementation is to alternate the torque current command on each control loop iteration. 
 
 **DELIVERABLE: Submit a video of you moving the robot arm outside of the safety bounds, and the arm's haptic feedback response. Report what amplitude you chose for the haptic feedback. **
-
-[gif of completed project]
-
-References for Derivation of FK
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Mini-lecture - Forward Kinematics
-------------------------------------
-
-.. raw:: html
-
-    <iframe src="https://stanford195.autodesk360.com/shares/public/SH35dfcQT936092f0e43e4b3d19bbaacc90a?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
-    
-
-*3D illustration of motor angles, directions of positive rotation, and relevant geometry.*
-
-.. figure:: ../../../_static/kinematics/kinematics.002.png
-    :align: center
-    
-    Problem statement.
-
-
-.. figure:: ../../../_static/kinematics/kinematics.003.png
-    :align: center
-    
-    Coordinate frame, link lengths, and leg origin illustration.
-
-
-.. figure:: ../../../_static/kinematics/kinematics.004.png
-    :align: center
-    
-    Derivation of x coordinate of foot and L.
-
-
-.. figure:: ../../../_static/kinematics/kinematics.005.png
-    :align: center
-    
-    Derivation of y and z coordinate of foot.
