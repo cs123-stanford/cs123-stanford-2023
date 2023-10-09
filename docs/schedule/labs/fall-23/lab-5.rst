@@ -95,14 +95,6 @@ Edit the ``domain_rand`` ranges in ``pupper_config.py``. Experiment with differe
 
 DELIVERABLE: For 3 different terms that you randomized, what ranges or values did you select, and how did you choose them?
 
-
-
-.. figure:: ../_static/djipupper_photos/startup-position.png
-    :align: center
-    
-    Startup position.
-
-
 Step 7. Speed test (optional)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
