@@ -2,7 +2,7 @@ Forward Kinematics
 =======================================================
 
 **Lecture Slides:**
-`Forward Kinematics by Jie Tan <https://docs.google.com/presentation/d/1gsg9IUs2bAo_S2BXnDGDoTpzLmzE7ppX6uimRoEmzo8/edit#slide=id.p1>`_
+`Forward Kinematics by Jie Tan <https://drive.google.com/file/d/1Qutk0KPtqABuqEUxA5kuex0VuoKGaOQB/view?usp=sharing>`_
 
 
 **Lab:** 
