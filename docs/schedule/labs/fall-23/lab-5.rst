@@ -27,8 +27,9 @@ Step 3. Stand High Policy
 
 Edit the base height reward function so that Puppper stands up.
 
-#. Edit the  ''_reward_base_height'' ``cd lab_1_hello_pd``
-#. Deploy on real
+Write the  ``_reward_base_height`` function in ``pupper.py`` file so that pupper stands
+
+Hint: Make sure that the reward is positive. The code clips rewards at 0. To do so, you can subtract a base height penalty (based on the current state of Pupper relative to the target state) from a constant.
 
 DELIVERABLE: Screen recording of stand up in simulation
 
