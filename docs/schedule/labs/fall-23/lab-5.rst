@@ -24,7 +24,10 @@ Video of VS Code Setup
 
 Step 3. Stand High Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Reward is standing high. Provide code with standing at regular height, student need to modify it to make it stand higher.
+
+Edit the base height reward function so that Puppper stands up.
+
+#. Edit the  ''_reward_base_height'' ``cd lab_1_hello_pd``
 #. Deploy on real
 
 DELIVERABLE: Screen recording of stand up in simulation
@@ -42,13 +45,14 @@ Transfer policy from local machine to pupper
 #. ./deploy_to_robot.sh python puppersim/puppersim/isaac_gym_policy.py --run_on_robot
 
 
-DELIVERABLE: Take video of stand-up
+DELIVERABLE: Video of stand-up in real
+
+DELIVERABLE: Video of stand-up in real
 
 
 .. figure:: ../_static/motor_ids.png
     :align: center
     
-    Motor ID diagram
 
 Step 5. Walking Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
