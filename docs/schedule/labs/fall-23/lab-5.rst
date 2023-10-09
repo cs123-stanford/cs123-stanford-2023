@@ -31,7 +31,7 @@ Write the  ``_reward_base_height`` function in ``pupper.py`` file so that pupper
 
 Run 
 ``python legged_gym/scripts/train.py --task=pupper_stand --num_envs=2000 --max_iterations=500 --run_name='standup_test' --headless`` 
-to train your policy. Run for around 250 iterations and check the results.
+to train your policy. Check the policy at 250 iterations.
 
 Hint: Make sure that the reward is positive. The code clips rewards at 0. To do so, you can subtract a base height penalty (based on the current state of Pupper relative to the target state) from a constant.
 
@@ -68,7 +68,7 @@ Edit the ``forward_velocity`` and ``torques`` scales in ``pupper_config.py``
 
 Run 
 ``python legged_gym/scripts/train.py --task=pupper_flat --num_envs=2000 --max_iterations=1500 --run_name='running_test' --headless`` 
-to train your policy. Run for around 250 iterations and check the results.
+to train your policy. Check policy around every 250 iterations to analyze if you have chosen the correct coefficients.
 
 DELIVERABLE: What terms are included in your reward functions? What coefficeints did you use? How did you come up with these terms and what was their desired effect? Why might this policy perform poorly on the physical robot?
 
