@@ -105,4 +105,5 @@ DELIVERABLE: Test your policy during office hours
 Resources
 -----------
 `Legged Gym Paper <https://arxiv.org/pdf/2109.11978.pdf>`_
+
 `Learning Quadrupedal Locomotion Over Challenging Terrain <https://arxiv.org/abs/2010.11251>`_
