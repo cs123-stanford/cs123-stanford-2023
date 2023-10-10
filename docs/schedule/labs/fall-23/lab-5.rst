@@ -60,12 +60,6 @@ Transfer policy from virtual machine to local machine
 #. run your policy on Pupper using ``./deploy_to_robot.sh python puppersim/puppersim/isaac_gym_policy.py --run_on_robot``. Make sure you are aware of the cables in advance and are prepared for Pupper to behave unexpectedly.
 
 DELIVERABLE: Video of stand-up in real
-
-DELIVERABLE: Video of stand-up in real
-
-
-.. figure:: ../_static/motor_ids.png
-    :align: center
     
 
 Step 5. Walking Policy
