@@ -20,6 +20,7 @@ Step 2. VS Code SSH Setup
 
 Video of VS Code Setup
 
+#. Setup SSH key using `instructions <https://cloud.google.com/compute/docs/connect/create-ssh-keys>`_ 
 #. Install the VS Code SSH extension.
 #. Press Cmd + Shift + P. Select "Connect to host". then "Configure SSH Hosts...". Open the ".../.ssh/config" file. Fill out GCP host config as shown in the image.
 
