@@ -16,18 +16,18 @@ Step 1. Code inverse kinematics
 
 Step 2. Test the consistency between forward kinematics and inverse kinematics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Implement ``test_ik`` in ``test_inv_kinematics.h``
-#. Write a test by taking some reachable (x,y,z) point in space (think hard about what's reachable!), using your IK function to get the corresponding joint angles, then passing them to your FK function to retrieve the original (x,yz). These should match as long as the original point was reachable. 
+#. Look at the tests written for you in ``test_ik`` within ``test_inv_kinematics.h``
+#. The test works by taking some reachable (x,y,z) point in space, and calling your IK function to get the corresponding joint angles, then passing them to your FK function to retrieve the original (x,yz).
 #. Make sure the test passes before moving on
 
-**Deliverable: What test point did you use? Write about why we are doing an FK -> IK consistency test rather than an IK -> FK test (2-3 sentences). Hint: Think about the robot leg configuration(s)**
+**Deliverable: Write about why we are doing an FK -> IK consistency test rather than an IK -> FK test (2-3 sentences). Hint: Think about the robot leg configuration(s)**
+**Deliverable: Why is it important that the point we are testing is reachable?
 
 .. The reason we're doing this IK -> FK consistency test and not a FK -> IK consistency test is that for any reachable point in space, the robot can flip its "elbow" joint up or down to get to that point in space, resulting in different joint angles.
 
 Step 4. Almost there!
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Implement ``loop`` in ``main.cpp``
-#. Make sure that your test passes first
 #. Calculate the cartesian end-effector position of the leg on bus2
 #. Calculate the inverse kinematics of the leg on bus1 with the end effector position from the previous step
 #. Calculate ``actuator_commands1`` using ``vectorized_pd`` to command the leg on bus1 given Kp and Kd gains provided
@@ -51,15 +51,3 @@ Step 5. Put it together! Make your two robot arms match each other's end-effecto
 **Deliverable: Send a video of the arms roughly matching each other when you move them**
 Notes:
 * The code is set up to control both arms, but currently we are commanding the second robot arm's actuators to stay at zero.
-
-(Old) IK Lecture
-------------
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/FvQ6NbqDR1U" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    </div>
-
-|
-
