@@ -39,7 +39,7 @@ Clone the starter code using ``git clone https://github.com/cs123-stanford/legge
 
 Enter the directory you just installed and run ``pip install -e .``
 
-Edit the base height reward function so that Puppper stands up.
+Edit the base height reward function so that Puppper stands up. Access the height of the robot relative to the ground using ``self.root_states[:, 2].unsqueeze(1) - self.measured_heights``. Teh desired base height is defined in ``self.cfg.rewards.base_height_target``.
 
 Write the  ``_reward_base_height`` function in ``pupper.py`` file so that pupper stands
 
@@ -70,6 +70,12 @@ Step 5. Walking Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Write the  ``_reward_forward_velocity`` functions in ``pupper.py`` so that Pupper receives a positive reward for higher velocities. Make sure to set the max reward returned at ``self.forward_velocity_clip``.
+
+#. Calculate the current forward distance from origin using ``self.root_states[:, 0] - self.env_origins[:, 0] -self.base_init_state[0]``.
+#. Calculate speed using ``self.last_forward_distances`` and time since last step ``self.dt``
+#. Clip the speed using ``self.forward_velocity_clip``.
+#. Update ``self.last_forward_distances``
+#. Return the reward
 
 Write the ``_reward_torques`` function in ``pupper.py`` so that Puppers penalize
 
