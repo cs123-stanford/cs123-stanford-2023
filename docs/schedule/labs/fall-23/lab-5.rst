@@ -35,6 +35,10 @@ Video of VS Code Setup
 Step 3. Stand High Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Clone the starter code using ``git clone https://github.com/cs123-stanford/leggedgym.git``
+
+Enter the directory you just installed and run ``pip install -e .``
+
 Edit the base height reward function so that Puppper stands up.
 
 Write the  ``_reward_base_height`` function in ``pupper.py`` file so that pupper stands
