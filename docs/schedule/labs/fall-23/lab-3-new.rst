@@ -1,7 +1,9 @@
 Lab 3: Romeo and Juliet
 =======================================================
 
-*Goal: 1) Learn how to compute inverse kinematics 2) Use IK to create a mirroring setup.*
+**Goals:**
+        1. Learn how to compute inverse kinematics 
+        2. Use FK+IK to create a mirroring setup
 
 .. figure:: ../../../_static/lab3.jpg
     :align: center
@@ -9,6 +11,7 @@ Lab 3: Romeo and Juliet
 
 Step 1. Code inverse kinematics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#. Download starter code from here: https://github.com/cs123-stanford/lab_3_romeo_and_juliet.git  
 #. Implement ``distance`` in ``kinematics.h`` as the squared-norm of the error between the position returned by ``FK(guess)`` and ``target_location``. 
 #. Implement ``calculate_distance_gradient`` in ``kinematics.h``
 #. Implement ``inverse_kinematics`` in ``kinematics.h``
