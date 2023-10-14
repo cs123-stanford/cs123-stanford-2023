@@ -12,8 +12,9 @@ Step 1. Set Up Virtual Machine
     Access your group's GCP instance
 
 #. Log into GCP and find the gcp-robotics project
-#. Start your machine, and SSH into the instance
+#. Start your machine, and SSH into the instance (using the 'ssh' button on the webpage shown in the image above)
 #. Navigate to the directory "jvclark/rl/legged_gym". Here, you will be able to run the train.py script to train a policy, and play.py script to run the latest policy.
+#. Also, make a note of the username shown in the ssh window (it should look something like USERNAME@instance). This will be used in generating SSH key in the steps below.
 
 Step 2. VS Code SSH Setup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -21,7 +22,7 @@ Step 2. VS Code SSH Setup
 Video of VS Code Setup
 
 #. Setup SSH key using `instructions <https://cloud.google.com/compute/docs/connect/create-ssh-keys>`_ 
-#. Install the VS Code SSH extension.
+#. Install the VS Code 'Remote - SSH' extension.
 #. Press Cmd + Shift + P. Select "Connect to host". then "Configure SSH Hosts...". Open the ".../.ssh/config" file. Fill out GCP host config as shown in the image.
 
 .. figure:: ../../../_static/ssh_setup.jpg
@@ -35,9 +36,13 @@ Video of VS Code Setup
 Step 3. Stand High Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+In the SSH window from Step 1.
+
 Clone the starter code using ``git clone https://github.com/cs123-stanford/leggedgym.git``
 
 Enter the directory you just installed and run ``pip install -e .``
+
+TODO: describe how to find the code in vs code
 
 Edit the base height reward function so that Puppper stands up. Access the height of the robot relative to the ground using ``self.root_states[:, 2].unsqueeze(1) - self.measured_heights``. Teh desired base height is defined in ``self.cfg.rewards.base_height_target``.
 
