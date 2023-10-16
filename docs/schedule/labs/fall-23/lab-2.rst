@@ -225,7 +225,7 @@ Step 12. View cartesian coordinates of end effector
 Step 13. Make a safety box
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Decide which arm you plan to use for the control arm, and which arm you use for the surgery arm (either the bus_back or bus_front arm). 
-#. Pick a "safety" box -- a virtual box in cartesian coordinates that the robot can operate safely in (i.e. not touching an organ in the body). For example, -0.1<x<0.1 and -.1<y>0.1 and 0<z<-0.2.
+#. Pick a "safety" box -- a virtual box in cartesian coordinates that the robot can operate safely in (i.e. not touching an organ in the body). For example, -0.1<x<0.1 and -.1<y<0.1 and 0<z<0.2.
 #. Print a warning whenever the robot leaves the safety box. 
 
 **DELIVERABLE: Submit a video of you moving the robot arm outside of the safety bounds, and the serial monitor output printing an outside bounds message**
