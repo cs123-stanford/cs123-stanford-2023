@@ -38,11 +38,9 @@ Step 3. Stand High Policy
 
 In the SSH window from Step 1.
 
-Clone the starter code using ``git clone https://github.com/cs123-stanford/leggedgym.git``
+Access the starter code using ``cd rl/legged_gym``
 
-Enter the directory you just installed and run ``pip install -e .``
-
-TODO: describe how to find the code in vs code
+Switch to the correct branch using ``git checkout class``
 
 Edit the base height reward function so that Puppper stands up. Access the height of the robot relative to the ground using ``self.root_states[:, 2].unsqueeze(1) - self.measured_heights``. Teh desired base height is defined in ``self.cfg.rewards.base_height_target``.
 
