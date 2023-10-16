@@ -18,11 +18,12 @@ Step 1. Set Up Virtual Machine
 
 Step 2. VS Code SSH Setup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Video of VS Code Setup
+.. youtube:: onKg1KtGWiE
+   :width: 640
+   :height: 480
 
 #. Setup SSH key using `instructions <https://cloud.google.com/compute/docs/connect/create-ssh-keys>`_ 
-#. Once your ssh key is created run ``cat /path/to/key.pub`` and copy the full ssh key. The format should be ssh-rsa keyvalue user.
+#. Once your ssh key is created run ``cat /path/to/key.pub`` and copy the full ssh key. The format should be ``ssh-rsa keyvalue user``.
 #. Go to your instance, select edit, and add an SSH key.
 #. Install the VS Code 'Remote - SSH' extension.
 #. Press Cmd + Shift + P. Select "Connect to host". then "Configure SSH Hosts...". Open the ".../.ssh/config" file. Fill out GCP host config as shown in the image.
@@ -55,6 +56,15 @@ to train your policy. Check the policy at 250 iterations.
 Hint: Make sure that the reward is positive. The code clips rewards at 0. To do so, you can subtract a base height penalty (based on the current state of Pupper relative to the target state) from a constant.
 
 DELIVERABLE: Screen recording of stand up in simulation
+
+Pupper parameters for Isaac Gym:
+
+self.root_states[:, 0]
+self.env_origins[:, 0]
+self.base_init_state[0]
+self.base_ang_vel[:, :2]
+self.base_lin_vel[:, 2]
+self.torques
 
 Step 4. Deploy Stand High Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
