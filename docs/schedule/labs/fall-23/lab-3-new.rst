@@ -13,7 +13,7 @@ Step 1. Code inverse kinematics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Download starter code from here: https://github.com/cs123-stanford/lab_3_romeo_and_juliet.git and fill out deliverables in [template doc here](https://docs.google.com/document/d/1eVlykTsy5krLiFD5Apgt6rBzp-t0tfXLXmJ1NIIOQTQ/edit?usp=sharing)
 #. Implement ``distance`` in ``kinematics.h`` as the squared-norm of the error between the position returned by ``FK(guess)`` and ``target_location``. 
-#. Implement ``calculate_distance_gradient`` in ``kinematics.h``
+#. Implement ``calculate_gradient`` in ``kinematics.h``
 #. Implement ``inverse_kinematics`` in ``kinematics.h``
 
 Step 2. Test the consistency between forward kinematics and inverse kinematics
