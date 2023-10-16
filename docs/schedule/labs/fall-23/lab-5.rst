@@ -53,6 +53,10 @@ Run your code. Enter the SSH window and ``cd rl/legged_gym``. Then run
 ``python legged_gym/scripts/train.py --task=pupper_stand --num_envs=2000 --max_iterations=500 --run_name='standup_test' --headless`` 
 to train your policy. Check the policy at 250 iterations.
 
+To check the policy, visualize using ``python legged_gym/scripts/play.py --task=pupper_stand``. This will save a video, which you can drag and drop to your local machine for viewing.
+
+You can also analyze learning curves using tensorboard. To do so, open a terminal on your local machine and run ``ssh -i /path/to/sshkey -L 6006:localhost:6006 username@puplicip``. This opens port forwarding through 6006. Then navigate to the legged gym repo and run ``tensorboard --logdir logs``. Copy the suggested URL from the terminal and paste into a browser on your local machine to visualize learning curves.
+
 Hint: Make sure that the reward is positive. The code clips rewards at 0. To do so, you can subtract a base height penalty (based on the current state of Pupper relative to the target state) from a constant.
 
 DELIVERABLE: Screen recording of stand up in simulation
