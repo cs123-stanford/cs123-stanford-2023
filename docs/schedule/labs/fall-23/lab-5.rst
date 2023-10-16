@@ -42,11 +42,11 @@ Access the starter code using ``cd rl/legged_gym``
 
 Switch to the correct branch using ``git checkout class``
 
-Edit the base height reward function so that Puppper stands up. Access the height of the robot relative to the ground using ``self.root_states[:, 2].unsqueeze(1) - self.measured_heights``. Teh desired base height is defined in ``self.cfg.rewards.base_height_target``.
+Edit the base height reward function so that Puppper stands up. Access the height of the robot relative to the ground using ``self.root_states[:, 2].unsqueeze(1) - self.measured_heights``. The desired base height is defined in ``self.cfg.rewards.base_height_target``.
 
 Write the  ``_reward_base_height`` function in ``pupper.py`` file so that pupper stands
 
-Run 
+Run your code. Enter the SSH window and ``cd rl/legged_gym``. Then run
 ``python legged_gym/scripts/train.py --task=pupper_stand --num_envs=2000 --max_iterations=500 --run_name='standup_test' --headless`` 
 to train your policy. Check the policy at 250 iterations.
 
