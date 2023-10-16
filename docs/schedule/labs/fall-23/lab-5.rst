@@ -63,12 +63,14 @@ DELIVERABLE: Screen recording of stand up in simulation
 
 Pupper parameters for Isaac Gym:
 
-self.root_states[:, 0]
-self.env_origins[:, 0]
-self.base_init_state[0]
-self.base_ang_vel[:, :2]
-self.base_lin_vel[:, 2]
-self.torques
+``self.env_origins[:, :3]`` : cartesian coordinates (xyz) of all environments, use index [0,:3] for first environment
+``self.base_init_state`` : cartesian coordinates at initialization of base [:3], base rotation [3:6], linear velocity [6:9], angular velocity [9:12]
+``self.base_ang_vel[:, :3]`` angular velocity of base ( about x, y, z axes )
+``self.torques`` : torques commanded for each motor
+``self.root_states`` : cartesian coordinates of base [:3], base rotation [3:6], linear velocity [6:9], angular velocity [9:12]
+``self.measured_heights`` : height (z) of ground at base of robot
+``self.dt`` : time since last step
+
 
 Step 4. Deploy Stand High Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -90,11 +92,12 @@ Step 5. Walking Policy
 
 Write the  ``_reward_forward_velocity`` functions in ``pupper.py`` so that Pupper receives a positive reward for higher velocities. Make sure to set the max reward returned at ``self.forward_velocity_clip``.
 
-#. Calculate the current forward distance from origin using ``self.root_states[:, 0] - self.env_origins[:, 0] -self.base_init_state[0]``.
-#. Calculate speed using ``self.last_forward_distances`` and time since last step ``self.dt``
+#. Calculate the current forward distance from origin
+#. Calculate speed using ``self.last_forward_distances`` and time since last step
 #. Clip the speed using ``self.forward_velocity_clip``.
 #. Update ``self.last_forward_distances``
 #. Return the reward
+
 
 Write the ``_reward_torques`` function in ``pupper.py`` so that Puppers penalize
 
