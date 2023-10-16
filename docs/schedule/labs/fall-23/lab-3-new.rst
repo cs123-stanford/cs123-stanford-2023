@@ -22,7 +22,7 @@ Step 2. Test the consistency between forward kinematics and inverse kinematics
 #. The test works by taking some reachable (x,y,z) point in space, and calling your IK function to get the corresponding joint angles, then passing them to your FK function to retrieve the original (x,yz).
 #. Make sure the test passes before moving on
 
-**Deliverable: Write about why we are doing an FK -> IK consistency test rather than an IK -> FK test (2-3 sentences). Hint: Think about the robot leg configuration(s)**
+**Deliverable: Write about why we are doing an IK -> FK consistency test rather than an FK -> IK test (2-3 sentences). Hint: Think about the robot leg configuration(s)**
 
 **Deliverable: Why is it important that the point we are testing is reachable? Describe what you expect IK to return for this case?**
 
