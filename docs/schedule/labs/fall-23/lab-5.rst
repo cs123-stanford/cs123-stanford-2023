@@ -45,6 +45,10 @@ Access the starter code using ``cd rl/legged_gym``
 
 Switch to the correct branch using ``git checkout class``
 
+To open in google chrome desktop for visualization, follow instructions here: https://remotedesktop.google.com/headless
+
+Make sure to run play.py in a terminal in remote desktop for visualization
+
 Edit the base height reward function so that Puppper stands up. Access the height of the robot relative to the ground using ``self.root_states[:, 2].unsqueeze(1) - self.measured_heights``. The desired base height is defined in ``self.cfg.rewards.base_height_target``.
 
 Write the  ``_reward_base_height`` function in ``pupper.py`` file so that pupper stands
