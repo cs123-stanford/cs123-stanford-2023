@@ -36,111 +36,147 @@ Step 2. VS Code SSH Setup
 #. Press Cmd + Shift + P again. Then select "Connect to Host". Press Cmd + O to open the rl/legged_gym repository.
 #. You should now be able to edit your code in the legged_gym repo.
 
-Step 3. Stand High Policy
+Step 3. Setup Chrome Remote Desktop
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In the SSH window from Step 1.
+#. Go to https://remotedesktop.google.com/headless
+#. Click 'Begin' -> 'Authorize' -> Copy the command below 'Debian Linux' (the one that starts with ``switch-graphical-session``)
+#. In the SSH window from Step 1, pase and execute the copied command.
+#. For the 6-digit passcode you can just use something like '123456'.
+#. Go to https://remotedesktop.corp.google.com/access, you should see the GCP instance you just setup appear in the device list. Now you can click it to see the remote desktop.
 
-Access the starter code using ``cd rl/legged_gym``
+**Note:** for the RL training part of this lab, you will use the VS Code setup to edit the code, and then use the chrome remote desktop to run the command and visualize the policy.
+
+Step 4. Stand High Policy
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Navigate to the starter code.
+-------------------------------
+
+In the Chrome Remote Desktop window from Step 3, start a new terminal.
+
+Access the starter code using ``cd /rl/legged_gym`` (NEED TO CORREC)
 
 Switch to the correct branch using ``git checkout class``
 
-To open in google chrome desktop for visualization, follow instructions here: https://remotedesktop.google.com/headless
+Run ``export LD_LIBRARY_PATH=/opt/conda/envs/rlgpu/lib`` and ``conda activate rlgpu`` to enter the conda environment.
 
-Make sure to run play.py in a terminal in remote desktop for visualization
+Run training with skeleton code ``python legged_gym/scripts/train.py --task=pupper_stand --num_envs=2000 --max_iterations=500 --run_name='standup_test' `` 
 
-Edit the base height reward function so that Puppper stands up. Access the height of the robot relative to the ground using ``self.root_states[:, 2].unsqueeze(1) - self.measured_heights``. The desired base height is defined in ``self.cfg.rewards.base_height_target``.
+You should see a screen showing up with many robots and they start to move their legs a bit. On the terminal, you should see training logs with reward being zero (since we haven't added the reward yet).
 
-Write the  ``_reward_base_height`` function in ``pupper.py`` file so that pupper stands
 
-Before you train run ``export LD_LIBRARY_PATH=/opt/conda/envs/rlgpu/lib`` and ``conda activate rlgpu``
+Implement first version of standing up policy
+-------------------------------
 
-Run your code. Enter the SSH window and ``cd rl/legged_gym``. Then run
-``python legged_gym/scripts/train.py --task=pupper_stand --num_envs=2000 --max_iterations=500 --run_name='standup_test' --headless`` 
-to train your policy. Check the policy at 250 iterations.
+In VS Code, navigate to ``legged_gym/envs/pupper/pupper.py``.
+
+Your job is to edit the ``_reward_base_height`` function so that Puppper stands up.
+
+A key robot state you will be using in this task is the height of the robot's body. You can access that using ``self.root_states[:, 2].unsqueeze(1) - self.measured_heights``. Remember, we are using a parallel simulation that simulates many robots at the same time, so the height variable you get will be of shape [N, 1], where N is the number of robots being simulated.
+
+Now we want to make the robot stand up from a sitting pose, a straightfoward way is to make the height of the robot large, right? Let's give it a try by defining a reward function of: 
+
+$r(x) = x_2$
+
+where $x$ is the state of the robot, and $x_2$ means we are taking the second dimension of it (height). So this is saying: the higher the body is, the more reward robot will get.
+
+After you finish coding the reward, use the same command as above: ``python legged_gym/scripts/train.py --task=pupper_stand --num_envs=2000 --max_iterations=500 --run_name='standup_test' `` to run the training. This time you should see remove being non-zero.
 
 To check the policy, visualize using ``python legged_gym/scripts/play.py --task=pupper_stand``. This will save a video, which you can drag and drop to your local machine for viewing.
 
 You can also analyze learning curves using tensorboard. To do so, open a terminal on your local machine and run ``ssh -i /path/to/sshkey -L 6006:localhost:6006 username@puplicip``. This opens port forwarding through 6006. Then navigate to the legged gym repo and run ``tensorboard --logdir logs``. Copy the suggested URL from the terminal and paste into a browser on your local machine to visualize learning curves.
 
-Hint: Make sure that the reward is positive. The code clips rewards at 0. To do so, you can subtract a base height penalty (based on the current state of Pupper relative to the target state) from a constant.
+**DELIVERABLE**: Screen recording of simulation training result.
+**QUESTION**: What robot behavior do you observe? Why is the robot behaving this way?
 
-DELIVERABLE: Screen recording of stand up in simulation
+Implement second version of standing up policy
+-------------------------------
 
-Pupper parameters for Isaac Gym:
+Let's now try to make the robot stand at a certain height that we specifies. The desired base height is defined in ``self.cfg.rewards.base_height_target`` in the code.
 
-``self.env_origins[:, :3]`` : cartesian coordinates (xyz) of all environments, use index [0,:3] for first environment
+To make the robot go to certain height, a plausible idea is to penalize how different the current height of the robot is from the desired height, i.e. using a reward function of:
 
-``self.base_init_state`` : cartesian coordinates at initialization of base [:3], base rotation [3:6], linear velocity [6:9], angular velocity [9:12]
+$r(x) = -(x_2 - target)^2$
 
-``self.base_ang_vel[:, :3]`` angular velocity of base ( about x, y, z axes )
+Now go ahead and revise your ``_reward_base_height`` and run training again.
 
-``self.torques`` : torques commanded for each motor
+**DELIVERABLE**: Screen recording of simulation training result.
+**QUESTION**: What robot behavior do you observe? Why is the robot behaving this way? 
 
-``self.root_states`` : cartesian coordinates of base [:3], base rotation [3:6], linear velocity [6:9], angular velocity [9:12]
+Implement third version of standing up policy
+-------------------------------
 
-``self.measured_heights`` : height (z) of ground at base of robot
+Now, think about what happens in the previous two trainings, how should you revise the reward function such that pupper can learn to stand up and hold a certain height stably?
 
-``self.dt`` : time since last step
+**DELIVERABLE**: Screen recording of simulation training result with pupper successfully standing up.
+**QUESTION**: What's the reward function you used? What's the rationale behind the reward design? 
 
 
-Step 4. Deploy Stand High Policy
+Step 5. Deploy Stand High Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Transfer policy from virtual machine to local machine
 
-#. Clone the puppersim repo onto your local machine using ``git clone https://github.com/jietan/puppersim.git``. This repository contains policy deployment code for transferring the policy trained in simulation to the phsyical hardware.
+#. Clone the puppersim repo onto your **local** machine using ``git clone https://github.com/jietan/puppersim.git``. This repository contains policy deployment code for transferring the policy trained in simulation to the phsyical hardware.
 #. Navigate inside the puppersim repo and run ``pip install -e .`` Don't forget the "." at the end.
-#. Move your file into the puppersim repo. You can find the policy you just trained in the logs folder of  ``legged_gym`` in VS code, and drag and drop it to your  ``puppersim`` directory on your local machine. From your local machine run ``scp -i /path/to/ssh/token  user@instance:~/path/to/model /path/to/puppersim`` to move the file to your puppersim directory.Ex.) ``scp -i /Users/jaden/Downloads/isaac-gym-jaden.pub jvclark@34.81.55.199:/home/ubuntu/rl/legged_gym/logs/Jun06-00-33-22_pupper_test1/model_700.pt ~/Downloads/puppersim``
+#. Move your file into the puppersim repo. You can find the policy you just trained in the logs folder of  ``legged_gym`` in VS code, and drag and drop it to your  ``puppersim`` directory on your local machine.
 #. In local puppersim repo, change the policy called in isaac_gym_policy.py (located under the puppersim folder) to your policy name (your .pt file)
 #. Turn on and calibrate Pupper. 
 #. Connect the Ethernet cable from your computer to Pupper
 #. run your policy on Pupper using ``./deploy_to_robot.sh python puppersim/puppersim/isaac_gym_policy.py --run_on_robot``. Make sure you are aware of the cables in advance and are prepared for Pupper to behave unexpectedly.
 
-DELIVERABLE: Video of stand-up in real
+**DELIVERABLE**: Video of stand-up in real
     
 
-Step 5. Walking Policy
+Step 6. Walking Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Write the  ``_reward_forward_velocity`` functions in ``pupper.py`` so that Pupper receives a positive reward for higher velocities. Make sure to set the max reward returned at ``self.forward_velocity_clip``.
+Now let's make the Pupper walk! To do that, you need to write the  ``_reward_forward_velocity`` functions in ``pupper.py`` so that Pupper receives a positive reward for moving forward.
 
-#. Calculate the current forward distance from origin
-#. Calculate speed using ``self.last_forward_distances`` and time since last step
-#. Clip the speed using ``self.forward_velocity_clip``.
-#. Update ``self.last_forward_distances``
-#. Return the reward
+Of course you would need to access how fast the robot is moving currently. To do that you can use the ``self.root_states`` variable. Note that this is a matrix of [N, 13] (N is number of robots being simulated). For the 13 dimensions, we have 0-3: position of robot, 3-7: orientation of robot (in quaternion), 7-10: linear velocity of robot, 10-13: angular velocity of robot.
 
+Your task here is to propose **THREE** ideas of writing a reward function that would make the pupper walk forward as elegantly as possible, and obtain suggestions/approval from TA before implementing it in the code.
 
-Write the ``_reward_torques`` function in ``pupper.py`` so that Puppers penalize
-
-Edit the ``forward_velocity`` and ``torques`` scales in ``pupper_config.py``
-
-Run 
-``python legged_gym/scripts/train.py --task=pupper_flat --num_envs=2000 --max_iterations=1500 --run_name='running_test' --headless`` 
+For running training in this task, use the following command:
+``python legged_gym/scripts/train.py --task=pupper_flat --num_envs=2000 --max_iterations=1500 --run_name='running_test' `` 
 to train your policy. Check policy around every 250 iterations to analyze if you have chosen the correct coefficients.
 
 Experiment with different reward coefficents until you are happy with the walking gait.
 
-Deploy policy on Pupper, as in step 4. Be careful as the robot may behave erratically.
+Deploy policy on Pupper, as in Step 5. Be careful as the robot may behave erratically.
 
-DELIVERABLE: What terms are included in your reward functions? What coefficeints did you use? How did you come up with these terms and what was their desired effect? Why might this policy perform poorly on the physical robot?
+**DELIVERABLE**: Videos of sim and real robots with trained policies.
 
-DELIVERABLE: How did the performance in simulation compare to the performance on the physical robot? What about hte simluation might not be accurate to the real world?
+**DELIVERABLE**: What terms are included in your reward functions? What coefficeints did you use? How did you come up with these terms and what was their desired effect? Why might this policy perform poorly on the physical robot?
 
-Step 6. Domain Randomization
+**DELIVERABLE**: How did the performance in simulation compare to the performance on the physical robot? What about hte simluation might not be accurate to the real world?
+
+Step 7. Domain Randomization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Edit the ``domain_rand`` ranges in ``pupper_config.py``. Experiment with different ranges until Pupper has similar performance in the real world, to in simulation.
+Domain Randomization is a common technique to help simulation-trained robots to better work in the real-world. The core insight behind Domain Randomization is that a policy that can handle a large diverse set of simulation environments is more likely to succeed in the real-world.
 
-DELIVERABLE: For 3 different terms that you randomized, what ranges or values did you select, and how did you choose them?
+Now in order to create this large diverse set of simulation environments, we need to sample random parameters for our simulation during the training. The starter code has already done the infrastructure work to setup the randomization mechanism, and your job is to identify a good set of parameters to be randomized and their ranges.
 
-Step 7. Speed test (optional)
+In in ``pupper_config.py``, edit the ``domain_rand`` ranges. Experiment with different ranges until Pupper has similar performance in the real world, to in simulation.
+
+In addition, implement the torque penalization reward, which would make the robot motion safer and smoother. You can get access to the motor torque by ``self.torques``.
+
+**DELIVERABLE**: Simulation and real videos of policies trained with domain randomization.
+
+**DELIVERABLE**: For 3 different terms that you randomized, what ranges or values did you select, and how did you choose them?
+
+**DELIVERABLE**: How did the randomization impact the result of training and deployment to real?
+
+Step 8. Speed test (Bonus)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Now let's challenge our selves a bit in trying to train the pupper to run as fast as possible!
 
 #. Tune your reward function and domain randomization to improve Pupper's speed. You can use any reward function defined in legged_robot.py, or add your own.
 #. Fastest Puppers will get extra credit!
 
-DELIVERABLE: Test your policy during office hours
+**DELIVERABLE**: Test your policy during office hours
 
 Resources
 -----------
