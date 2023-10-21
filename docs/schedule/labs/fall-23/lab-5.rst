@@ -88,6 +88,7 @@ To check the policy, visualize using ``python legged_gym/scripts/play.py --task=
 You can also analyze learning curves using tensorboard. To do so, open a terminal on your local machine and run ``ssh -i /path/to/sshkey -L 6006:localhost:6006 username@puplicip``. This opens port forwarding through 6006. Then navigate to the legged gym repo and run ``tensorboard --logdir logs``. Copy the suggested URL from the terminal and paste into a browser on your local machine to visualize learning curves.
 
 **DELIVERABLE**: Screen recording of simulation training result.
+
 **QUESTION**: What robot behavior do you observe? Why is the robot behaving this way?
 
 Implement second version of standing up policy
@@ -102,6 +103,7 @@ $r(x) = -(x_2 - target)^2$
 Now go ahead and revise your ``_reward_base_height`` and run training again.
 
 **DELIVERABLE**: Screen recording of simulation training result.
+
 **QUESTION**: What robot behavior do you observe? Why is the robot behaving this way? 
 
 Implement third version of standing up policy
@@ -110,6 +112,7 @@ Implement third version of standing up policy
 Now, think about what happens in the previous two trainings, how should you revise the reward function such that pupper can learn to stand up and hold a certain height stably?
 
 **DELIVERABLE**: Screen recording of simulation training result with pupper successfully standing up.
+
 **QUESTION**: What's the reward function you used? What's the rationale behind the reward design? 
 
 
@@ -133,7 +136,17 @@ Step 6. Walking Policy
 
 Now let's make the Pupper walk! To do that, you need to write the  ``_reward_forward_velocity`` functions in ``pupper.py`` so that Pupper receives a positive reward for moving forward.
 
-Of course you would need to access how fast the robot is moving currently. To do that you can use the ``self.root_states`` variable. Note that this is a matrix of [N, 13] (N is number of robots being simulated). For the 13 dimensions, we have 0-3: position of robot, 3-7: orientation of robot (in quaternion), 7-10: linear velocity of robot, 10-13: angular velocity of robot.
+Of course you would need to access how fast the robot is moving currently. To do that you can use the ``self.root_states`` variable. Note that this is a matrix of [N, 13] (N is number of robots being simulated). 
+
+For the 13 dimensions, we have:
+
+0-3: position of robot, 
+
+3-7: orientation of robot (in quaternion), 
+
+7-10: linear velocity of robot, 
+
+10-13: angular velocity of robot.
 
 Your task here is to propose **THREE** ideas of writing a reward function that would make the pupper walk forward as elegantly as possible, and obtain suggestions/approval from TA before implementing it in the code.
 
