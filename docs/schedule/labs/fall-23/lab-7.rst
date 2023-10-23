@@ -39,6 +39,7 @@ Step 3. Make Pupper move in a square
 Step 4. Add in OpenAI API Key
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Now that we can make Pupper do more complex tasks with simpler, abstracted commands, instead of tuning motor torques, we can use LLMs to do a lot of the work for us!
+
 #. For working with ChatGPT from a script, you must have an API key. This API key allows you to make a request to the ChatGPT api from your script, and tells OpenAI the associated account that is making the request (each API call has a small charge associated with it). For the lab, we will be using a shared API key. Check your Canvas announcements for the API key, and copy that API key as a string into ``constants.py`` under ``OPEN_AI_API_KEY``.
 #. Save the file before the next step.
 
