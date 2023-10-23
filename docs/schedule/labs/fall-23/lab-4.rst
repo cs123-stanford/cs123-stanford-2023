@@ -142,7 +142,21 @@ Step 6. Attach electronics bulkhead to PCB
 
 Step 7. Attach top PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Follow instructions at https://github.com/Nate711/puppersim/blob/main/puppersim/reacher/README.md to deploy to your robot.
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/15xuPJpki4M" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+
+|
+
+#. Insert the XT60 female side (conductor is a circular slot) of XT60 splitter cable into 3D printed power hub. 
+#. Insert JST-XH extender balance cable into 3D printed power hub.
+#. Attach the 3D printed power hub to the top PCB with 2 M3x6 button head screws.
+#. Take the large nut off the power switch and then mount the power switch to the top PCB panel. Then secure the switch by threading on the nut from the bottom of the top panel.
+#. Screw the USB-C connector to the top PCB with 2 M3x6 button head screws
+#. Connect other female XT60 into the bottom PCB
 
 #. Insert the XT60 female side (conductor is a circular slot) of XT60 splitter cable into 3D printed power hub. 
 #. Insert JST-XH extender balance cable into 3D printed power hub.
