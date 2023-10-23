@@ -69,6 +69,8 @@ Step 7. Make a robot script using ChatGPT
 
 **Deliverable: What are the differences you noticed, can you tune your prompt to make ChatGPT more exactly match your script?**
 
-Step 8. Make a robot script using ChatGPT
+Step 8. Mini Project
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#. Using ChatGPT, make Pupper do a complex task of your choice.
 
+**Deliverable: Submit a video of Pupper doing your complex task. Submit the code script as well.**
