@@ -13,12 +13,15 @@ TODO ADD IMAGE
 Step 1. SSH into the Pupper
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. With the fully built Pupper, plug an ethernet cable between your laptop and the Pupper's Raspberry Pi, using an ethernet to usb adapter if needed (provided, ask a TA).  TODO INSERT PHOTO OF ADDING ETHERNET CABLE
-#. Open a terminal window on your computer. Run the command ssh pi@raspberrypi.local. This will allow you to ssh into the Pupper's Raspberry Pi via the ethernet connection. 
-#. When the Enter Password prompt shows, enter raspberry as the password. This is a default password on Raspberry Pi's you may change it if you like (be sure to remember it!). Your terminal window should show that you are in the Pi if the SSH was successful. 
+#. Open a terminal window on your computer. Run the command ``ssh pi@raspberrypi.local``. This will allow you to ssh into the Pupper's Raspberry Pi via the ethernet connection. 
+#. When the Enter Password prompt shows, enter ``raspberry`` as the password. This is a default password on the Raspberry Pis, you may change it if you like (be sure to remember it!). Your terminal window should show that you are in the Pi if the SSH was successful. 
 
 Step 1. Clone the starter code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. 
+#. For this lab, the code will run directly on your Pupper, which is why we have to SSH into the Raspberry Pi. Once SSH'd create a new directory for CS123 under home, and ``cd`` into it, and clone the lab 7 starter code. Install the package prequisites.
+``mkdir ~/CS123``
+``cd CS123``
+`` git clone 
 
 
 #. Download starter code from here: https://github.com/cs123-stanford/lab_3_romeo_and_juliet.git and fill out deliverables in [template doc here](https://docs.google.com/document/d/1eVlykTsy5krLiFD5Apgt6rBzp-t0tfXLXmJ1NIIOQTQ/edit?usp=sharing)
