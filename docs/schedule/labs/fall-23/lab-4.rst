@@ -190,7 +190,7 @@ Step 12. Enable the heuristic controller
 #. Run ``sudo systemctl status robot`` to check that the service is running ok (should be green).
 #. Reboot with ``sudo reboot 0``
 
-Step 12.5. (Optional, Stanford only) Get Stanford Wifi access
+Step 12.5. Get Stanford Wifi access
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Once ssh'd into the robot, run ``ifconfig`` and record the ``wlan0`` MAC address. This is the MAC address for the WIFI chip. It should be a series of hex characters like f0:2f:4b:07:ee:ea. 
 #. Go to iprequest.stanford.edu on your computer, and make a new registration for the Pi. Select other device -> other wired. Enter the *Wireless* MAC address you got in step 1. 
