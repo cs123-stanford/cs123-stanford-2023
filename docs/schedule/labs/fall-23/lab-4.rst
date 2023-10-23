@@ -2,6 +2,7 @@ Lab 4: Sum > Parts (Pupper Assembly)
 =======================================
 
 *Goal: Build a full Pupper robot!*
+`Lab 4 Document <https://docs.google.com/document/d/1FMKkObLqlZzjJoEIAOVgsZIBCSo2hmZahJIBBmIjXt8/edit?usp=sharing>`_
 
 Step 1. Prepare the bottom PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
