@@ -94,6 +94,7 @@ IMPORTANT: Calibrate your motors BEFORE attaching to legs. Please redo this step
 14. Repeat the above steps until you have 4 completed legs (2 left, 2 right).
 
 **DELIVERABLE: Submit a photo of all 4 completed legs. **
+
 Step 4. Attach the legs to the body
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
