@@ -1,19 +1,26 @@
 Lab 7: Do What I Say
 ========================
 
-*Goal: Use LLMs to program Pupper to perform new tasks on the fly.*
+Now we are ready to do some cool things! With the fully built Pupper, we are going to use LLMs to control the robot to do new tasks that we can come up with, making new movements faster than we could have imagined!
 
 
 **Goals:**
         1. Use LLMs to program Pupper to perform new tasks on the fly.
         2. Use prompt engineering for an open-ended mini project!
 
-.. figure:: ../../../_static/lab3.jpg
-    :align: center
-    :width: 50%
+TODO ADD IMAGE
 
-Step 1. Code inverse kinematics
+Step 1. SSH into the Pupper
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#. With the fully built Pupper, plug an ethernet cable between your laptop and the Pupper's Raspberry Pi, using an ethernet to usb adapter if needed (provided, ask a TA).  TODO INSERT PHOTO OF ADDING ETHERNET CABLE
+#. Open a terminal window on your computer. Run the command ssh pi@raspberrypi.local. This will allow you to ssh into the Pupper's Raspberry Pi via the ethernet connection. 
+#. When the Enter Password prompt shows, enter raspberry as the password. This is a default password on Raspberry Pi's you may change it if you like (be sure to remember it!). Your terminal window should show that you are in the Pi if the SSH was successful. 
+
+Step 1. Clone the starter code
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#. 
+
+
 #. Download starter code from here: https://github.com/cs123-stanford/lab_3_romeo_and_juliet.git and fill out deliverables in [template doc here](https://docs.google.com/document/d/1eVlykTsy5krLiFD5Apgt6rBzp-t0tfXLXmJ1NIIOQTQ/edit?usp=sharing)
 #. Implement ``distance`` in ``kinematics.h`` as the squared-norm of the error between the position returned by ``FK(guess)`` and ``target_location``. 
 #. Implement ``calculate_gradient`` in ``kinematics.h``
