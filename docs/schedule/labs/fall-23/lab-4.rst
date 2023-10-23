@@ -20,7 +20,7 @@ Note: You can skip this step if you completed your bottom PCB in lab 1
 
 Congrats! You finished the first step. 
 
-Step 2. Configure IDs and Calibrate the Motor Conotrollers
+Step 2. Configure IDs and Calibrate the Motor Controllers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. youtube:: FpVTkltykIs
    :width: 640
