@@ -93,6 +93,7 @@ IMPORTANT: Calibrate your motors BEFORE attaching to legs. Please redo this step
 
 14. Repeat the above steps until you have 4 completed legs (2 left, 2 right).
 
+**DELIVERABLE: Submit a photo of all 4 completed legs. **
 Step 4. Attach the legs to the body
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -104,7 +105,7 @@ Step 4. Attach the legs to the body
 2. Place 4 dowel pins into the corresponding holes on the motor bulkhead. Ensure the pins do not extend beyond 0.5cm from the surface.
 3. Secure the motor bulkhead, ensuring that the arrow is directed towards the motor cable. 
 4. Insert the hip bracket onto the motor, ensuring that the flat surface on the motor shaft is facing outward. Utilize a screwdriver to align the hole on the motor shaft. Fasten the components together using the shoulder screw.
-5. Fasten the cable to the motor bulkhead using zip ties, following the cable arrangement demonstrated in the video. This will prevenet the cable from experiencing strain while the robot is moving.
+5. Fasten the cable to the motor bulkhead using zip ties, following the cable arrangement demonstrated in the video. This will prevent the cable from experiencing strain while the robot is moving.
 
 Step 5. Attach legs to PCB
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -205,7 +206,7 @@ Step 13. Take your robot on a walk
 #. Place your robot on a flat, level surface. Position the legs as shown in the picture below.
 #. Power on the robot by hooking up the power supply to the bottom PCB (like you've done in labs).
 #. Connect the Pi with USB C to your computer.
-#. Wait for the robot to complete the calibration sequence. During the calibration sequence, the hips should turn inwards until they hit the stops, then back down. Then the thigh pieces should rotate upward until they hit their stops and then back down. **TODO** Add calibration video
+#. Wait for the robot to complete the calibration sequence. During the calibration sequence, the hips should turn inwards until they hit the stops, then back down. Then the thigh pieces should rotate upward until they hit their stops and then back down. 
 #. Flip all switches on the back RC transmitter down so they're away from you.
 #. Turn on the RC transmitter by pressing the middle power button and moving the left joystick up and down until the light turns blue.
 #. Wait ~30s for the RPi to boot (the green light should stop blinking).
