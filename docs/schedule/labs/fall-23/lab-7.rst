@@ -36,6 +36,10 @@ Step 4. Chat with ChatGPT in the command line
 #. Run ``simple_conversation.py`` in the terminal window``
 #. Once run, you should see a chat window open with ChatGPT. You should be able to chat with the ChatGPT from your terminal, just like in the web app. Play around and chat with ChatGPT. 
 
+.. figure:: ../../../_static/openai.png
+    :align: center
+    :width: 50%
+
 **Deliverable: Take a look at simple_conversation.py, and write a sentence about how it works. How does the ``get_response()`` function work?**
 
 
