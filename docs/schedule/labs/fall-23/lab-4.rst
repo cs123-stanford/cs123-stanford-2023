@@ -149,7 +149,10 @@ Step 7. Attach top PCB
         <iframe src="https://www.youtube.com/embed/15xuPJpki4M" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
-|
+.. youtube:: 15xuPJpki4M
+   :width: 640
+   :height: 480
+
 
 #. Insert the XT60 female side (conductor is a circular slot) of XT60 splitter cable into 3D printed power hub. 
 #. Insert JST-XH extender balance cable into 3D printed power hub.
