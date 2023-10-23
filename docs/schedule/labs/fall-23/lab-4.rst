@@ -63,7 +63,7 @@ Left knee motor: 6
     
     Motor ID diagram
 
-**DELIVERABLE: Calibrating before constructing the motors is essential. Take a video of all 12 motors flashing green correctly and submit with the lab report. **
+**DELIVERABLE: Calibrating before constructing the motors is essential. Take a video of all 12 motors flashing green correctly and submit with the lab report. Why is it important to calibrate the motors before inserting them into the leg? **
 
 Step 3. Assemble the legs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
