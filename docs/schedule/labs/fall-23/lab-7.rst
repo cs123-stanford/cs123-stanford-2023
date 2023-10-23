@@ -61,7 +61,7 @@ Step 6. Make a prompted conversation
 
 **Deliverable: Change the prompt in ``prompted_conversation.py`` to your liking, and submit your prompt in addition to ChatGPT's default response to your prompt**
 
-Step 7. Make a robot script using ChatGPT
+Step 7. Use ChatGPT to write a square script with high level control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Open ``make_robot_script.py``. This file uses ChatGPT to make karelPupper scripts for you. Run this file, and see how ChatGPT can make scripts for you. Every time you make a script, a new script will be made inside the ``outputs`` directory.
 
@@ -69,8 +69,13 @@ Step 7. Make a robot script using ChatGPT
 
 **Deliverable: What are the differences you noticed, can you tune your prompt to make ChatGPT more exactly match your script?**
 
-Step 8. Mini Project
+Step 8. ChatGPT for high level control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Using ChatGPT, make Pupper do a complex task of your choice.
+#. Using ChatGPT, make Pupper do a complex task of your choice using the high level control from karelPupper.
 
 **Deliverable: Submit a video of Pupper doing your complex task. Submit the code script as well.**
+
+Step 9. ChatGPT for lower level control
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+EXPRESSIVE GAITS
