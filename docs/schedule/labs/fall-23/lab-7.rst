@@ -16,24 +16,28 @@ Step 1. SSH into the Pupper
 #. Open a terminal window on your computer. Run the command ``ssh pi@raspberrypi.local``. This will allow you to ssh into the Pupper's Raspberry Pi via the ethernet connection. 
 #. When the Enter Password prompt shows, enter ``raspberry`` as the password. This is a default password on the Raspberry Pis, you may change it if you like (be sure to remember it!). Your terminal window should show that you are in the Pi if the SSH was successful. 
 
-Step 1. Clone the starter code
+Step 2. Clone the starter code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. For this lab, the code will run directly on your Pupper, which is why we have to SSH into the Raspberry Pi. Once SSH'd create a new directory for CS123 under home, and ``cd`` into it, and clone the lab 7 starter code. Install the package prequisites.
 ``mkdir ~/CS123``
 ``cd CS123``
-`` git clone 
+``git clone https://github.com/cs123-stanford/lab_7_llms.git``
+``pip3 install -r requirements.txt``
+After running the ``pip install`` command, you should see that openai has been installed. If not, ask a TA.
 
+Step 3. Add in OpenAI API Key
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#. For working with ChatGPT from a script, you must have an API key. This API key allows you to make a request to the ChatGPT api from your script, and tells OpenAI the associated account that is making the request (each API call has a small charge associated with it). For the lab, we will be using a shared API key. Check your Canvas announcements for the API key, and copy that API key as a string into ``constants.py`` under ``OPEN_AI_API_KEY``.
+#. Save the file before the next step.
 
-#. Download starter code from here: https://github.com/cs123-stanford/lab_3_romeo_and_juliet.git and fill out deliverables in [template doc here](https://docs.google.com/document/d/1eVlykTsy5krLiFD5Apgt6rBzp-t0tfXLXmJ1NIIOQTQ/edit?usp=sharing)
-#. Implement ``distance`` in ``kinematics.h`` as the squared-norm of the error between the position returned by ``FK(guess)`` and ``target_location``. 
-#. Implement ``calculate_gradient`` in ``kinematics.h``
-#. Implement ``inverse_kinematics`` in ``kinematics.h``
+Step 4. Chat with ChatGPT in the command line
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#. In VSCode, open ``simple_conversation.py``. This file provides the framework for starting a simple conversation with ChatGPT. Open a new terminal (top bar, Terminal -> New Terminal). 
+#. Run ``simple_conversation.py`` in the terminal window``
+#. Once run, you should see a chat window open with ChatGPT. You should be able to chat with the ChatGPT from your terminal, just like in the web app. Play around and chat with ChatGPT. 
 
-Step 2. Test the consistency between forward kinematics and inverse kinematics
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Look at the tests written for you in ``test_ik`` within ``test_inv_kinematics.h``
-#. The test works by taking some reachable (x,y,z) point in space, and calling your IK function to get the corresponding joint angles, then passing them to your FK function to retrieve the original (x,yz).
-#. Make sure the test passes before moving on
+**Deliverable: Take a look at simple_conversation.py, and write a sentence about how it works. How does the ``get_response()`` function work?**
+
 
 **Deliverable: Write about why we are doing an IK -> FK consistency test rather than an FK -> IK test (2-3 sentences). Hint: Think about the robot leg configuration(s)**
 
