@@ -25,12 +25,24 @@ Step 2. Clone the starter code
 ``pip3 install -r requirements.txt``
 After running the ``pip install`` command, you should see that openai has been installed. If not, ask a TA.
 
-Step 3. Add in OpenAI API Key
+Step 3. Make Pupper move in a square
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#. The code in this repository depends on the KarelPupper API
+#. Take a look at the ``karelPupper.py`` Python file. This file details many functions that abstracts away basic functional elements for Pupper, such as ``wakeup()``, ``moveForward()``, and ``turn()`` which were all created using MPC. Using the commands detailed in ``karelPupper.py``, write code to make Pupper move in a square in ``outputs/script_square.py``.
+#. Run this script on Pupper, and see how Pupper performs. 
+(TODO: we can have them implement one of the karelpupper commands for MPC exposure/experience??)
+
+**Deliverable: Submit your code for ``script_square.py``. Take a video of Pupper successfully walking in a square.**
+
+**Deliverable: Did Pupper walk in a square successfully on the first try? What tuning did you make for Pupper to walk in the square (delays, speed, angle, etc.)**
+
+Step 4. Add in OpenAI API Key
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Now that we can make Pupper do more complex tasks with simpler, abstracted commands, instead of tuning motor torques, we can use LLMs to do a lot of the work for us!
 #. For working with ChatGPT from a script, you must have an API key. This API key allows you to make a request to the ChatGPT api from your script, and tells OpenAI the associated account that is making the request (each API call has a small charge associated with it). For the lab, we will be using a shared API key. Check your Canvas announcements for the API key, and copy that API key as a string into ``constants.py`` under ``OPEN_AI_API_KEY``.
 #. Save the file before the next step.
 
-Step 4. Chat with ChatGPT in the command line
+Step 5. Chat with ChatGPT in the command line
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. In VSCode, open ``simple_conversation.py``. This file provides the framework for starting a simple conversation with ChatGPT. Open a new terminal (top bar, Terminal -> New Terminal). 
 #. Run ``simple_conversation.py`` in the terminal window``
@@ -42,17 +54,20 @@ Step 4. Chat with ChatGPT in the command line
 
 **Deliverable: Take a look at simple_conversation.py, and write a sentence about how it works. How does the ``get_response()`` function work?**
 
-
-**Deliverable: Write about why we are doing an IK -> FK consistency test rather than an FK -> IK test (2-3 sentences). Hint: Think about the robot leg configuration(s)**
-
-**Deliverable: Why is it important that the point we are testing is reachable? Describe what you expect IK to return for this case?**
-
-Step 4. Put it together! Make your two robot arms match each other's end-effector positions
+Step 6. Make a prompted conversation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-1. Implement the rest of ``loop()`` in ``main.cpp`` and deploy on the robot
+#. Open ``prompted_conversation.py``. This file provides creates a prompted conversation with ChatGPT. Run this file, and see how ChatGPT gets prompted before running the script. 
 
-**Deliverable: Send a video of the arms roughly matching each other when you move them**
+**Deliverable: Change the prompt in ``prompted_conversation.py`` to your liking, and submit your prompt in addition to ChatGPT's default response to your prompt**
 
-2. Try more iterations of IK in ``kinematics.h``, and observe the behavior **(Careful may be unstable)**
+Step 7. Make a robot script using ChatGPT
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#. Open ``make_robot_script.py``. This file uses ChatGPT to make karelPupper scripts for you. Run this file, and see how ChatGPT can make scripts for you. Every time you make a script, a new script will be made inside the ``outputs`` directory.
 
-**Deliverable: Why does more iterations of IK cause instability?**
+**Deliverable: Using ``make_robot_script.py``, use ChatGPT to write a script that makes Pupper move in a square. Compare this AI-made script to your previous ``square_script.py``. Take a video of Pupper walking in a square using your AI-made script**
+
+**Deliverable: What are the differences you noticed, can you tune your prompt to make ChatGPT more exactly match your script?**
+
+Step 8. Make a robot script using ChatGPT
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
