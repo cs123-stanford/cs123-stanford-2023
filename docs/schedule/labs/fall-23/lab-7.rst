@@ -30,7 +30,7 @@ Step 2. Clone the starter code
 
 ``pip3 install -r requirements.txt``
 
-This pip3 install may take some time. After running the ``pip install`` command, you should see that openai has been installed. If not, ask a TA.
+After running the ``pip install`` command, you should see that openai has been installed. If not, ask a TA.
 
 Step 3. Make Pupper move in a square
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
