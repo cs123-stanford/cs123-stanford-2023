@@ -77,7 +77,7 @@ Step 7. ChatGPT for lower level control
     :align: center
     :width: 50%
 
-Step 7. Use ChatGPT to write a square script with high level control
+Step 7. Use ChatGPT to write a square script using karelPupper commands
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Open ``make_robot_script.py``. This file uses ChatGPT to make karelPupper scripts for you. Run this file, and see how ChatGPT can make scripts for you. Every time you make a script, a new script will be made inside the ``outputs`` directory.
 
