@@ -6,6 +6,7 @@ Now we are ready to do some cool things! With the fully built Pupper, we are goi
 
 **Goals:**
         1. Use LLMs to program Pupper to perform new tasks on the fly.
+        2. Experiment on how LLMs perform with high level and low level control on Pupper. 
         2. Use prompt engineering for an open-ended mini project!
 
 TODO ADD IMAGE
@@ -67,15 +68,18 @@ Step 6. Make a prompted conversation
 
 **Deliverable: Change the prompt in ``prompted_conversation.py`` to your liking, and submit your prompt in addition to ChatGPT's default response to your prompt**
 
+Next, we are going to experiment with how ChatGPT controls Pupper using both low level, and high level functions. The high level functions will abstract a lot of the nuance associated with tuning motor torques and speeds away. 
+
+
 Step 7. ChatGPT for lower level control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. In the following steps, we will use ChatGPT to control Pupper with high level functions that abstract lots of nuance away from the model. For now, we are going to see how the LLM performs when controlling Pupper at a lower, less abstracted level. We are going to see how well LLMs can be used to help us with implementing a turn function. 
-#. In ``prompted_conversation.py``, change ``A_FANTASTIC_ROLE`` to "python code developer", and ``PROMPT`` to "You are now a chat bot that will aid me in coding low level functions for a quadruped robot. I will be giving you parameters as well as constraints (as constants) that you can use to write code as I prompt you to.``
-#. Ask ChatGPT to program a ``turn()`` function. The parameters we will work with are an angle, speed, and behavior. The behavior can take on three states, shown below. THe constraints are
+#. In this step, we are going to see how the LLM performs when controlling Pupper at a lower, less abstracted level. We are going to see how well LLMs can be used to help us with implementing a turn function for Pupper
+#. In ``prompted_conversation.py``, change ``A_FANTASTIC_ROLE`` and ``PROMPT`` so that ChatGPT understands the context of the behaviors you want. **NOTE:** The initial response from ChatGPT may take some time, so add "Start by asking how you can help me" at the end of your prompt so that ChatGPT doesn't hang. 
+#. Ask ChatGPT to program a ``turn()`` function. The parameters we will work with are an angle, speed, and behavior. The behavior can take on three states, shown in ``line 27`` of ``karelPupper.py``. Give this information to ChatGPT, and explain the logic of this pseudocode in your prompt: 
 
-.. figure:: ../../../_static/behaviors.png
-    :align: center
-    :width: 50%
+
+
+**NOTE:** You will notice that ChatGPT will not understand the full syntax of your code parameters, hence you can prompt ChatGPT to make the syntax changes. For example, telling ChatGPT that the maximum and minimimum possible yaw rates are given by the positive and negative of the syntax ``self.config.max_yaw_rate`` should help ChatGPT to understand how to clip the yaw rate. 
 
 Step 7. Use ChatGPT to write a square script using karelPupper commands
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
