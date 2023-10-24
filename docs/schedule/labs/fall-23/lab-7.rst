@@ -13,17 +13,23 @@ TODO ADD IMAGE
 Step 1. SSH into the Pupper
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. With the fully built Pupper, plug an ethernet cable between your laptop and the Pupper's Raspberry Pi, using an ethernet to usb adapter if needed (provided, ask a TA).  TODO INSERT PHOTO OF ADDING ETHERNET CABLE
-#. Open a terminal window on your computer. Run the command ``ssh pi@raspberrypi.local``. This will allow you to ssh into the Pupper's Raspberry Pi via the ethernet connection. 
-#. When the Enter Password prompt shows, enter ``raspberry`` as the password. This is a default password on the Raspberry Pis, you may change it if you like (be sure to remember it!). Your terminal window should show that you are in the Pi if the SSH was successful. 
+#. Like the RL lab, we can SSH into a remote system inside VSCode. Open VSCode, and use ``CMD + Shift + P`` to access the Command Pallete.
+#. In the Command Pallette, type in ``pi@raspberrypi.local`` to prompt a remote connection. This will allow you to ssh into the Pupper's Raspberry Pi via the ethernet connection. 
+#. When the Enter Password prompt shows, enter ``raspberry`` as the password. This is a default password on the Raspberry Pis, you may change it if you like (be sure to remember it!). VSCode will tell you if your SSH connection was successful. You can use the Command Pallete to navigate around the Raspberry Pi and use the Terminal to run commands. 
 
 Step 2. Clone the starter code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. For this lab, the code will run directly on your Pupper, which is why we have to SSH into the Raspberry Pi. Once SSH'd create a new directory for CS123 under home, and ``cd`` into it, and clone the lab 7 starter code. Install the package prequisites.
+
 ``mkdir ~/CS123``
+
 ``cd CS123``
+
 ``git clone https://github.com/cs123-stanford/lab_7_llms.git``
+
 ``pip3 install -r requirements.txt``
-After running the ``pip install`` command, you should see that openai has been installed. If not, ask a TA.
+
+This pip3 install may take some time. After running the ``pip install`` command, you should see that openai has been installed. If not, ask a TA.
 
 Step 3. Make Pupper move in a square
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
