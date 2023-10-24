@@ -75,9 +75,14 @@ Step 7. ChatGPT for lower level control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. In this step, we are going to see how the LLM performs when controlling Pupper at a lower, less abstracted level. We are going to see how well LLMs can be used to help us with implementing a turn function for Pupper
 #. In ``prompted_conversation.py``, change ``A_FANTASTIC_ROLE`` and ``PROMPT`` so that ChatGPT understands the context of the behaviors you want. **NOTE:** The initial response from ChatGPT may take some time, so add "Start by asking how you can help me" at the end of your prompt so that ChatGPT doesn't hang. 
-#. Ask ChatGPT to program a ``turn()`` function. The parameters we will work with are an angle, speed, and behavior. The behavior can take on three states, shown in ``line 27`` of ``karelPupper.py``. Give this information to ChatGPT, and explain the logic of this pseudocode in your prompt: 
+#. Ask ChatGPT to program a ``turn()`` function that calls the turn_for_time() function in karelPupper.py. The parameters we will work with are an angle, speed, and behavior. The behavior can take on three states, shown in ``line 27`` of ``karelPupper.py``. Give this information to ChatGPT, and explain the logic of this pseudocode in your prompt: 
 
+.. code-block:: python
 
+    def turn(self, angle, speed, behavior_state):
+        clip speed between positive and negative yaw rates (self.config.max_yaw_rate, -self.config.max_yaw_rate) using np.clip (remember to retain the correct signs!)
+        calculate the target time using the formula time = angle / yaw_rate
+        call the turn_for_time function as self.turn_for_time(target time, speed, behavior_state)
 
 **NOTE:** You will notice that ChatGPT will not understand the full syntax of your code parameters, hence you can prompt ChatGPT to make the syntax changes. For example, telling ChatGPT that the maximum and minimimum possible yaw rates are given by the positive and negative of the syntax ``self.config.max_yaw_rate`` should help ChatGPT to understand how to clip the yaw rate. 
 
