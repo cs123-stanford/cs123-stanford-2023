@@ -32,17 +32,6 @@ Step 2. Clone the starter code
 
 After running the ``pip install`` command, you should see that openai has been installed. If not, ask a TA.
 
-Step 3. Make Pupper move in a square
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. The code in this repository depends on the KarelPupper API
-#. Take a look at the ``karelPupper.py`` Python file. This file details many functions that abstracts away basic functional elements for Pupper, such as ``wakeup()``, ``moveForward()``, and ``turn()`` which were all created using MPC. Using the commands detailed in ``karelPupper.py``, write code to make Pupper move in a square in ``outputs/script_square.py``.
-#. Run this script on Pupper, and see how Pupper performs. 
-(TODO: we can have them implement one of the karelpupper commands for MPC exposure/experience??)
-
-**Deliverable: Submit your code for ``script_square.py``. Take a video of Pupper successfully walking in a square.**
-
-**Deliverable: Did Pupper walk in a square successfully on the first try? What tuning did you make for Pupper to walk in the square (delays, speed, angle, etc.)**
-
 Step 4. Add in OpenAI API Key
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Now that we can make Pupper do more complex tasks with simpler, abstracted commands, instead of tuning motor torques, we can use LLMs to do a lot of the work for us!
