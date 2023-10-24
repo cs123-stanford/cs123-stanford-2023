@@ -62,9 +62,10 @@ Next, we are going to experiment with how ChatGPT controls Pupper using both low
 
 Step 7. ChatGPT for lower level control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#. Here, we are going to use ChatGPT to help us implement high level functions in an API, much like the great CS106A classic, Karel. The naming conventions and features are modeled after Karel functions. 
 #. In this step, we are going to see how the LLM performs when controlling Pupper at a lower, less abstracted level. We are going to see how well LLMs can be used to help us with implementing a turn function for Pupper
 #. In ``prompted_conversation.py``, change ``A_FANTASTIC_ROLE`` and ``PROMPT`` so that ChatGPT understands the context of the behaviors you want. **NOTE:** The initial response from ChatGPT may take some time, so add "Start by asking how you can help me" at the end of your prompt so that ChatGPT doesn't hang. 
-#. Ask ChatGPT to program a ``turn()`` function that calls the turn_for_time() function in karelPupper.py. The parameters we will work with are an angle, speed, and behavior. The behavior can take on three states, shown in ``line 27`` of ``karelPupper.py``. Give this information to ChatGPT, and explain the logic of this pseudocode in your prompt: 
+#. Ask ChatGPT to program a ``turn()`` function that calls the turn_for_time() function in karelPupper.py. The parameters we will work with are an angle, speed, and behavior. The behavior can take on three states, shown in ``line 27`` of ``karelPupper.py``. Give this information to ChatGPT, and explain the logic of this pseudocode in your prompt so that ChatGPT knows what to do. 
 
 .. code-block:: python
 
@@ -75,13 +76,18 @@ Step 7. ChatGPT for lower level control
 
 **NOTE:** You will notice that ChatGPT will not understand the full syntax of your code parameters, hence you can prompt ChatGPT to make the syntax changes. For example, telling ChatGPT that the maximum and minimimum possible yaw rates are given by the positive and negative of the syntax ``self.config.max_yaw_rate`` should help ChatGPT to understand how to clip the yaw rate. 
 
+**DELIVERABLE: Copy the role and prompt you used and submit it in your lab document. Copy and paste the conversation you had with ChatGPT to get a successful turn() function. How much tuning and detail do you feel you had to give ChatGPT for it to give the correct function?**
+
 Step 8. Implement script_square.py to test your turn() function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. There is a placeholder for the turn() function in karelPupper.py. Paste the AI-generated code into the the turn() function. 
-#. Using karelPupper() commands detailed in karelPupper.py, make pupper walk in a square using the high-level karel_pupper commands in ``script_square.py``
+#. Using karelPupper() commands detailed in karelPupper.py, make pupper walk in a square using the high-level karel_pupper commands by implementing ``script_square.py``.
 #. Deploy this to the robot, and test how well Pupper walks in a square.
 
 **NOTE:** you may still need to make syntax changes so that your code will run. Refer to the rest of karelPupper.py to see how to do this. 
+
+**DELIVERABLE: Did Pupper walk in a square successfully on the first try? What changes did you have to make? Take a video of Pupper walking in a square**
+
 
 Step 9. Use ChatGPT to make pupper walk in a square
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -90,14 +96,5 @@ Step 9. Use ChatGPT to make pupper walk in a square
 
 **Deliverable: Using ``make_robot_script.py``, use ChatGPT to write a script that makes Pupper move in a square. Compare this AI-made script to your previous ``square_script.py``. Take a video of Pupper walking in a square using your AI-made script**
 
-**Deliverable: What are the differences you noticed, can you tune your prompt to make ChatGPT more exactly match your script?**
+**Deliverable: Did you have to provide less, or more detail for prompting ChatGPT to make Python scripts for you at a higher level or a lower level? Write about the drawbacks and advantages for using LLMs that you realized in this lab.**
 
-Step 8. ChatGPT for high level control
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Using ChatGPT, make Pupper do a complex task of your choice using the high level control from karelPupper.
-
-**Deliverable: Submit a video of Pupper doing your complex task. Submit the code script as well.**
-
-
-
-EXPRESSIVE GAITS
