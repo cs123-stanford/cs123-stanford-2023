@@ -67,6 +67,11 @@ Step 6. Make a prompted conversation
 
 **Deliverable: Change the prompt in ``prompted_conversation.py`` to your liking, and submit your prompt in addition to ChatGPT's default response to your prompt**
 
+Step 7. ChatGPT for lower level control
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#. In the following steps, we will use ChatGPT to control Pupper with high level functions that abstract lots of nuance away from the model. For now, we are going to see how the LLM performs when controlling Pupper at a lower, less abstracted level. We are going to see how well LLMs can be used to help us with implementing a turn function. 
+#. In ``prompted_conversation.py``, change ``A_FANTASTIC_ROLE`` to "python code developer", and ``PROMPT`` to "You are now a chat bot that will aid me in coding low level functions for a quadruped robot. I will be giving you parameters as well as constraints
+
 Step 7. Use ChatGPT to write a square script with high level control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Open ``make_robot_script.py``. This file uses ChatGPT to make karelPupper scripts for you. Run this file, and see how ChatGPT can make scripts for you. Every time you make a script, a new script will be made inside the ``outputs`` directory.
@@ -81,7 +86,6 @@ Step 8. ChatGPT for high level control
 
 **Deliverable: Submit a video of Pupper doing your complex task. Submit the code script as well.**
 
-Step 9. ChatGPT for lower level control
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 EXPRESSIVE GAITS
