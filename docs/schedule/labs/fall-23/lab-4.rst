@@ -129,7 +129,6 @@ Step 6. Attach electronics bulkhead to PCB
 
 #. Screw RPi into electronics bulkhead with M2.5x5 socket head screws such that the Pi is oriented like in the video.
 #. Connect USB C extension cable to Rpi
-#. Connect RPi camera flex cable into RPi. There's a little grey flap that flips up on the connector that lets you slide the cable in. Flip the flap down to lock the cable in.
 #. Connect RPi to power by using 2-pin cable. Connect one end into 5V, GND pins near the Teensy and other side into RPi. Quadruple-check that the 5V and GND pins are going the right places. See diagram.
 #. Connect RPi to Teensy using USB A to USB micro cable
 #. Connect RC receiver to RPi with usb extension cable.
