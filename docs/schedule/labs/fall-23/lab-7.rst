@@ -86,9 +86,18 @@ Step 7. ChatGPT for lower level control
 
 **NOTE:** You will notice that ChatGPT will not understand the full syntax of your code parameters, hence you can prompt ChatGPT to make the syntax changes. For example, telling ChatGPT that the maximum and minimimum possible yaw rates are given by the positive and negative of the syntax ``self.config.max_yaw_rate`` should help ChatGPT to understand how to clip the yaw rate. 
 
-Step 7. Use ChatGPT to write a square script using karelPupper commands
+Step 8. Implement script_square.py to test your turn() function
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#. There is a placeholder for the turn() function in karelPupper.py. Paste the AI-generated code into the the turn() function. 
+#. Using karelPupper() commands detailed in karelPupper.py, make pupper walk in a square using the high-level karel_pupper commands in ``script_square.py``
+#. Deploy this to the robot, and test how well Pupper walks in a square.
+
+**NOTE:** you may still need to make syntax changes so that your code will run. Refer to the rest of karelPupper.py to see how to do this. 
+
+Step 9. Use ChatGPT to make pupper walk in a square
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Open ``make_robot_script.py``. This file uses ChatGPT to make karelPupper scripts for you. Run this file, and see how ChatGPT can make scripts for you. Every time you make a script, a new script will be made inside the ``outputs`` directory.
+#. Ask ChatGPT here to make pupper walk in a square. 
 
 **Deliverable: Using ``make_robot_script.py``, use ChatGPT to write a script that makes Pupper move in a square. Compare this AI-made script to your previous ``square_script.py``. Take a video of Pupper walking in a square using your AI-made script**
 
