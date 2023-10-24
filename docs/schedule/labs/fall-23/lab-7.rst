@@ -7,7 +7,7 @@ Now we are ready to do some cool things! With the fully built Pupper, we are goi
 **Goals:**
         1. Use LLMs to program Pupper to perform new tasks on the fly.
         2. Experiment on how LLMs perform with high level and low level control on Pupper. 
-        2. Use prompt engineering for an open-ended mini project!
+        3. Use prompt engineering for an open-ended mini project!
 
 TODO ADD IMAGE
 
