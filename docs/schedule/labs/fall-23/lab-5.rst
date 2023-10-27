@@ -14,6 +14,7 @@ Step 1. Set Up Virtual Machine
 #. Log into GCP and find the gcp-robotics project
 #. Start your machine, and SSH into the instance (using the 'ssh' button on the webpage shown in the image above)
 #. Navigate to the directory "jvclark/rl/legged_gym". Here, you will be able to run the train.py script to train a policy, and play.py script to run the latest policy.
+#. Test if all installations work by running ``python legged_gym/scripts/train.py --task=pupper_stand --num_envs=2000 --max_iterations=500 --run_name='standup_test' --headless`` to start training. If the policy beings training, then press Ctrl+C to cancel and continue. Talk to a TA if this does not work.
 #. Also, make a note of the username shown in the ssh window (it should look something like USERNAME@instance). This will be used in generating SSH key in the steps below.
 
 Step 2. VS Code SSH Setup
@@ -23,10 +24,11 @@ Step 2. VS Code SSH Setup
    :height: 480
 
 #. Setup SSH key using `instructions <https://cloud.google.com/compute/docs/connect/create-ssh-keys>`_ 
+#. Press return to not require a password when it prompts you
 #. Once your ssh key is created run ``cat /path/to/key.pub`` and copy the full ssh key. The format should be ``ssh-rsa keyvalue user``.
 #. Go to your instance, select edit, and add an SSH key.
 #. Install the VS Code 'Remote - SSH' extension.
-#. Press Cmd + Shift + P. Select "Connect to host". then "Configure SSH Hosts...". Open the ".../.ssh/config" file. Fill out GCP host config as shown in the image.
+#. Press Cmd + Shift + P. Select "Connect to host". then "Configure SSH Hosts...". Open the ".../.ssh/config" file. Fill out GCP host config as shown in the image. The user is the  same as your Stanford user. For example, if your email is jvclark@stanford.edu, use jvclark.
 
 .. figure:: ../../../_static/ssh_setup.jpg
     :align: center
@@ -35,6 +37,7 @@ Step 2. VS Code SSH Setup
 
 #. Press Cmd + Shift + P again. Then select "Connect to Host". Press Cmd + O to open the rl/legged_gym repository.
 #. You should now be able to edit your code in the legged_gym repo.
+#. IMPORTANT: If you turn your machine on and off, you will need to reset
 
 Step 3. Setup Chrome Remote Desktop
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -44,6 +47,7 @@ Step 3. Setup Chrome Remote Desktop
 #. In the SSH window from Step 1, pase and execute the copied command.
 #. For the 6-digit passcode you can just use something like '123456'.
 #. Go to https://remotedesktop.corp.google.com/access, you should see the GCP instance you just setup appear in the device list. Now you can click it to see the remote desktop.
+#. Once in the remote desktop, activate copy and paste by opening a terminal and running ``sudo apt-get install gnome-terminal``. Then right click to copy and paste.
 
 **Note:** for the RL training part of this lab, you will use the VS Code setup to edit the code, and then use the chrome remote desktop to run the command and visualize the policy.
 
@@ -52,6 +56,8 @@ Step 4. Stand High Policy
 
 Navigate to the starter code.
 -------------------------------
+
+IMPORTANT: Your workflow for this lab should be coding in VS code, and running and visualizing policies in the chrome remote desktop. To run a policy in chrome desktop, just open a terminal and navigate to the correct directory to run the play and train scripts.
 
 In the Chrome Remote Desktop window from Step 3, start a new terminal.
 
