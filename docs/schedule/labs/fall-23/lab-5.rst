@@ -75,6 +75,8 @@ You should see a screen showing up with many robots and they start to move their
 Implement first version of standing up policy
 -------------------------------
 
+IMPORTANT DEBUGGING ADVICE: It may be challenging at first to compose the correct tensor operations. To debug, please use pdb by adding ``breakpoint()`` in your reward functions and analyzing dimensions of key variables. Refer to the slides handout for common pdb operations.
+
 In VS Code, navigate to ``legged_gym/envs/pupper/pupper.py``.
 
 Your job is to edit the ``_reward_base_height`` function so that Puppper stands up.
@@ -89,11 +91,13 @@ where $x$ is the state of the robot, and $x_2$ means we are taking the second di
 
 After you finish coding the reward, use the same command as above: ``python legged_gym/scripts/train.py --task=pupper_stand --num_envs=2000 --max_iterations=500 --run_name='standup_test' `` to run the training. This time you should see remove being non-zero.
 
-To check the policy, visualize using ``python legged_gym/scripts/play.py --task=pupper_stand``. This will save a video, which you can drag and drop to your local machine for viewing.
+To check the policy, visualize by running ``python legged_gym/scripts/play.py --task=pupper_stand`` in a new terminal every 100 or so iterations. This will save a video, which you can drag and drop to your local machine for viewing.
 
 You can also analyze learning curves using tensorboard. To do so, open a terminal on your local machine and run ``ssh -i /path/to/sshkey -L 6006:localhost:6006 username@puplicip``. This opens port forwarding through 6006. Then navigate to the legged gym repo and run ``tensorboard --logdir logs``. Copy the suggested URL from the terminal and paste into a browser on your local machine to visualize learning curves.
 
-**DELIVERABLE**: Screen recording of simulation training result.
+In a successful first standup policy, Pupper should be standing up and staionary off the ground. Don't worry if Pupper falls over or this policy is imperfect.
+
+**DELIVERABLE**: Saved vido of simulation training result.
 
 **QUESTION**: What robot behavior do you observe? Why is the robot behaving this way?
 
@@ -108,18 +112,11 @@ $r(x) = -(x_2 - target)^2$
 
 Now go ahead and revise your ``_reward_base_height`` and run training again.
 
+Similar to the last step, view your policy with play.py while training. This policy should stand up and be stable after around 200-300 iterations.
+
 **DELIVERABLE**: Screen recording of simulation training result.
 
 **QUESTION**: What robot behavior do you observe? Why is the robot behaving this way? 
-
-Implement third version of standing up policy
--------------------------------
-
-Now, think about what happens in the previous two trainings, how should you revise the reward function such that pupper can learn to stand up and hold a certain height stably?
-
-**DELIVERABLE**: Screen recording of simulation training result with pupper successfully standing up.
-
-**QUESTION**: What's the reward function you used? What's the rationale behind the reward design? 
 
 
 Step 5. Deploy Stand High Policy
@@ -142,7 +139,7 @@ Step 6. Walking Policy
 
 Now let's make the Pupper walk! To do that, you need to write the  ``_reward_forward_velocity`` functions in ``pupper.py`` so that Pupper receives a positive reward for moving forward.
 
-Of course you would need to access how fast the robot is moving currently. To do that you can use the ``self.root_states`` variable. Note that this is a matrix of [N, 13] (N is number of robots being simulated). 
+Of course you would need to access how fast the robot is moving currently. To do that you can use the ``self.root_states`` variable. Note that this is a matrix of [N, 13] (N is number of robots being simulated, which sould be 2000).  
 
 For the 13 dimensions, we have:
 
@@ -154,17 +151,19 @@ For the 13 dimensions, we have:
 
 10-13: angular velocity of robot.
 
+For example, to capture the forward linear velocity of all robots use ``self.root_states[:,8]``.
+
 Your task here is to propose **THREE** ideas of writing a reward function that would make the pupper walk forward as elegantly as possible, and obtain suggestions/approval from TA before implementing it in the code.
 
 For running training in this task, use the following command:
 ``python legged_gym/scripts/train.py --task=pupper_flat --num_envs=2000 --max_iterations=1500 --run_name='running_test' `` 
 to train your policy. Check policy around every 250 iterations to analyze if you have chosen the correct coefficients.
 
-Experiment with different reward coefficents until you are happy with the walking gait.
+Experiment with different reward coefficents in ``pupper_config`` until you are happy with the walking gait.
 
 Deploy policy on Pupper, as in Step 5. Be careful as the robot may behave erratically.
 
-**DELIVERABLE**: Videos of sim and real robots with trained policies.
+**DELIVERABLE**: Videos of sim and real robots with trained policies. Also please submit your tensorboard mean reward plot for the successful policy.
 
 **DELIVERABLE**: What terms are included in your reward functions? What coefficeints did you use? How did you come up with these terms and what was their desired effect? Why might this policy perform poorly on the physical robot?
 
