@@ -91,7 +91,7 @@ where $x$ is the state of the robot, and $x_2$ means we are taking the second di
 
 After you finish coding the reward, use the same command as above: ``python legged_gym/scripts/train.py --task=pupper_stand --num_envs=2000 --max_iterations=500 --run_name='standup_test' `` to run the training. This time you should see remove being non-zero.
 
-To check the policy, visualize by running ``python legged_gym/scripts/play.py --task=pupper_stand`` in a new terminal every 100 or so iterations. This will save a video, which you can drag and drop to your local machine for viewing.
+To check the policy, visualize by running ``python legged_gym/scripts/play.py --task=pupper_stand`` in a new terminal every 100 or so iterations. This will save a video in the folder , which you can right-click and download onto your local machine for viewing.
 
 You can also analyze learning curves using tensorboard. To do so, open a terminal on your local machine and run ``ssh -i /path/to/sshkey -L 6006:localhost:6006 username@puplicip``. This opens port forwarding through 6006. Then navigate to the legged gym repo and run ``tensorboard --logdir logs``. Copy the suggested URL from the terminal and paste into a browser on your local machine to visualize learning curves.
 
