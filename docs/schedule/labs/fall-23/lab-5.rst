@@ -123,7 +123,7 @@ Step 5. Deploy Stand High Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Transfer policy from virtual machine to local machine
 
-#. Clone the puppersim repo onto your **local** machine using ``git clone https://github.com/jietan/puppersim.git``. This repository contains policy deployment code for transferring the policy trained in simulation to the phsyical hardware.
+#. Clone the puppersim repo onto your **local** machine using ``git clone https://github.com/jadenvc/puppersim.git``. This repository contains policy deployment code for transferring the policy trained in simulation to the phsyical hardware. Swith to the branch "jaden" using git checkout ``jaden``.
 #. Navigate inside the puppersim repo and run ``pip install -e .`` Don't forget the "." at the end.
 #. Move your file into the puppersim repo. You can find the policy you just trained in the logs folder of  ``legged_gym`` in VS code, and drag and drop it to your  ``puppersim`` directory on your local machine.
 #. In local puppersim repo, change the policy called in isaac_gym_policy.py (located under the puppersim folder) to your policy name (your .pt file)
