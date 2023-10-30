@@ -92,6 +92,8 @@ Step 7. ChatGPT for lower level control
 
 **NOTE:** You will notice that ChatGPT will not understand the full syntax of your code parameters, hence you can prompt ChatGPT to make the syntax changes. For example, telling ChatGPT that the maximum and minimimum possible yaw rates are given by the positive and negative of the syntax ``self.config.max_yaw_rate`` should help ChatGPT to understand how to clip the yaw rate. 
 
+**ANOTHER NOTE:** This turn function does not use the IMU to determine Pupper's orientation. Hence, since Pupper works on many different surfaces, the time required for Pupper to turn a certain degree is not always consistent. Therefore, in your script, you may add some offsets to the turn angle or time so that Pupper turns correctly (this will mostly be trial and error).
+
 **DELIVERABLE: Copy the role and prompt you used and submit it in your lab document. Copy and paste the conversation you had with ChatGPT to get a successful turn() function. How much tuning and detail do you feel you had to give ChatGPT for it to give the correct function?**
 
 Step 8. Implement script_square.py to test your turn() function
@@ -100,7 +102,7 @@ Step 8. Implement script_square.py to test your turn() function
 #. Using karelPupper() commands detailed in karelPupper.py, make pupper walk in a square using the high-level karel_pupper commands by implementing ``script_square.py``.
 #. Deploy this to the robot, and test how well Pupper walks in a square.
 
-**NOTE:** you may still need to make syntax changes so that your code will run. Refer to the rest of karelPupper.py to see how to do this. 
+**NOTE:** you may still need to make syntax changes so that your code will run. Refer to the rest of karelPupper.py to see how to do this.
 
 **DELIVERABLE: Did Pupper walk in a square successfully on the first try? What changes did you have to make? Take a video of Pupper walking in a square**
 
