@@ -16,6 +16,7 @@ Step 1. Set Up Virtual Machine
 #. Log into GCP and find the gcp-robotics project
 #. Start your machine, and SSH into the instance (using the 'ssh' button on the webpage shown in the image above)
 #. Navigate to the directory "/home/jaden_v_clark/rl/cs123/legged_gym". Here, you will be able to run the train.py script to train a policy, and play.py script to run the latest policy.
+#. In legged_gym run ``pip install -e .`` and ``export LD_LIBRARY_PATH=/opt/conda/envs/rlgpu/lib``
 #. Test if all installations work by running ``conda activate rlgpu`` then ``python legged_gym/scripts/train.py --task=pupper_stand --num_envs=2000 --max_iterations=500 --run_name='standup_test' --headless`` to start training. If the policy beings training, then press Ctrl+C to cancel and continue. Talk to a TA if this does not work.
 #. Also, make a note of the username shown in the ssh window (it should look something like USERNAME@instance). This will be used in generating SSH key in the steps below.
 
