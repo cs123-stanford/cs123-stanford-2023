@@ -1,6 +1,8 @@
 Lab 5: How to Train Your Dog
 ========================
 
+`Lab document <https://docs.google.com/document/d/1JGY5c8KDmdC-akXE1jUoKW8Bshc-y2HM5WJQnYqEUtk/edit?usp=sharing>`_ 
+
 *Goal: Use RL to control your Pupper.*
 
 Step 1. Set Up Virtual Machine
@@ -162,6 +164,8 @@ to train your policy. Check policy around every 250 iterations to analyze if you
 Experiment with different reward coefficents in ``pupper_config`` until you are happy with the walking gait.
 
 Deploy policy on Pupper, as in Step 5. Be careful as the robot may behave erratically.
+
+**DELIVERABLE**: Why is the torque reward important? Why is torque penalized?
 
 **DELIVERABLE**: Videos of sim and real robots with trained policies. Also please submit your tensorboard mean reward plot for the successful policy.
 
