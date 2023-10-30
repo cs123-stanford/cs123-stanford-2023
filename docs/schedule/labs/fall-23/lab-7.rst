@@ -13,6 +13,13 @@ Now we are ready to do some cool things! With the fully built Pupper, we are goi
    :width: 640
    :height: 480
 
+.. raw:: html
+
+   <video width="560" height="315" controls>
+     <source src="../../../_static/square_walk.MOV" type="video/mp4">
+   Your browser does not support the video tag.
+   </video>
+
 TODO ADD IMAGE
 
 Step 1. SSH into the Pupper
