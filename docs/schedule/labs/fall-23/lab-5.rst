@@ -70,7 +70,7 @@ Switch to the correct branch using ``git checkout class``
 
 Run ``export LD_LIBRARY_PATH=/opt/conda/envs/rlgpu/lib`` and ``conda activate rlgpu`` to enter the conda environment.
 
-Run training with skeleton code ``python legged_gym/scripts/train.py --task=pupper_stand --num_envs=2000 --max_iterations=500 --run_name='standup_test' `` 
+Run training with skeleton code ``python legged_gym/scripts/train.py --task=pupper_stand --num_envs=2000 --max_iterations=500 --run_name='standup_test'`` 
 
 You should see a screen showing up with many robots and they start to move their legs a bit. On the terminal, you should see training logs with reward being zero (since we haven't added the reward yet).
 
