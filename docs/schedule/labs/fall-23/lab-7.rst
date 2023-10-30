@@ -100,7 +100,7 @@ Step 7. Implement script_square.py to test your turn() function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. There is a placeholder for the turn() function in karelPupper.py. Paste the AI-generated code into the the turn() function. 
 #. Using karelPupper() commands detailed in karelPupper.py, make pupper walk in a square using the high-level karel_pupper commands by implementing ``script_square.py``.
-#. Deploy this to the robot, and test how well Pupper walks in a square. Using Karel Pupper commands, deploying to the robot is easy. Run the python file as normal, just above the outputs directory. **TIP: If Pupper ever ends up in a weird state after deploying, you can use ``rest.py`` to set Pupper back to the normal state without breaking SSH. 
+#. Deploy this to the robot, and test how well Pupper walks in a square. Using Karel Pupper commands, deploying to the robot is easy. Run the python file as normal, just above the outputs directory. **TIP: If Pupper ever ends up in a weird state after deploying, you can use ``rest.py`` to set Pupper back to the normal state without breaking SSH.** 
 
 Example: ``python3 outputs/script_square.py``
 
