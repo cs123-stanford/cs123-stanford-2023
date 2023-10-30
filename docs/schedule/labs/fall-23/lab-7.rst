@@ -44,7 +44,13 @@ Step 2. Clone the starter code
 
 ``pip3 install -r requirements.txt``
 
-After running the ``pip install`` command, you should see that openai has been installed. If not, ask a TA.
+After running the ``pip install`` command, you should see that openai has been installed. If not, ask a TA. Next set the python path:
+
+``nano ~/.bashrc``
+
+Copy in the line export ``PYTHONPATH=/home/pi/CS123/lab_7_llms_solutions`` to the end of this file (you can just copy and paste in). Use Ctrl+O, Enter, Ctrl+X to write your changes. Source these changes in the termianl so that the Python path changes permanently. 
+
+``source ~/.bashrc``
 
 Step 3. Add in OpenAI API Key
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
