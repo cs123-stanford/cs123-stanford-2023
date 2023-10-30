@@ -61,7 +61,7 @@ IMPORTANT: Your workflow for this lab should be coding in VS code, and running a
 
 In the Chrome Remote Desktop window from Step 3, start a new terminal.
 
-Access the starter code using ``cd /rl/legged_gym`` (NEED TO CORREC)
+Access the starter code using ``cd/home/jaden_v_clark/rl/legged_gym``
 
 Switch to the correct branch using ``git checkout class``
 
