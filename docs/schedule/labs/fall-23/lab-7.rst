@@ -124,3 +124,5 @@ Step 9. Nuanced GPT Commands
 
 **Deliverable: Submit your nuanced scripts with your upload. If you were to implement these yourself, what would you have changed? Take videos of Pupper performing the complex tasks.**
 
+*One of the goals of this lab is to help you get started thinking about the final project and provide you with the infrastructure necessary to work with LLMs. How may you use LLMs for your final project. Can you interface RL policies rather than KarelPupper commands using LLMs? Can you prompt Pupper to follow an object using CV?*
+
