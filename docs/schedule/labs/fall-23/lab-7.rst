@@ -4,6 +4,7 @@ Lab 7: Do What I Say
 Now we are ready to do some cool things! With the fully built Pupper, we are going to use LLMs to control the robot to do new tasks that we can come up with, making new movements faster than we could have imagined!
 
 `Lab Document <https://docs.google.com/document/d/1QEGYznZovdQ-JiNtLgiRd0G3alqqqAifYUD2NQlMEHo/edit?usp=sharing>`_ 
+
 `Lab Review Slides <https://docs.google.com/presentation/d/1sjY9XK81GSq5iTafxziCz354rBoAEb1O/edit?usp=sharing&ouid=112164671976474020631&rtpof=true&sd=true>`_ 
 
 **Goals:**
