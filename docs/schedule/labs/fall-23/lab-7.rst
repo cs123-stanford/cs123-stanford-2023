@@ -66,7 +66,7 @@ Step 6. Make a prompted conversation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Open ``prompted_conversation.py``. This file provides creates a prompted conversation with ChatGPT. Run this file, and see how ChatGPT gets prompted before running the script. 
 
-**Deliverable: Change the prompt in ``prompted_conversation.py`` to your liking, and submit your prompt in addition to ChatGPT's default response to your prompt**
+**Deliverable: Change the prompt in ``prompted_conversation.py`` to your liking, and submit your prompt in addition to ChatGPT's default response to your prompt. Experiment with this to see how ChatGPT creates a default prompt (This is much like having different tabs on the ChatGPT website)**
 
 Next, we are going to experiment with how ChatGPT controls Pupper using both low level, and high level functions. The high level functions will abstract a lot of the nuance associated with tuning motor torques and speeds away. 
 
