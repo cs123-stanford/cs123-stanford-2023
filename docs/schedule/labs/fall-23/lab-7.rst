@@ -9,12 +9,9 @@ Now we are ready to do some cool things! With the fully built Pupper, we are goi
         2. Experiment on how LLMs perform with high level and low level control on Pupper. 
         3. Use prompt engineering for an open-ended mini project!
 
-.. raw:: html
-
-   <video width="560" height="315" controls>
-     <source src="_static/videos/square_walk.MOV" type="video/mp4">
-   Pupper walking in a square using LLMs
-   </video>
+.. youtube:: NyxzC4KVDoc
+   :width: 640
+   :height: 480
 
 TODO ADD IMAGE
 
