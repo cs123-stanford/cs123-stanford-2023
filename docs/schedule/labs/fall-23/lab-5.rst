@@ -137,7 +137,7 @@ Transfer policy from virtual machine to local machine
 Step 6. Walking Policy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Now let's make the Pupper walk! To do that, you need to write the  ``_reward_forward_velocity`` functions in ``pupper.py`` so that Pupper receives a positive reward for moving forward.
+Now let's make the Pupper walk! To do that, you need to write the  ``_reward_forward_velocity`` and ``_reward_torques`` functions in ``pupper.py`` so that Pupper receives a positive reward for moving forward.
 
 Of course you would need to access how fast the robot is moving currently. To do that you can use the ``self.root_states`` variable. Note that this is a matrix of [N, 13] (N is number of robots being simulated, which sould be 2000).  
 
