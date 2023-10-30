@@ -21,6 +21,7 @@ Step 1. SSH into the Pupper
 .. figure:: ../../../_static/internet_sharing.png
     :align: center
     :width: 50%
+
 #. Before starting the SSH, share network between your host machine and its remotes. In System Preferences, open "Sharing". In this window, you should see "Internet Sharing". Expand the options there, and enable all LAN connections so that we can share network over the ethernet connection to the Raspberry Pi. Turn on Internet Sharing. 
 #. With the fully built Pupper, plug an ethernet cable between your laptop and the Pupper's Raspberry Pi, using an ethernet to usb adapter if needed (provided, ask a TA).  
 
@@ -31,6 +32,12 @@ Step 1. SSH into the Pupper
 #. Like the RL lab, we can SSH into a remote system inside VSCode. Open VSCode, and use ``CMD + Shift + P`` to access the Command Pallete.
 #. In the Command Pallette, type in ``pi@raspberrypi.local`` to prompt a remote connection. This will allow you to ssh into the Pupper's Raspberry Pi via the ethernet connection. 
 #. When the Enter Password prompt shows, enter ``raspberry`` as the password. This is a default password on the Raspberry Pis, you may change it if you like (be sure to remember it!). VSCode will tell you if your SSH connection was successful. You can use the Command Pallete to navigate around the Raspberry Pi and use the Terminal to run commands. 
+
+If you run into an issue like below, follow the command that the window suggests, and try ssh again. 
+
+.. figure:: ../../../_static/ssh_error.png
+    :align: center
+    :width: 50%
 
 Step 2. Clone the starter code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
