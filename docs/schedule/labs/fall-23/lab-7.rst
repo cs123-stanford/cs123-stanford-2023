@@ -118,7 +118,7 @@ Step 8. Use ChatGPT to make pupper walk in a square
 
 Step 9. Nuanced GPT Commands
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Using ``make_robot_script.py``, ask ChatGPT to make Pupper do more complex tasks. See how well the LLM performs when you add more complexity to the task. 
+#. Using ``make_robot_script.py``, ask ChatGPT to make Pupper do more complex tasks. See how well the LLM performs when you add more complexity to the task. Come up with two new tasks for Pupper to do. 
 
-**Deliverable: Submit your nuanced script with your upload. If you were to implement this yourself, what would you have changed? Take a video of Pupper performing the complex task.**
+**Deliverable: Submit your nuanced scripts with your upload. If you were to implement these yourself, what would you have changed? Take videos of Pupper performing the complex tasks.**
 
