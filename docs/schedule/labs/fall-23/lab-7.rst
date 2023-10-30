@@ -43,14 +43,14 @@ Step 2. Clone the starter code
 
 After running the ``pip install`` command, you should see that openai has been installed. If not, ask a TA.
 
-Step 4. Add in OpenAI API Key
+Step 3. Add in OpenAI API Key
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Now that we can make Pupper do more complex tasks with simpler, abstracted commands, instead of tuning motor torques, we can use LLMs to do a lot of the work for us!
 
 #. For working with ChatGPT from a script, you must have an API key. This API key allows you to make a request to the ChatGPT api from your script, and tells OpenAI the associated account that is making the request (each API call has a small charge associated with it). For the lab, we will be using a shared API key. Check your Canvas announcements for the API key, and copy that API key as a string into ``constants.py`` under ``OPEN_AI_API_KEY``.
 #. Save the file before the next step.
 
-Step 5. Chat with ChatGPT in the command line
+Step 4. Chat with ChatGPT in the command line
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. In VSCode, open ``simple_conversation.py``. This file provides the framework for starting a simple conversation with ChatGPT. Open a new terminal (top bar, Terminal -> New Terminal). 
 #. Run ``simple_conversation.py`` in the terminal window``
@@ -62,7 +62,7 @@ Step 5. Chat with ChatGPT in the command line
 
 **Deliverable: Take a look at simple_conversation.py, and write a sentence about how it works. How does the ``get_response()`` function work?**
 
-Step 6. Make a prompted conversation
+Step 5. Make a prompted conversation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Open ``prompted_conversation.py``. This file provides creates a prompted conversation with ChatGPT. Run this file, and see how ChatGPT gets prompted before running the script. 
 
@@ -71,7 +71,7 @@ Step 6. Make a prompted conversation
 Next, we are going to experiment with how ChatGPT controls Pupper using both low level, and high level functions. The high level functions will abstract a lot of the nuance associated with tuning motor torques and speeds away. 
 
 
-Step 7. ChatGPT for lower level control
+Step 6. ChatGPT for lower level control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Here, we are going to use ChatGPT to help us implement high level functions in an API, much like the great CS106A classic, Karel. The naming conventions and features are modeled after Karel functions. 
 
@@ -96,7 +96,7 @@ Step 7. ChatGPT for lower level control
 
 **DELIVERABLE: Copy the role and prompt you used and submit it in your lab document. Copy and paste the conversation you had with ChatGPT to get a successful turn() function. How much tuning and detail do you feel you had to give ChatGPT for it to give the correct function?**
 
-Step 8. Implement script_square.py to test your turn() function
+Step 7. Implement script_square.py to test your turn() function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. There is a placeholder for the turn() function in karelPupper.py. Paste the AI-generated code into the the turn() function. 
 #. Using karelPupper() commands detailed in karelPupper.py, make pupper walk in a square using the high-level karel_pupper commands by implementing ``script_square.py``.
@@ -107,7 +107,7 @@ Step 8. Implement script_square.py to test your turn() function
 **DELIVERABLE: Did Pupper walk in a square successfully on the first try? What changes did you have to make? Take a video of Pupper walking in a square**
 
 
-Step 9. Use ChatGPT to make pupper walk in a square
+Step 8. Use ChatGPT to make pupper walk in a square
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Open ``make_robot_script.py``. This file uses ChatGPT to make karelPupper scripts for you. Run this file, and see how ChatGPT can make scripts for you. Every time you make a script, a new script will be made inside the ``outputs`` directory.
 #. Ask ChatGPT here to make pupper walk in a square. 
@@ -116,7 +116,7 @@ Step 9. Use ChatGPT to make pupper walk in a square
 
 **Deliverable: Did you have to provide less, or more detail for prompting ChatGPT to make Python scripts for you at a higher level or a lower level? Write about the drawbacks and advantages for using LLMs that you realized in this lab.**
 
-Step 10. Nuanced GPT Commands
+Step 9. Nuanced GPT Commands
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. Using ``make_robot_script.py``, ask ChatGPT to make Pupper do more complex tasks. See how well the LLM performs when you add more complexity to the task. 
 
