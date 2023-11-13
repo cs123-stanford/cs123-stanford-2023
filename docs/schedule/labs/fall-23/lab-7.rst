@@ -68,7 +68,7 @@ Now that we can make Pupper do more complex tasks with simpler, abstracted comma
 
 Step 4. Chat with ChatGPT in the command line
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. In this step, you will be starting a simple conversation with ChatGPT through the command line. Open ``model-api.py``, and implement the ``get_response`` function. Ask ChatGPT how to implement this function by going onto the web application and pasting in this code, and ask ChatGPT to implement ``get_response`` for you. If you need more information on how to do this, refer to these docs: https://platform.openai.com/docs/api-reference/introduction. 
+#. In this step, you will be starting a simple conversation with ChatGPT through the command line. Open ``model-api.py``, and implement the ``get_response`` function. Ask ChatGPT how to implement this function by going onto the web application and pasting in this code, and asking ChatGPT to implement ``get_response`` for you. If you need more information on how to do this, refer to these docs: https://platform.openai.com/docs/api-reference/introduction. 
 #. In VSCode, open ``simple_conversation.py``. This file provides the framework for starting a simple conversation with ChatGPT. Open a new terminal (top bar, Terminal -> New Terminal). 
 #. Run ``simple_conversation.py`` in the terminal window``
 #. Once run, you should see a chat window open with ChatGPT. You should be able to chat with the ChatGPT from your terminal, just like in the web app. Play around and chat with ChatGPT. 
