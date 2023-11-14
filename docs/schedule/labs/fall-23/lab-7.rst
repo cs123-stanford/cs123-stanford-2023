@@ -55,7 +55,7 @@ After running the ``pip install`` command, you should see that openai has been i
 
 ``nano ~/.bashrc``
 
-Copy in the line export ``PYTHONPATH=/home/pi/CS123/lab_7_llms`` to the end of this file (you can just copy and paste in). Use Ctrl+O, Enter, Ctrl+X to write your changes. Source these changes in the termianl so that the Python path changes permanently. 
+Copy in the line ``export PYTHONPATH=/home/pi/CS123/lab_7_llms`` to the end of this file (you can just copy and paste in). Use Ctrl+O, Enter, Ctrl+X to write your changes. Source these changes in the termianl so that the Python path changes permanently. 
 
 ``source ~/.bashrc``
 
