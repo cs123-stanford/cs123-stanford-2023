@@ -3,7 +3,7 @@ Lab 8: Seeing is Believing
 
 Give Pupper the ability to see! In this lab, you'll be using Pupper's OAK-D camera to recognize and track a person (in place).
 
-`Lab Document <https://docs.google.com/document/d/1QEGYznZovdQ-JiNtLgiRd0G3alqqqAifYUD2NQlMEHo/edit?usp=sharing>`_ 
+`Lab Document <https://docs.google.com/document/d/1E9m5CkxJx1agDqbwgxrIn9BYTjTdWUYTpshVoe7uvxg/edit?usp=sharing>`_ 
 
 `Lab Review Slides <https://docs.google.com/presentation/d/1sjY9XK81GSq5iTafxziCz354rBoAEb1O/edit?usp=sharing&ouid=112164671976474020631&rtpof=true&sd=true>`_ 
 
