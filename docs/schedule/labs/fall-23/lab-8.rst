@@ -50,4 +50,7 @@ Step 4. Edit control.py to update Pupper's velocity
 
 Step 5. Run your code on Pupper!
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
+#. Open two terminal windows, and SSH into Pupper in both.
+#. In the first window, run the vision script (``python3 vision.py``)
+#. In the second window, run the control script (``python3 control.py``)
+#. Pupper should turn to track you when you stand in front of the camera. Experiment with different values of ``KP`` to see how they affect Pupper's behavior.
