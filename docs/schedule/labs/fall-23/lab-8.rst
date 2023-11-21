@@ -40,6 +40,9 @@ Step 2. Clone the starter code
 
 Step 3. Edit vision.py to determine where the Pupper should be looking
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#. Add a print statement to view the outputs of the "detections" variable.
+#. Filter the detections so they only include the "person" class. You can get the text representation of the label like this: ``labelMap[detection.label]``
+#. Fill in the contents of the send_velocity_command function. This should take a single number (the velocity at which Pupper should turn) and write it to a file so it can be accessed by the control.py script.
 
 Step 4. Edit control.py to update Pupper's velocity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
