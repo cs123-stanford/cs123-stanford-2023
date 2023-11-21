@@ -38,8 +38,6 @@ Step 2. Clone the starter code
 
 ``git clone https://github.com/cs123-stanford/lab_8_seeing_is_believing.git``
 
-#GABRAEL PLEASE EDIT THIS SECTION
-
 Step 3. Edit vision.py to determine where the Pupper should be looking
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
