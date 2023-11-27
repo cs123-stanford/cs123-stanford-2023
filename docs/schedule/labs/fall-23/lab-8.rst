@@ -5,7 +5,7 @@ Give Pupper the ability to see! In this lab, you'll be using Pupper's OAK-D came
 
 `Lab Document <https://docs.google.com/document/d/1E9m5CkxJx1agDqbwgxrIn9BYTjTdWUYTpshVoe7uvxg/edit?usp=sharing>`_ 
 
-`Lab Review Slides <https://docs.google.com/presentation/d/1sjY9XK81GSq5iTafxziCz354rBoAEb1O/edit?usp=sharing&ouid=112164671976474020631&rtpof=true&sd=true>`_ 
+`Lab Review Slides <https://docs.google.com/presentation/d/1a1IG7vqRjBscTM1JT7yWsLgEbjuSJ4uk/edit?usp=sharing&ouid=106128192400488507549&rtpof=true&sd=true>`_ 
 
 **Goals:**
         1. Use computer vision to detect people.
