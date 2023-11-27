@@ -48,7 +48,7 @@ Step 3. Edit vision.py to determine where the Pupper should be looking
 
 Step 4. Edit control.py to update Pupper's velocity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- In this step, write code to read from the velocity_command file and determine what Pupper's yaw velocity should be. Once this is done, the pup.step function will command Pupper to move according to the desired yaw velocities. 
+ In this step, write code to read from the velocity_command file and determine what Pupper's yaw rate should be. Once this is done, the pup.step function will command Pupper to move according to the desired yaw rates. 
 
 Step 5. Run your code on Pupper!
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
