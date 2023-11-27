@@ -52,8 +52,8 @@ Step 3. Edit vision.py to determine where the Pupper should be looking
 #. Filter the detections so they only include the "person" class. You can get the text representation of the label like this: ``labelMap[detection.label]``.
 #. Find the x center of the bounding box around the person.
 #. Find how far the x center of the person is from where the Pupper is currently pointing (Pupper's field of view is a rectangle normalized to have lengths and widths of 1)
-#. Use KP to implement a proportional controller to determine yaw_velocity.
-#. Fill in the contents of the send_velocity_command function. This should take a single number (the velocity at which Pupper should turn) and write it to a file so it can be accessed by the control.py script.
+#. Use KP to implement a proportional controller to determine yaw_rate.
+#. Fill in the contents of the send_velocity_command function. This should take a single number (the rate at which Pupper should turn) and write it to a file so it can be accessed by the control.py script.
 
 Step 4. Edit control.py to update Pupper's velocity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
