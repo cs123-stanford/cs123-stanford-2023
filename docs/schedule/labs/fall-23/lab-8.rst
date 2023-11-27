@@ -47,8 +47,8 @@ Step 2. Clone the starter code
 
 Step 3. Edit vision.py to determine where the Pupper should be looking
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. In this section, you guys will be working with bounding boxes. Bounding boxes are rectangles surrounding an individual detection that indicate the size and position of an object in the image. Each bounding box is stored in the detections array, and you can pull out each individual detection by iterating through it.
-#. Add a print statement to view the outputs of the "detections" variable. 
+#. In this section, you guys will be working with bounding boxes. Bounding boxes are rectangles surrounding an individual detection that indicate the size and position of an object in the image. Each bounding box is stored in the ``detections`` array, and you can pull out each individual detection by iterating through it.
+#. Add a print statement to view the outputs of the ``detections`` variable. 
 #. Filter the detections so they only include the "person" class. You can get the text representation of the label like this: ``labelMap[detection.label]``.
 #. Find the x center of the bounding box around the person.
 #. Find how far the x center of the person is from where the Pupper is currently pointing (Pupper's field of view is a rectangle normalized to have lengths and widths of 1)
