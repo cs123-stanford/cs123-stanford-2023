@@ -11,6 +11,13 @@ Give Pupper the ability to see! In this lab, you'll be using Pupper's OAK-D came
         1. Use computer vision to detect people.
         2. Program pupper to track people in place using bounding boxes.
 
+Step 0. Flash software image with vision dependencies onto Raspberry Pi
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#. Download the `pupper_vision.iso image <https://drive.google.com/file/d/1AE6p09rVYqrKcIkyFl45AEo0zhFC5BbI/view?usp=sharing>`_
+#. Install `Balena etcher <https://www.balena.io/etcher/>`_
+#. Flash the image onto the micro SD card using Balena etcher. 
+#. Insert the micro sd card into the Pi's micro sd card slot (on bottom side of board)
+
 
 Step 1. SSH into the Pupper
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
