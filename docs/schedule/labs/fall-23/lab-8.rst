@@ -45,6 +45,11 @@ Step 2. Clone the starter code
 
 ``git clone https://github.com/cs123-stanford/lab_8_seeing_is_believing.git``
 
+If you're getting the error "pupper module" not found, first delete ``Stanford Quadruped``, and then run this command:
+``git clone https://github.com/stanfordroboticsclub/StanfordQuadruped/tree/pupper_api``
+
+
+
 Step 3. Edit vision.py to determine where the Pupper should be looking
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. In this section, you guys will be working with bounding boxes. Bounding boxes are rectangles surrounding an individual detection that indicate the size and position of an object in the image. Each bounding box is stored in the ``detections`` array, and you can pull out each individual detection by iterating through it.
